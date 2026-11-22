@@ -1,0 +1,20 @@
+Audited 480/3840 rows; 335686 sampled states
+Audited 960/3840 rows; 654036 sampled states
+Audited 1440/3840 rows; 936357 sampled states
+Audited 1920/3840 rows; 1271372 sampled states
+Audited 2400/3840 rows; 1620547 sampled states
+Audited 2880/3840 rows; 1941990 sampled states
+Audited 3360/3840 rows; 2269724 sampled states
+Audited 3840/3840 rows; 2632650 sampled states
+{
+  "status": "passed_recorded_evidence_consistency",
+  "counts": {
+    "rows": 3840,
+    "failures": 2271,
+    "trace_samples": 2632650,
+    "successes": 1569
+  },
+  "evidence_files_checked": 7693,
+  "wall_s": 23.31853491603397,
+  "output": "records/data_quality_v1"
+}

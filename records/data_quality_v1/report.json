@@ -1,0 +1,1483 @@
+{
+  "core_source_provenance": {
+    "collect_grasp_classifiers.py": {
+      "collection_hash_verified": true,
+      "recorded_collection_sha256": "a1533b40ae93d242ae10d5f02966ef3d885b965b553465b40ff2b6065280d35c",
+      "sha256": "a1533b40ae93d242ae10d5f02966ef3d885b965b553465b40ff2b6065280d35c"
+    },
+    "grasp.py": {
+      "collection_hash_verified": true,
+      "recorded_collection_sha256": "4ddc10acf904456661c89fbcb595e2677f5e1a8029abd0cb3ad059c4bfc75114",
+      "sha256": "4ddc10acf904456661c89fbcb595e2677f5e1a8029abd0cb3ad059c4bfc75114"
+    },
+    "grasp_classifier_data.py": {
+      "collection_hash_verified": false,
+      "recorded_collection_sha256": null,
+      "sha256": "c384573782912fdd0e83e598580c934efa2a1f043e2d528567f328306d395262"
+    },
+    "grasp_study_objects.py": {
+      "collection_hash_verified": true,
+      "recorded_collection_sha256": "a1a7a76f01b282710cc95384735cc9fe0303d4bee3ea9a4357314a55208e63eb",
+      "sha256": "a1a7a76f01b282710cc95384735cc9fe0303d4bee3ea9a4357314a55208e63eb"
+    },
+    "grasp_study_physics.py": {
+      "collection_hash_verified": true,
+      "recorded_collection_sha256": "b6f1907750c681d987547e4dfdb0d404ed6131453975057c5f2294f302fbd92b",
+      "sha256": "b6f1907750c681d987547e4dfdb0d404ed6131453975057c5f2294f302fbd92b"
+    }
+  },
+  "counts": {
+    "failures": 2271,
+    "rows": 3840,
+    "successes": 1569,
+    "trace_samples": 2632650
+  },
+  "coverage": {
+    "condition_count": 240,
+    "controls_per_condition": 8,
+    "duplicate_interpretation": "Observable 11-feature duplicates may disagree because paired latent execution biases are excluded; this alone is not corruption.",
+    "exact_physical_input_duplicates": {
+      "conflicting_label_groups": 0,
+      "cross_split_groups": 0,
+      "distinct_vectors": 3840,
+      "duplicate_vector_groups": 0,
+      "redundant_rows": 0,
+      "rows_in_duplicate_vectors": 0
+    },
+    "families": {
+      "bottle": {
+        "condition_count": 48,
+        "distinct_control_configurations": 54,
+        "group_split_counts": {
+          "test": 8,
+          "train": 32,
+          "validation": 8
+        },
+        "property_grid_combinations": 48
+      },
+      "bowl": {
+        "condition_count": 48,
+        "distinct_control_configurations": 54,
+        "group_split_counts": {
+          "test": 8,
+          "train": 32,
+          "validation": 8
+        },
+        "property_grid_combinations": 48
+      },
+      "glass": {
+        "condition_count": 48,
+        "distinct_control_configurations": 54,
+        "group_split_counts": {
+          "test": 8,
+          "train": 32,
+          "validation": 8
+        },
+        "property_grid_combinations": 48
+      },
+      "pen": {
+        "condition_count": 48,
+        "distinct_control_configurations": 54,
+        "group_split_counts": {
+          "test": 8,
+          "train": 32,
+          "validation": 8
+        },
+        "property_grid_combinations": 48
+      },
+      "spoon": {
+        "condition_count": 48,
+        "distinct_control_configurations": 54,
+        "group_split_counts": {
+          "test": 8,
+          "train": 32,
+          "validation": 8
+        },
+        "property_grid_combinations": 48
+      }
+    },
+    "group_count": 240,
+    "group_ids_reconstructed": true,
+    "group_split_counts": {
+      "test": 40,
+      "train": 160,
+      "validation": 40
+    },
+    "nominal_pose_strata": {
+      "bottle": {
+        "test": {
+          "x_m": {
+            "maximum": 0.519539248635103,
+            "minimum": 0.47754962760254077,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.06339267364345143,
+            "minimum": -0.09833660957668836,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.13292939544610885,
+            "minimum": -0.14628874010294626,
+            "occupied_once": true,
+            "strata": 8
+          }
+        },
+        "train": {
+          "x_m": {
+            "maximum": 0.5246626885675723,
+            "minimum": 0.4759878147226298,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "y_m": {
+            "maximum": -0.06093952658942835,
+            "minimum": -0.09907892939916474,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "yaw_rad": {
+            "maximum": 0.14542545970510776,
+            "minimum": -0.14449879513031666,
+            "occupied_once": true,
+            "strata": 32
+          }
+        },
+        "validation": {
+          "x_m": {
+            "maximum": 0.5220115394705928,
+            "minimum": 0.47690812676946476,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.06315421735776121,
+            "minimum": -0.09695137973699067,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.12236025239372081,
+            "minimum": -0.14743242421894978,
+            "occupied_once": true,
+            "strata": 8
+          }
+        }
+      },
+      "bowl": {
+        "test": {
+          "x_m": {
+            "maximum": 0.5215797554852738,
+            "minimum": 0.4810968519042034,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.06319970259420307,
+            "minimum": -0.09526178084450973,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.13409986211664207,
+            "minimum": -0.13125055161173776,
+            "occupied_once": true,
+            "strata": 8
+          }
+        },
+        "train": {
+          "x_m": {
+            "maximum": 0.5243172726447141,
+            "minimum": 0.47611247906226045,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "y_m": {
+            "maximum": -0.061148024997286554,
+            "minimum": -0.09921669650561307,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "yaw_rad": {
+            "maximum": 0.14237769863075297,
+            "minimum": -0.14727840599728567,
+            "occupied_once": true,
+            "strata": 32
+          }
+        },
+        "validation": {
+          "x_m": {
+            "maximum": 0.524735871515668,
+            "minimum": 0.47724192292613943,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.0637492523278641,
+            "minimum": -0.09545798287064244,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.13822818712852317,
+            "minimum": -0.12040932943124646,
+            "occupied_once": true,
+            "strata": 8
+          }
+        }
+      },
+      "glass": {
+        "test": {
+          "x_m": {
+            "maximum": 0.5190737612598216,
+            "minimum": 0.4800283291065619,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.06169205564285177,
+            "minimum": -0.09657068721254576,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.12025024174532775,
+            "minimum": -0.12268938380586047,
+            "occupied_once": true,
+            "strata": 8
+          }
+        },
+        "train": {
+          "x_m": {
+            "maximum": 0.5241970582219093,
+            "minimum": 0.47513152018360505,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "y_m": {
+            "maximum": -0.0611788039539423,
+            "minimum": -0.09972253502812538,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "yaw_rad": {
+            "maximum": 0.1409790920983641,
+            "minimum": -0.14909875591346342,
+            "occupied_once": true,
+            "strata": 32
+          }
+        },
+        "validation": {
+          "x_m": {
+            "maximum": 0.521504617834303,
+            "minimum": 0.4784616440930535,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.062219395123873686,
+            "minimum": -0.09633941136596189,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.12649843381569967,
+            "minimum": -0.12257507862096706,
+            "occupied_once": true,
+            "strata": 8
+          }
+        }
+      },
+      "pen": {
+        "test": {
+          "x_m": {
+            "maximum": 0.520555760682735,
+            "minimum": 0.4802883915434598,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.06047111666729407,
+            "minimum": -0.09844594875266256,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.1493319003765233,
+            "minimum": -0.13063689028510697,
+            "occupied_once": true,
+            "strata": 8
+          }
+        },
+        "train": {
+          "x_m": {
+            "maximum": 0.5242647584472714,
+            "minimum": 0.4762599332349249,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "y_m": {
+            "maximum": -0.061144218661261115,
+            "minimum": -0.09930410158218153,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "yaw_rad": {
+            "maximum": 0.14727113831462937,
+            "minimum": -0.1412992973087826,
+            "occupied_once": true,
+            "strata": 32
+          }
+        },
+        "validation": {
+          "x_m": {
+            "maximum": 0.5193879225304748,
+            "minimum": 0.47696639305629057,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.06389650033389324,
+            "minimum": -0.09885927354498773,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.13497876949491108,
+            "minimum": -0.13770748659289944,
+            "occupied_once": true,
+            "strata": 8
+          }
+        }
+      },
+      "spoon": {
+        "test": {
+          "x_m": {
+            "maximum": 0.5214319910996562,
+            "minimum": 0.4768222608813219,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.06366253623321103,
+            "minimum": -0.09900528142438343,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.1191213830412943,
+            "minimum": -0.1479767364072613,
+            "occupied_once": true,
+            "strata": 8
+          }
+        },
+        "train": {
+          "x_m": {
+            "maximum": 0.5243947287849401,
+            "minimum": 0.47515068297702234,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "y_m": {
+            "maximum": -0.06016067540711971,
+            "minimum": -0.0992915951448544,
+            "occupied_once": true,
+            "strata": 32
+          },
+          "yaw_rad": {
+            "maximum": 0.14262537546691859,
+            "minimum": -0.1478904796594817,
+            "occupied_once": true,
+            "strata": 32
+          }
+        },
+        "validation": {
+          "x_m": {
+            "maximum": 0.5220952482353476,
+            "minimum": 0.4778746217735297,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "y_m": {
+            "maximum": -0.06094208283364447,
+            "minimum": -0.09866154036688346,
+            "occupied_once": true,
+            "strata": 8
+          },
+          "yaw_rad": {
+            "maximum": 0.12565270885600058,
+            "minimum": -0.14852737761298226,
+            "occupied_once": true,
+            "strata": 8
+          }
+        }
+      }
+    },
+    "observable_feature_duplicates": {
+      "conflicting_label_groups": 391,
+      "cross_split_groups": 0,
+      "distinct_vectors": 1920,
+      "duplicate_vector_groups": 1920,
+      "redundant_rows": 1920,
+      "rows_in_duplicate_vectors": 3840
+    },
+    "paired_draws_per_condition": 2,
+    "split_attempts": {
+      "test": 640,
+      "train": 2560,
+      "validation": 640
+    },
+    "training_only_diagnostics": {
+      "condition_label_counts": {
+        "five_object_v2.s20261121.bottle_00": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.bottle_02": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.bottle_03": {
+          "0": 7,
+          "1": 9
+        },
+        "five_object_v2.s20261121.bottle_04": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_06": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.bottle_07": {
+          "0": 7,
+          "1": 9
+        },
+        "five_object_v2.s20261121.bottle_08": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_10": {
+          "0": 13,
+          "1": 3
+        },
+        "five_object_v2.s20261121.bottle_11": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.bottle_12": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_13": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_15": {
+          "0": 10,
+          "1": 6
+        },
+        "five_object_v2.s20261121.bottle_16": {
+          "0": 11,
+          "1": 5
+        },
+        "five_object_v2.s20261121.bottle_18": {
+          "0": 3,
+          "1": 13
+        },
+        "five_object_v2.s20261121.bottle_20": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_21": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_22": {
+          "0": 5,
+          "1": 11
+        },
+        "five_object_v2.s20261121.bottle_24": {
+          "0": 15,
+          "1": 1
+        },
+        "five_object_v2.s20261121.bottle_25": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_26": {
+          "0": 10,
+          "1": 6
+        },
+        "five_object_v2.s20261121.bottle_30": {
+          "0": 11,
+          "1": 5
+        },
+        "five_object_v2.s20261121.bottle_31": {
+          "0": 9,
+          "1": 7
+        },
+        "five_object_v2.s20261121.bottle_32": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.bottle_33": {
+          "0": 9,
+          "1": 7
+        },
+        "five_object_v2.s20261121.bottle_34": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.bottle_36": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_37": {
+          "0": 15,
+          "1": 1
+        },
+        "five_object_v2.s20261121.bottle_38": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.bottle_43": {
+          "0": 3,
+          "1": 13
+        },
+        "five_object_v2.s20261121.bottle_44": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_45": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bottle_47": {
+          "0": 12,
+          "1": 4
+        },
+        "five_object_v2.s20261121.bowl_00": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.bowl_02": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.bowl_03": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.bowl_04": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_05": {
+          "0": 15,
+          "1": 1
+        },
+        "five_object_v2.s20261121.bowl_06": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.bowl_07": {
+          "0": 3,
+          "1": 13
+        },
+        "five_object_v2.s20261121.bowl_08": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_09": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_10": {
+          "0": 10,
+          "1": 6
+        },
+        "five_object_v2.s20261121.bowl_11": {
+          "0": 5,
+          "1": 11
+        },
+        "five_object_v2.s20261121.bowl_12": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_13": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_17": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.bowl_18": {
+          "0": 1,
+          "1": 15
+        },
+        "five_object_v2.s20261121.bowl_19": {
+          "0": 1,
+          "1": 15
+        },
+        "five_object_v2.s20261121.bowl_20": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_21": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_22": {
+          "0": 3,
+          "1": 13
+        },
+        "five_object_v2.s20261121.bowl_25": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_26": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.bowl_28": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_30": {
+          "0": 12,
+          "1": 4
+        },
+        "five_object_v2.s20261121.bowl_31": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.bowl_32": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.bowl_34": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.bowl_35": {
+          "1": 16
+        },
+        "five_object_v2.s20261121.bowl_36": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_38": {
+          "0": 3,
+          "1": 13
+        },
+        "five_object_v2.s20261121.bowl_40": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.bowl_42": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.bowl_43": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.glass_01": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.glass_02": {
+          "0": 1,
+          "1": 15
+        },
+        "five_object_v2.s20261121.glass_03": {
+          "0": 1,
+          "1": 15
+        },
+        "five_object_v2.s20261121.glass_04": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.glass_06": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.glass_07": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.glass_08": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.glass_09": {
+          "0": 13,
+          "1": 3
+        },
+        "five_object_v2.s20261121.glass_10": {
+          "1": 16
+        },
+        "five_object_v2.s20261121.glass_15": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.glass_16": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.glass_17": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.glass_19": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.glass_20": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.glass_21": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.glass_22": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.glass_24": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.glass_26": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.glass_27": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.glass_28": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.glass_29": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.glass_30": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.glass_33": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.glass_34": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.glass_35": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.glass_38": {
+          "0": 5,
+          "1": 11
+        },
+        "five_object_v2.s20261121.glass_39": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.glass_41": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.glass_42": {
+          "0": 7,
+          "1": 9
+        },
+        "five_object_v2.s20261121.glass_45": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.glass_46": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.glass_47": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.pen_00": {
+          "0": 11,
+          "1": 5
+        },
+        "five_object_v2.s20261121.pen_01": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.pen_02": {
+          "0": 5,
+          "1": 11
+        },
+        "five_object_v2.s20261121.pen_03": {
+          "0": 10,
+          "1": 6
+        },
+        "five_object_v2.s20261121.pen_04": {
+          "0": 10,
+          "1": 6
+        },
+        "five_object_v2.s20261121.pen_06": {
+          "0": 7,
+          "1": 9
+        },
+        "five_object_v2.s20261121.pen_07": {
+          "0": 9,
+          "1": 7
+        },
+        "five_object_v2.s20261121.pen_08": {
+          "0": 15,
+          "1": 1
+        },
+        "five_object_v2.s20261121.pen_10": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.pen_11": {
+          "0": 10,
+          "1": 6
+        },
+        "five_object_v2.s20261121.pen_13": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.pen_14": {
+          "0": 5,
+          "1": 11
+        },
+        "five_object_v2.s20261121.pen_16": {
+          "0": 9,
+          "1": 7
+        },
+        "five_object_v2.s20261121.pen_20": {
+          "1": 16
+        },
+        "five_object_v2.s20261121.pen_21": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.pen_22": {
+          "0": 3,
+          "1": 13
+        },
+        "five_object_v2.s20261121.pen_23": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.pen_25": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.pen_27": {
+          "0": 7,
+          "1": 9
+        },
+        "five_object_v2.s20261121.pen_29": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.pen_30": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.pen_31": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.pen_33": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.pen_34": {
+          "0": 3,
+          "1": 13
+        },
+        "five_object_v2.s20261121.pen_35": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.pen_39": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.pen_40": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.pen_43": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.pen_44": {
+          "0": 11,
+          "1": 5
+        },
+        "five_object_v2.s20261121.pen_45": {
+          "0": 7,
+          "1": 9
+        },
+        "five_object_v2.s20261121.pen_46": {
+          "0": 3,
+          "1": 13
+        },
+        "five_object_v2.s20261121.pen_47": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.spoon_01": {
+          "0": 12,
+          "1": 4
+        },
+        "five_object_v2.s20261121.spoon_02": {
+          "0": 10,
+          "1": 6
+        },
+        "five_object_v2.s20261121.spoon_03": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.spoon_05": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.spoon_07": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.spoon_09": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.spoon_11": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.spoon_12": {
+          "0": 15,
+          "1": 1
+        },
+        "five_object_v2.s20261121.spoon_13": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.spoon_14": {
+          "0": 13,
+          "1": 3
+        },
+        "five_object_v2.s20261121.spoon_16": {
+          "0": 10,
+          "1": 6
+        },
+        "five_object_v2.s20261121.spoon_17": {
+          "0": 9,
+          "1": 7
+        },
+        "five_object_v2.s20261121.spoon_18": {
+          "0": 2,
+          "1": 14
+        },
+        "five_object_v2.s20261121.spoon_19": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.spoon_21": {
+          "0": 12,
+          "1": 4
+        },
+        "five_object_v2.s20261121.spoon_22": {
+          "0": 6,
+          "1": 10
+        },
+        "five_object_v2.s20261121.spoon_23": {
+          "0": 7,
+          "1": 9
+        },
+        "five_object_v2.s20261121.spoon_24": {
+          "0": 15,
+          "1": 1
+        },
+        "five_object_v2.s20261121.spoon_29": {
+          "0": 15,
+          "1": 1
+        },
+        "five_object_v2.s20261121.spoon_30": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.spoon_32": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.spoon_33": {
+          "0": 8,
+          "1": 8
+        },
+        "five_object_v2.s20261121.spoon_34": {
+          "0": 5,
+          "1": 11
+        },
+        "five_object_v2.s20261121.spoon_35": {
+          "0": 3,
+          "1": 13
+        },
+        "five_object_v2.s20261121.spoon_37": {
+          "0": 11,
+          "1": 5
+        },
+        "five_object_v2.s20261121.spoon_38": {
+          "0": 5,
+          "1": 11
+        },
+        "five_object_v2.s20261121.spoon_39": {
+          "0": 4,
+          "1": 12
+        },
+        "five_object_v2.s20261121.spoon_40": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.spoon_41": {
+          "0": 15,
+          "1": 1
+        },
+        "five_object_v2.s20261121.spoon_42": {
+          "0": 14,
+          "1": 2
+        },
+        "five_object_v2.s20261121.spoon_44": {
+          "0": 16
+        },
+        "five_object_v2.s20261121.spoon_46": {
+          "0": 15,
+          "1": 1
+        }
+      },
+      "controller_failure_diagnostic_codes": {
+        "hold_postcondition_failure": 208,
+        "lost_bilateral_contact_during_lift": 611,
+        "pose_target_timeout": 237,
+        "postcompletion_physical_predicates_lost": 51,
+        "stable_bilateral_contact_not_established": 344
+      },
+      "failure_category_caveat": "Recorded heuristic categories/co-occurrences, not demonstrated causal root causes or necessarily robot-obstacle collisions.",
+      "failure_kind_counts": {
+        "grasp_contact_or_retention": 459,
+        "motion_or_preparation": 87,
+        "unplanned_contact": 905
+      },
+      "family_label_counts": {
+        "bottle": {
+          "0": 342,
+          "1": 170
+        },
+        "bowl": {
+          "0": 299,
+          "1": 213
+        },
+        "glass": {
+          "0": 273,
+          "1": 239
+        },
+        "pen": {
+          "0": 219,
+          "1": 293
+        },
+        "spoon": {
+          "0": 318,
+          "1": 194
+        }
+      },
+      "feature_level_label_counts": {
+        "close_trigger_m": {
+          "0.0": {
+            "0": 921,
+            "1": 835
+          },
+          "0.01": {
+            "0": 224,
+            "1": 174
+          },
+          "0.02": {
+            "0": 306,
+            "1": 100
+          }
+        },
+        "closing_force_n": {
+          "2.0": {
+            "0": 315,
+            "1": 83
+          },
+          "4.0": {
+            "0": 864,
+            "1": 752
+          },
+          "8.0": {
+            "0": 272,
+            "1": 274
+          }
+        },
+        "descent_speed_m_s": {
+          "0.04": {
+            "0": 322,
+            "1": 232
+          },
+          "0.1": {
+            "0": 814,
+            "1": 626
+          },
+          "0.2": {
+            "0": 315,
+            "1": 251
+          }
+        },
+        "mass_kg": {
+          "0.005": {
+            "0": 62,
+            "1": 66
+          },
+          "0.01": {
+            "0": 47,
+            "1": 81
+          },
+          "0.015": {
+            "0": 81,
+            "1": 95
+          },
+          "0.02": {
+            "0": 58,
+            "1": 54
+          },
+          "0.025": {
+            "0": 57,
+            "1": 71
+          },
+          "0.03": {
+            "0": 52,
+            "1": 92
+          },
+          "0.04": {
+            "0": 76,
+            "1": 20
+          },
+          "0.06": {
+            "0": 198,
+            "1": 186
+          },
+          "0.08": {
+            "0": 44,
+            "1": 100
+          },
+          "0.15": {
+            "0": 63,
+            "1": 65
+          },
+          "0.18": {
+            "0": 187,
+            "1": 101
+          },
+          "0.25": {
+            "0": 80,
+            "1": 48
+          },
+          "0.3": {
+            "0": 190,
+            "1": 66
+          },
+          "0.35": {
+            "0": 86,
+            "1": 26
+          },
+          "0.45": {
+            "0": 170,
+            "1": 38
+          }
+        },
+        "opening_m": {
+          "0.04": {
+            "0": 331,
+            "1": 161
+          },
+          "0.08": {
+            "0": 1120,
+            "1": 948
+          }
+        },
+        "scale": {
+          "0.8": {
+            "0": 539,
+            "1": 373
+          },
+          "1.0": {
+            "0": 498,
+            "1": 350
+          },
+          "1.2": {
+            "0": 414,
+            "1": 386
+          }
+        },
+        "sliding_friction": {
+          "0.2": {
+            "0": 506,
+            "1": 102
+          },
+          "0.4": {
+            "0": 431,
+            "1": 161
+          },
+          "0.8": {
+            "0": 312,
+            "1": 424
+          },
+          "1.2": {
+            "0": 202,
+            "1": 422
+          }
+        },
+        "target": {
+          "bottle": {
+            "0": 342,
+            "1": 170
+          },
+          "bowl": {
+            "0": 299,
+            "1": 213
+          },
+          "glass": {
+            "0": 273,
+            "1": 239
+          },
+          "pen": {
+            "0": 219,
+            "1": 293
+          },
+          "spoon": {
+            "0": 318,
+            "1": 194
+          }
+        }
+      },
+      "numeric_features_by_label": {
+        "close_trigger_m": {
+          "0": {
+            "count": 1451,
+            "maximum": 0.02,
+            "mean": 0.005761543762922122,
+            "minimum": 0.0
+          },
+          "1": {
+            "count": 1109,
+            "maximum": 0.02,
+            "mean": 0.003372407574391344,
+            "minimum": 0.0
+          }
+        },
+        "closing_force_n": {
+          "0": {
+            "count": 1451,
+            "maximum": 8.0,
+            "mean": 4.3156443831840114,
+            "minimum": 2.0
+          },
+          "1": {
+            "count": 1109,
+            "maximum": 8.0,
+            "mean": 4.838593327321911,
+            "minimum": 2.0
+          }
+        },
+        "descent_speed_m_s": {
+          "0": {
+            "count": 1451,
+            "maximum": 0.2,
+            "mean": 0.10839421088904204,
+            "minimum": 0.04
+          },
+          "1": {
+            "count": 1109,
+            "maximum": 0.2,
+            "mean": 0.11008115419296664,
+            "minimum": 0.04
+          }
+        },
+        "mass_kg": {
+          "0": {
+            "count": 1451,
+            "maximum": 0.45,
+            "mean": 0.173184011026878,
+            "minimum": 0.005
+          },
+          "1": {
+            "count": 1109,
+            "maximum": 0.45,
+            "mean": 0.10285843101893598,
+            "minimum": 0.005
+          }
+        },
+        "opening_m": {
+          "0": {
+            "count": 1451,
+            "maximum": 0.08,
+            "mean": 0.07087525844245349,
+            "minimum": 0.04
+          },
+          "1": {
+            "count": 1109,
+            "maximum": 0.08,
+            "mean": 0.07419296663660956,
+            "minimum": 0.04
+          }
+        },
+        "scale": {
+          "0": {
+            "count": 1451,
+            "maximum": 1.2,
+            "mean": 0.9827705031013094,
+            "minimum": 0.8
+          },
+          "1": {
+            "count": 1109,
+            "maximum": 1.2,
+            "mean": 1.0023444544634805,
+            "minimum": 0.8
+          }
+        },
+        "sliding_friction": {
+          "0": {
+            "count": 1451,
+            "maximum": 1.2,
+            "mean": 0.5276361130254996,
+            "minimum": 0.2
+          },
+          "1": {
+            "count": 1109,
+            "maximum": 1.2,
+            "mean": 0.8389540126239855,
+            "minimum": 0.2
+          }
+        },
+        "x_m": {
+          "0": {
+            "count": 1451,
+            "maximum": 0.5246626921224083,
+            "mean": 0.4993954841264862,
+            "minimum": 0.4751313123998309
+          },
+          "1": {
+            "count": 1109,
+            "maximum": 0.5246626921224083,
+            "mean": 0.5008190702408744,
+            "minimum": 0.4751404294833217
+          }
+        },
+        "y_m": {
+          "0": {
+            "count": 1451,
+            "maximum": -0.06015908437566852,
+            "mean": -0.07947532584321214,
+            "minimum": -0.09972108377341976
+          },
+          "1": {
+            "count": 1109,
+            "maximum": -0.06015908437566852,
+            "mean": -0.08066562932046395,
+            "minimum": -0.09930393913038776
+          }
+        },
+        "yaw_rad": {
+          "0": {
+            "count": 1451,
+            "maximum": 0.14727217193421904,
+            "mean": 0.002996632173316544,
+            "minimum": -0.1490987648000005
+          },
+          "1": {
+            "count": 1109,
+            "maximum": 0.14727217193421904,
+            "mean": -0.0033350916446116536,
+            "minimum": -0.1490987648000005
+          }
+        }
+      },
+      "row_count": 2560,
+      "scope": "train only; descriptive, not causal; no validation/test outcome-conditioned feature exploration"
+    },
+    "trial_count": 3840
+  },
+  "evidence_files_checked": 7693,
+  "frozen_package_validation": {
+    "counts": {
+      "test": {
+        "failures": 423,
+        "groups": 40,
+        "rows": 640,
+        "successes": 217
+      },
+      "train": {
+        "failures": 1451,
+        "groups": 160,
+        "rows": 2560,
+        "successes": 1109
+      },
+      "validation": {
+        "failures": 397,
+        "groups": 40,
+        "rows": 640,
+        "successes": 243
+      }
+    },
+    "cv_folds": 3,
+    "cv_index_space": "global CSV IDs remapped to TRAIN-local indices",
+    "historical_test_already_inspected": true,
+    "sha256": {
+      "cv_manifest.json": "7952deb8129dce436b3c1a26bc40a4d0f43186ff41b4b63bdbd96a11e18323a6",
+      "dataset.csv": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+      "manifest.json": "7722200a3f0a6138fa494a66958327115ad0ad924ff26d2249080db55fd52f7f",
+      "split_assignments.csv": "5a45cd13537248b9d4228a00113bee962815fe28a34d4324ededf11afb561c93"
+    }
+  },
+  "implementation_sha256": {
+    "audit_coverage.py": "630bd3bae60ffce6582ec8891cd1071261b0ad7fb80a28c02ae10988e708ace8",
+    "audit_data_quality.py": "d19d338cdb35abea566ef7894f7fc6d58507bf57e10601cb6fbba2140ef1ce62",
+    "audit_trace.py": "6bc6718c61aa6682dd27c38734ba7ad0a28e15b05523c6bb553780888eadcb16",
+    "baseline.py": "d365edd7aab91ced54d7f0dac715a6edf8b474e1fd86c3048c0f11f18513ab5c",
+    "uv.lock": "ea6a66b404391748ed436b615e53f178d86f59fcf064700036161eb36ff65d23"
+  },
+  "labels_modified": 0,
+  "limits": [
+    "Recorded-evidence consistency, not a guarantee of simulator correctness or real-robot validity.",
+    "The observer checked every 0.002 simulation seconds, but trajectories retain approximately 0.020-second samples plus phase/terminal samples. Unsaved physics steps cannot be independently reconstructed here.",
+    "Contact/stability booleans share the controller's predicates. Saved trajectories lack full state and contact-force history; this audit is not independent contact sensing or a physics rerun.",
+    "Relative stability means target-to-TCP position displacement, not a full orientation guarantee.",
+    "Failure kinds are controller diagnostic categories with collision-episode precedence, not independently proven causal root causes or verified object drops.",
+    "Only training outcomes are used for exploratory feature/failure summaries and case selection; historical test labels are read for integrity only. That test was already public, not a fresh blind final test.",
+    "Eight configurations and two paired latent-error draws per condition are correlated trials, not sixteen independent object conditions.",
+    "Object family also identifies geometry, grasp profile and some contact settings; descriptive associations are not causal feature effects.",
+    "Mass/friction are prescribed simulator inputs. Speed, force and opening are commands, not measured constant TCP speed, grip force or final gap.",
+    "Scale/settings and recorded compiled diagnostics are checked; collision geometry is not independently regenerated. No new trials, labels, classifier results or storage-task success claims are created."
+  ],
+  "max_feature_absolute_error": 0.0,
+  "max_trace_sample_gap_s": 0.02000000000000668,
+  "schema_version": 1,
+  "scope": "All frozen v1 rows, individual raw trials and sampled trajectories; no simulation rerun",
+  "software": {
+    "platform": "macOS-26.6-arm64-arm-64bit",
+    "python": "3.12.12 (main, Jan 27 2026, 23:41:44) [Clang 21.1.4 ]"
+  },
+  "source_commit": "7a2c5642113d0d3b9c5b5d5205feda843b2c043a",
+  "source_repository": "https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms",
+  "source_study": "results/grasp_classifier_five_objects_20261121",
+  "status": "passed_recorded_evidence_consistency",
+  "training_case_count": 14,
+  "training_only_diagnostics": {
+    "controller_failure_diagnostics": {
+      "hold_postcondition_failure": 208,
+      "lost_bilateral_contact_during_lift": 611,
+      "pose_target_timeout": 237,
+      "postcompletion_physical_predicates_lost": 51,
+      "stable_bilateral_contact_not_established": 344,
+      "success": 1109
+    },
+    "failure_kinds": {
+      "grasp_contact_or_retention": 459,
+      "motion_or_preparation": 87,
+      "success": 1109,
+      "unplanned_contact": 905
+    },
+    "last_active_phase": {
+      "close": 344,
+      "descend": 237,
+      "hold": 1368,
+      "lift": 611
+    },
+    "rows_with_collision_episodes": {
+      "failure": 905,
+      "success": 64
+    }
+  },
+  "wall_s": 23.31853491603397
+}

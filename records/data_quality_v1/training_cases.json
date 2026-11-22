@@ -1,0 +1,898 @@
+[
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 662,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": "unplanned_contact",
+      "failure_reason_code": "lost_bilateral_contact_during_lift",
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "group_id": "group_67ea874a24e8d80b940061d4414088043778b3dde429d14a82e4ea677c8d5f7a",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": false,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.bowl_00.control_0.draw_0.json",
+      "raw_record_sha256": "2403a79f9136f2684c64b3761c0a5597425596d350c27665d7718ebba0975095",
+      "recorded_mass_absolute_error_kg": 6.938893903907228e-18,
+      "row_index": "0",
+      "sample_count": 663,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 0,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": null,
+        "final_window_max_sample_gap_s": 0.0,
+        "final_window_sample_count": 0,
+        "final_window_start_s": null,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 0,
+      "target": "bowl",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.bowl_00.control_0.draw_0.json.gz",
+      "trace_sha256": "a18c9bfcc82e08d5a58965aff440c1298f0c16bec380c543caa947f5c2de60c3",
+      "trial_id": "five_object_v2.s20261121.bowl_00.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "4.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.06",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.2",
+      "target": "bowl",
+      "x_m": "0.48539892913001187",
+      "y_m": "-0.09921671744235908",
+      "yaw_rad": "-0.06763617708527767"
+    },
+    "final_postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "bowl",
+        false
+      ],
+      [
+        "controller_diagnostic",
+        "lost_bilateral_contact_during_lift"
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 761,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": null,
+      "failure_reason_code": "success",
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.000000000000668,
+      "group_id": "group_67ea874a24e8d80b940061d4414088043778b3dde429d14a82e4ea677c8d5f7a",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": true,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.bowl_00.control_1.draw_0.json",
+      "raw_record_sha256": "ccb5e023666d748c3fdf41409802f327b3cee6b51d02705e2113be4c105c3f35",
+      "recorded_mass_absolute_error_kg": 6.938893903907228e-18,
+      "row_index": "1",
+      "sample_count": 762,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 101,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": 5.168064823559151e-05,
+        "final_window_max_sample_gap_s": 0.02000000000000668,
+        "final_window_sample_count": 101,
+        "final_window_start_s": 13.158000000001064,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 1,
+      "target": "bowl",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.bowl_00.control_1.draw_0.json.gz",
+      "trace_sha256": "5dfe2f8bc541222d187f630845ccec0024021ec1db329ab57d5c48ce7840fac5",
+      "trial_id": "five_object_v2.s20261121.bowl_00.control_1.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "8.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.06",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.2",
+      "target": "bowl",
+      "x_m": "0.48539892913001187",
+      "y_m": "-0.09921671744235908",
+      "yaw_rad": "-0.06763617708527767"
+    },
+    "final_postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "bowl",
+        true
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 678,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": "grasp_contact_or_retention",
+      "failure_reason_code": "hold_postcondition_failure",
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "group_id": "group_67ea874a24e8d80b940061d4414088043778b3dde429d14a82e4ea677c8d5f7a",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": false,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.bowl_00.control_2.draw_0.json",
+      "raw_record_sha256": "381d07bb5541ad6efcba68daf11673fce02e26db6195ef0cb351acdcbe1e39d4",
+      "recorded_mass_absolute_error_kg": 6.938893903907228e-18,
+      "row_index": "2",
+      "sample_count": 679,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 1,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": null,
+        "final_window_max_sample_gap_s": 0.0,
+        "final_window_sample_count": 0,
+        "final_window_start_s": null,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 0,
+      "target": "bowl",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.bowl_00.control_2.draw_0.json.gz",
+      "trace_sha256": "6ca55b8371ea19195bb4432110d72d2b7fd5fec9d0dccd968e55a7004b23862c",
+      "trial_id": "five_object_v2.s20261121.bowl_00.control_2.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "4.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.06",
+      "opening_m": "0.04",
+      "scale": "0.8",
+      "sliding_friction": "0.2",
+      "target": "bowl",
+      "x_m": "0.48539892913001187",
+      "y_m": "-0.09921671744235908",
+      "yaw_rad": "-0.06763617708527767"
+    },
+    "final_postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": false
+    },
+    "selection_reasons": [
+      [
+        "controller_diagnostic",
+        "hold_postcondition_failure"
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 841,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": "unplanned_contact",
+      "failure_reason_code": "stable_bilateral_contact_not_established",
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "group_id": "group_42655c4222bff48ab97ea51754b884d35a83acd7a6d1145f98ff03e881ae446a",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": false,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.bowl_02.control_6.draw_0.json",
+      "raw_record_sha256": "fe4a29b3569ee710028fe8fba8c41628be68b3c97d4112a24206d0e8428fe055",
+      "recorded_mass_absolute_error_kg": 6.938893903907228e-18,
+      "row_index": "38",
+      "sample_count": 842,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 0,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": null,
+        "final_window_max_sample_gap_s": 0.0,
+        "final_window_sample_count": 0,
+        "final_window_start_s": null,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 0,
+      "target": "bowl",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.bowl_02.control_6.draw_0.json.gz",
+      "trace_sha256": "63e9426a49a8898edd8f3ff4b66fd5d9033d2a0df7014c93703fbc6cbbfad183",
+      "trial_id": "five_object_v2.s20261121.bowl_02.control_6.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.02",
+      "closing_force_n": "8.0",
+      "descent_speed_m_s": "0.04",
+      "mass_kg": "0.06",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.8",
+      "target": "bowl",
+      "x_m": "0.5168857435323608",
+      "y_m": "-0.08164076053935988",
+      "yaw_rad": "-0.019903065975621404"
+    },
+    "final_postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "selection_reasons": [
+      [
+        "controller_diagnostic",
+        "stable_bilateral_contact_not_established"
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 683,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": null,
+      "failure_reason_code": "success",
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.000000000000668,
+      "group_id": "group_e0d1d74bd8c53fc9451925871dab9966b2b059747ddac88f658cd29e9e316904",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": true,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.bottle_00.control_0.draw_0.json",
+      "raw_record_sha256": "ebe74498b4a8ba059f54cdf77c438425bd41e35ec90361e49dd3fb4fbf63c872",
+      "recorded_mass_absolute_error_kg": 6.938893903907228e-18,
+      "row_index": "768",
+      "sample_count": 684,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 101,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": 0.000756323825665266,
+        "final_window_max_sample_gap_s": 0.02000000000000668,
+        "final_window_sample_count": 101,
+        "final_window_start_s": 11.586000000000539,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 1,
+      "target": "bottle",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.bottle_00.control_0.draw_0.json.gz",
+      "trace_sha256": "f6af90b13a394662047aadaa61c38a7632a72fe3ac51521a489a5882bef1c3c5",
+      "trial_id": "five_object_v2.s20261121.bottle_00.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "4.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.06",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.2",
+      "target": "bottle",
+      "x_m": "0.5022858921051694",
+      "y_m": "-0.08532886757919018",
+      "yaw_rad": "-0.058946256347800714"
+    },
+    "final_postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "bottle",
+        true
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 498,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": "unplanned_contact",
+      "failure_reason_code": "lost_bilateral_contact_during_lift",
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "group_id": "group_e0d1d74bd8c53fc9451925871dab9966b2b059747ddac88f658cd29e9e316904",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": false,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.bottle_00.control_3.draw_0.json",
+      "raw_record_sha256": "6d277fe8957e951b2959e6823aa38fd83bc4b3fba5fc36c789cdf9bdd1e83ef6",
+      "recorded_mass_absolute_error_kg": 6.938893903907228e-18,
+      "row_index": "771",
+      "sample_count": 499,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 0,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": null,
+        "final_window_max_sample_gap_s": 0.0,
+        "final_window_sample_count": 0,
+        "final_window_start_s": null,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 0,
+      "target": "bottle",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.bottle_00.control_3.draw_0.json.gz",
+      "trace_sha256": "8450df26c74d98a515e52d37c51b5d5ad1518b2ddf5266de650291bd0cd9ae47",
+      "trial_id": "five_object_v2.s20261121.bottle_00.control_3.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "2.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.06",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.2",
+      "target": "bottle",
+      "x_m": "0.5022858921051694",
+      "y_m": "-0.08532886757919018",
+      "yaw_rad": "-0.058946256347800714"
+    },
+    "final_postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "bottle",
+        false
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 755,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": "unplanned_contact",
+      "failure_reason_code": "pose_target_timeout",
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "group_id": "group_e0d1d74bd8c53fc9451925871dab9966b2b059747ddac88f658cd29e9e316904",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": false,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.bottle_00.control_6.draw_0.json",
+      "raw_record_sha256": "d4b990b275a3ea6da4d7a7be245411f4ecbafc4c25b0a4146bca1b3a386c68e5",
+      "recorded_mass_absolute_error_kg": 6.938893903907228e-18,
+      "row_index": "774",
+      "sample_count": 756,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 0,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": null,
+        "final_window_max_sample_gap_s": 0.0,
+        "final_window_sample_count": 0,
+        "final_window_start_s": null,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 0,
+      "target": "bottle",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.bottle_00.control_6.draw_0.json.gz",
+      "trace_sha256": "54bf7f72fbba1aede6b0955ee9d2a050a8d5a334c190117360d18ab5ae40bbd9",
+      "trial_id": "five_object_v2.s20261121.bottle_00.control_6.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.02",
+      "closing_force_n": "8.0",
+      "descent_speed_m_s": "0.04",
+      "mass_kg": "0.06",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.2",
+      "target": "bottle",
+      "x_m": "0.5022858921051694",
+      "y_m": "-0.08532886757919018",
+      "yaw_rad": "-0.058946256347800714"
+    },
+    "final_postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "selection_reasons": [
+      [
+        "controller_diagnostic",
+        "pose_target_timeout"
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 725,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": "grasp_contact_or_retention",
+      "failure_reason_code": "postcompletion_physical_predicates_lost",
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "group_id": "group_45f04eefeb3c22f965b84a33d9726e01959034d6f254a8ac0ccfcc17f68a6461",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": false,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.bottle_10.control_2.draw_0.json",
+      "raw_record_sha256": "e82e53e0c82f37729a1b2b553e16d76fdb47236d162323b4a9513095f401816a",
+      "recorded_mass_absolute_error_kg": 0.0,
+      "row_index": "930",
+      "sample_count": 726,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 66,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": null,
+        "final_window_max_sample_gap_s": 0.0,
+        "final_window_sample_count": 0,
+        "final_window_start_s": null,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 1,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 0,
+      "target": "bottle",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.bottle_10.control_2.draw_0.json.gz",
+      "trace_sha256": "c21f7d69d44370f2aa44563a623c0c93c3e9ac6d359f029b4beeb3e154564881",
+      "trial_id": "five_object_v2.s20261121.bottle_10.control_2.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.01",
+      "closing_force_n": "4.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.3",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.8",
+      "target": "bottle",
+      "x_m": "0.4871849001516099",
+      "y_m": "-0.09907886505223788",
+      "yaw_rad": "-0.08514102749197683"
+    },
+    "final_postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": false
+    },
+    "selection_reasons": [
+      [
+        "controller_diagnostic",
+        "postcompletion_physical_predicates_lost"
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 629,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": "unplanned_contact",
+      "failure_reason_code": "stable_bilateral_contact_not_established",
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "group_id": "group_df57879127f9c95ae5d2e1dce14b899d2535e2598770d8486da86232015121b4",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": false,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.spoon_01.control_0.draw_0.json",
+      "raw_record_sha256": "b71f10667614ca07f39bb13c5029413da154eeaea7486391e79f266ba4d6889c",
+      "recorded_mass_absolute_error_kg": 1.734723475976807e-18,
+      "row_index": "1552",
+      "sample_count": 630,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 0,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": null,
+        "final_window_max_sample_gap_s": 0.0,
+        "final_window_sample_count": 0,
+        "final_window_start_s": null,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 0,
+      "target": "spoon",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.spoon_01.control_0.draw_0.json.gz",
+      "trace_sha256": "a328111dabf0ca11c4c51cae713a3d5000171e43c5e3f6edf42ed0fbcfe16bfd",
+      "trial_id": "five_object_v2.s20261121.spoon_01.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "4.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.015",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.4",
+      "target": "spoon",
+      "x_m": "0.49649958442502123",
+      "y_m": "-0.0789618641778472",
+      "yaw_rad": "-0.017730439138117563"
+    },
+    "final_postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "spoon",
+        false
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 774,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": null,
+      "failure_reason_code": "success",
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.000000000000668,
+      "group_id": "group_df57879127f9c95ae5d2e1dce14b899d2535e2598770d8486da86232015121b4",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": true,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.spoon_01.control_3.draw_0.json",
+      "raw_record_sha256": "4415a73c60fa6a953e67ca97cc2993f29a8f8827049a7b5a763165ae653996b7",
+      "recorded_mass_absolute_error_kg": 1.734723475976807e-18,
+      "row_index": "1555",
+      "sample_count": 775,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 101,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": 4.879492396419755e-05,
+        "final_window_max_sample_gap_s": 0.02000000000000668,
+        "final_window_sample_count": 101,
+        "final_window_start_s": 13.440000000001158,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 1,
+      "target": "spoon",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.spoon_01.control_3.draw_0.json.gz",
+      "trace_sha256": "29b97aea39c3dd370df2f8c75fda01fa95dd0a887a007ffb041b6512e6d9d52c",
+      "trial_id": "five_object_v2.s20261121.spoon_01.control_3.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.01",
+      "closing_force_n": "4.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.015",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.4",
+      "target": "spoon",
+      "x_m": "0.49649958442502123",
+      "y_m": "-0.0789618641778472",
+      "yaw_rad": "-0.017730439138117563"
+    },
+    "final_postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "spoon",
+        true
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 726,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": null,
+      "failure_reason_code": "success",
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.000000000000668,
+      "group_id": "group_f7a27903f3dbe201d758cf5e61aa775a525127e88fe127ec500cf9b5e441079f",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": true,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.glass_01.control_0.draw_0.json",
+      "raw_record_sha256": "4be318416ad89db41213896a28b4bca197594ff1a897040dfa8cf31be8d041f9",
+      "recorded_mass_absolute_error_kg": 0.0,
+      "row_index": "2320",
+      "sample_count": 727,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 101,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": 0.001293713891806966,
+        "final_window_max_sample_gap_s": 0.02000000000000668,
+        "final_window_sample_count": 101,
+        "final_window_start_s": 12.454000000000828,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 1,
+      "target": "glass",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.glass_01.control_0.draw_0.json.gz",
+      "trace_sha256": "b785601776d9bb742c6e5bb935c1d4ad97779323fae60c0cab9e3fee549b704b",
+      "trial_id": "five_object_v2.s20261121.glass_01.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "4.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.08",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.4",
+      "target": "glass",
+      "x_m": "0.5028446688230322",
+      "y_m": "-0.06444274491958746",
+      "yaw_rad": "-0.13998410887681073"
+    },
+    "final_postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "glass",
+        true
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 646,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": "grasp_contact_or_retention",
+      "failure_reason_code": "hold_postcondition_failure",
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "group_id": "group_f7a27903f3dbe201d758cf5e61aa775a525127e88fe127ec500cf9b5e441079f",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": false,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.glass_01.control_2.draw_0.json",
+      "raw_record_sha256": "31217c277e233f3c22750e15800d0e594234ed9e052794c96821c383cd490e92",
+      "recorded_mass_absolute_error_kg": 0.0,
+      "row_index": "2322",
+      "sample_count": 647,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 6,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": null,
+        "final_window_max_sample_gap_s": 0.0,
+        "final_window_sample_count": 0,
+        "final_window_start_s": null,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 1,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 0,
+      "target": "glass",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.glass_01.control_2.draw_0.json.gz",
+      "trace_sha256": "e912e062d71289cbcb704e4453f92edc268078c13aa7ea931a7dd269daf2bd13",
+      "trial_id": "five_object_v2.s20261121.glass_01.control_2.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "2.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.08",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.4",
+      "target": "glass",
+      "x_m": "0.5028446688230322",
+      "y_m": "-0.06444274491958746",
+      "yaw_rad": "-0.13998410887681073"
+    },
+    "final_postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": false
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "glass",
+        false
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 625,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": "unplanned_contact",
+      "failure_reason_code": "stable_bilateral_contact_not_established",
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "group_id": "group_e81f65351545b50ac8f46aee32c136f3c8a8522b8598bb440e01f4f0bcefd3d9",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": false,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.pen_00.control_0.draw_0.json",
+      "raw_record_sha256": "1c8e59b0df9d4cdcd36fd85a03596225bf94db958737a9e6e5d66fee4e5c17e5",
+      "recorded_mass_absolute_error_kg": 0.0,
+      "row_index": "3072",
+      "sample_count": 626,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 0,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": null,
+        "final_window_max_sample_gap_s": 0.0,
+        "final_window_sample_count": 0,
+        "final_window_start_s": null,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 0,
+      "target": "pen",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.pen_00.control_0.draw_0.json.gz",
+      "trace_sha256": "535b0856a3db21621deca6916200e904c909adbb0ada3ba8544814083f0f2470",
+      "trial_id": "five_object_v2.s20261121.pen_00.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "4.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.005",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.2",
+      "target": "pen",
+      "x_m": "0.5242635029806957",
+      "y_m": "-0.07626889330555316",
+      "yaw_rad": "0.14727217193421904"
+    },
+    "final_postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "pen",
+        false
+      ]
+    ]
+  },
+  {
+    "diagnostic_is_not_proven_causal_root_cause": true,
+    "evidence": {
+      "distinct_time_sample_count": 774,
+      "duplicate_terminal_samples": 1,
+      "failure_kind": null,
+      "failure_reason_code": "success",
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.000000000000668,
+      "group_id": "group_e81f65351545b50ac8f46aee32c136f3c8a8522b8598bb440e01f4f0bcefd3d9",
+      "max_feature_absolute_error": 0.0,
+      "max_sample_gap_s": 0.02000000000000668,
+      "observed_success": true,
+      "positive_label_consistent": true,
+      "raw_record_path": "results/grasp_classifier_five_objects_20261121/collection/trials/five_object_v2.s20261121.pen_00.control_0.draw_1.json",
+      "raw_record_sha256": "9534029f42ba530006d7cf3bc9387e23924256020d8188f373541bae8b637b2d",
+      "recorded_mass_absolute_error_kg": 0.0,
+      "row_index": "3080",
+      "sample_count": 775,
+      "sampled_hold_observations": {
+        "eligible_sample_count": 101,
+        "final_window_max_relative_displacement_from_sampled_anchor_m": 2.33981694058644e-05,
+        "final_window_max_sample_gap_s": 0.02000000000000668,
+        "final_window_sample_count": 101,
+        "final_window_start_s": 13.432000000001155,
+        "relative_anchor_is_not_the_unsaved_controller_reference": true,
+        "sampled_timer_reset_intervals": 0,
+        "unsampled_continuity_independently_verified": false
+      },
+      "split": "train",
+      "success": 1,
+      "target": "pen",
+      "trace_path": "results/grasp_classifier_five_objects_20261121/collection/traces/five_object_v2.s20261121.pen_00.control_0.draw_1.json.gz",
+      "trace_sha256": "108d79ef509a7ba13467eedad2c82d6ad1eb064de4fa3d17e9abaaeaf1fec34c",
+      "trial_id": "five_object_v2.s20261121.pen_00.control_0.draw_1"
+    },
+    "features": {
+      "close_trigger_m": "0.0",
+      "closing_force_n": "4.0",
+      "descent_speed_m_s": "0.1",
+      "mass_kg": "0.005",
+      "opening_m": "0.08",
+      "scale": "0.8",
+      "sliding_friction": "0.2",
+      "target": "pen",
+      "x_m": "0.5242635029806957",
+      "y_m": "-0.07626889330555316",
+      "yaw_rad": "0.14727217193421904"
+    },
+    "final_postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "selection_reasons": [
+      [
+        "family_label",
+        "pen",
+        true
+      ]
+    ]
+  }
+]

@@ -15,6 +15,7 @@ The animation loops through the complete recorded Experiment 2 mission. It uses 
 - **[Download all v1 data as one ZIP](https://github.com/youseihuayu-wonderful/intelligent-grasping-course-project/raw/refs/heads/main/grasp_dataset_v1.zip)** — complete CSV, fixed splits/CV, source metadata and feature/label documentation; no videos or model artifacts.
 - **[Download the raw v1 CSV](https://raw.githubusercontent.com/youseihuayu-wonderful/intelligent-grasping-course-project/main/data/v1/dataset.csv)** · [Browse the data](data/v1/dataset.csv) · [Frozen manifest](data/v1/manifest.json)
 - [Dataset, feature units, physical labels, and provenance](docs/DATASET.md)
+- **[Data-quality audit: actual findings, raw-evidence traceability and limitations](docs/DATA_QUALITY.md)** — exhaustive recorded-evidence checks with reproducible code; frozen labels and splits unchanged.
 - [Team roles, leakage prevention, metrics, and attribution rules](docs/TEAM_PROTOCOL.md)
 - **[Both original simulations: Experiment 1 and Experiment 2](https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms/blob/main/docs/SIMULATIONS.md)** — runnable code, assets and authoritative execution evidence remain upstream; this repository mirrors the recorded Experiment 2 demo above.
 
