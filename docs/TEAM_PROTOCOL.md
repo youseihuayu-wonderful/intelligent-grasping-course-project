@@ -37,6 +37,8 @@ CV manifest row values are global zero-based CSV indices. Consumers working on t
 
 **The v1 test partition is already published and inspected historical evidence, not a new blind or untouched final test.** Preserving it does not restore blindness. Current reports must state this limitation. A genuinely fresh final claim would need newly held-out conditions collected or reserved under a later predeclared protocol; that work is outside current steps 1–3. Do not promise fresh-test performance from the existing partition.
 
+The subsequent [independent-test preregistration](INDEPENDENT_TEST_PROTOCOL.md) defines a separate development pilot and a fresh final batch. It does not collect them or reclassify the historical split as blind. A holds concrete final inputs/seeds outside Git; model artifacts/settings must be frozen before final collection, and predictions locked before labels are joined for scoring. Follow that protocol's budgets, exclusion rules and grouped uncertainty procedure for the new final comparison.
+
 No identity, metadata, execution duration, diagnostic, trajectory, or outcome-derived column may be a predictor. See the [explicit exclusion list](DATASET.md#forbidden-predictors). `group_id` and `split` organize evaluation only.
 
 ## Shared evaluation contract

@@ -1,0 +1,11 @@
+{
+  "condition_groups": 240,
+  "final_plan_bytes": 4001056,
+  "final_plan_sha256": "8862c4d40fbfa71d5bcf7e22ef84c574d29a53232783357cf5419ec404b8919c",
+  "pilot_plan_sha256": "ca384e9b365eddaa56c6aa09762181eeca3706773645ced3db01bed508a8f2b9",
+  "planned_attempts": 3840,
+  "policy_sha256": "db190249e6d202a0a07ee474aabd13132593be13dc5eaa68485a7b6638c48e99",
+  "protocol_id": "course_independent_test_v1",
+  "schema_version": 1,
+  "status": "planned_not_collected_private_inputs_withheld"
+}

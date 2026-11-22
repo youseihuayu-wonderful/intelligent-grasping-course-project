@@ -1,0 +1,212 @@
+{
+  "baseline_control": {
+    "close_trigger_m": 0.0,
+    "closing_force_n": 4.0,
+    "descent_speed_m_s": 0.1,
+    "opening_m": 0.08
+  },
+  "collection_rules": {
+    "fixed_attempt_budget_no_outcome_stopping": true,
+    "freeze_required": [
+      "model_artifact_hashes",
+      "training_code_revision",
+      "feature_allowlist",
+      "v1_and_cv_hashes",
+      "hyperparameters",
+      "preprocessing_and_selection",
+      "calibration_if_any",
+      "dependency_versions",
+      "threshold_and_tie_rule"
+    ],
+    "incomplete_or_unusable_final_batch": "Block confirmatory comparison, preserve all evidence and diagnose. Any changed environment/protocol needs a new version; a replacement run must be a complete declared batch, not cherry-picked trials",
+    "models_frozen_before_final_collection": true,
+    "no_label_balance_target": true,
+    "ordinary_controller_failure": "Keep as label 0; never discard because unfavorable",
+    "pilot_does_not_modify_final_plan": true,
+    "unusable_attempt": "Preserve invalid initialization, internal errors and numerical warnings as explicit nonlabels; no replacements or selective retries"
+  },
+  "control_levels": {
+    "close_trigger_m": [
+      0.0,
+      0.01,
+      0.02
+    ],
+    "closing_force_n": [
+      2.0,
+      4.0,
+      8.0
+    ],
+    "descent_speed_m_s": [
+      0.04,
+      0.1,
+      0.2
+    ],
+    "opening_m": [
+      0.04,
+      0.08
+    ]
+  },
+  "control_sampling": "Baseline, high-force anchor, two rotating one-command contrasts, both nonbaseline speeds and two rotating multi-command configurations; full 54-command pool per final-test family",
+  "controls_per_condition": 8,
+  "design_code_sha256": "a4097c412aa63de301248c13b79e0b9a07c7933317aed0eb5a97e607377c8327",
+  "evaluation": {
+    "all_models_same_trial_ids": true,
+    "bootstrap": {
+      "interval": "95% percentile; descriptive, not multiplicity-adjusted superiority testing",
+      "paired_across_models": true,
+      "resamples": 2000,
+      "seed": 5644,
+      "strata": "target_family",
+      "unit": "condition_group"
+    },
+    "constant_reference": "Frozen training-only success prevalence",
+    "fit_policy": "Training CV for tuning; validation for documented development; final pipelines fitted on v1 train only for this comparison",
+    "log_loss_clipping_epsilon": 2.220446049250313e-16,
+    "model_ids": [
+      "logistic",
+      "lasso_logistic",
+      "random_forest",
+      "xgboost"
+    ],
+    "predictions_locked_before_test_labels_joined": true,
+    "primary_metric": "log_loss",
+    "probability_class": 1,
+    "probability_dtype": "float64",
+    "scope": "Classifier probability comparison on predeclared candidates; no claim of faster physical execution or globally optimal control",
+    "secondary_metrics": [
+      "brier_score",
+      "roc_auc",
+      "balanced_accuracy",
+      "failure_recall",
+      "confusion_matrix",
+      "class_support"
+    ],
+    "threshold": 0.5,
+    "threshold_tie_class": 1,
+    "undefined_metric": "Report null with reason; do not invent zero or collect extra data to change support"
+  },
+  "family_mass_levels_kg": {
+    "bottle": [
+      0.06,
+      0.18,
+      0.3,
+      0.45
+    ],
+    "bowl": [
+      0.06,
+      0.18,
+      0.3,
+      0.45
+    ],
+    "glass": [
+      0.08,
+      0.15,
+      0.25,
+      0.35
+    ],
+    "pen": [
+      0.005,
+      0.01,
+      0.02,
+      0.03
+    ],
+    "spoon": [
+      0.015,
+      0.025,
+      0.04,
+      0.06
+    ]
+  },
+  "features": [
+    "target",
+    "scale",
+    "mass_kg",
+    "sliding_friction",
+    "x_m",
+    "y_m",
+    "yaw_rad",
+    "opening_m",
+    "closing_force_n",
+    "close_trigger_m",
+    "descent_speed_m_s"
+  ],
+  "final": {
+    "condition_groups": 240,
+    "groups_per_family": 48,
+    "planned_attempts": 3840,
+    "property_sampling": "Complete 3 scale x 4 family mass x 4 friction grid once per family",
+    "release": "Inputs, seed and labels remain outside Git until models, predictions and final evaluation are frozen",
+    "secret_seed_bits": 256,
+    "split": "test"
+  },
+  "frozen_v1_sha256": {
+    "cv_manifest.json": "7952deb8129dce436b3c1a26bc40a4d0f43186ff41b4b63bdbd96a11e18323a6",
+    "dataset.csv": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+    "split_assignments.csv": "5a45cd13537248b9d4228a00113bee962815fe28a34d4324ededf11afb561c93"
+  },
+  "historical_protocol_payload_sha256": "7c8c2b32efd35cecc91c56787af84375f7681491c4d4673020742a1b14ff5039",
+  "label_rule": {
+    "continuous_observer_hold_s": 2.0,
+    "minimum_lift_m": 0.1,
+    "negative_class": 0,
+    "physics_step_s": 0.002,
+    "positive_class": 1,
+    "predicates": [
+      "bilateral_grip",
+      "clear_of_table",
+      "target_lifted",
+      "relative_pose_stable"
+    ],
+    "relative_position_displacement_less_than_m": 0.01,
+    "required_controller_status": "succeeded",
+    "sampling_limit": "Retain existing raw evidence; sampled traces alone cannot independently reconstruct unsaved contacts"
+  },
+  "latent_bias_uniform_bounds_m": [
+    -0.004,
+    0.004
+  ],
+  "maximum_pose_design_draws": 1000,
+  "minimum_matched_property_xy_separation_m": 0.005,
+  "paired_draws_per_condition": 2,
+  "physics_collector_sha256": "b6f1907750c681d987547e4dfdb0d404ed6131453975057c5f2294f302fbd92b",
+  "pilot": {
+    "condition_groups": 20,
+    "groups_per_family": 4,
+    "planned_attempts": 320,
+    "property_sampling": "Four fixed light/high-friction to heavy/low-friction corners; all family mass and friction levels and all three scales, not a representative prevalence sample",
+    "split": "train",
+    "use": "development_only_never_final_test"
+  },
+  "pose_bounds": {
+    "x_m": [
+      0.475,
+      0.525
+    ],
+    "y_m": [
+      -0.1,
+      -0.06
+    ],
+    "yaw_rad": [
+      -0.15,
+      0.15
+    ]
+  },
+  "pose_sampling": "Latin hypercube within each family/role; reject whole candidate pose designs only for predeclared proximity to historical/pilot matched-property poses, never outcomes",
+  "protocol_id": "course_independent_test_v1",
+  "scale_levels": [
+    0.8,
+    1.0,
+    1.2
+  ],
+  "schema_version": 1,
+  "sliding_friction_levels": [
+    0.2,
+    0.4,
+    0.8,
+    1.2
+  ],
+  "source_commit": "7a2c5642113d0d3b9c5b5d5205feda843b2c043a",
+  "source_environment_payload_sha256": "08ffed00369b276a7168dbd53e5f5edfd01f1ca6e3902366b1f41a078a008afc",
+  "status": "preregistered_design_only_not_collected",
+  "target_population": "New poses and latent execution errors in the known five-family simulator domain; not unseen shapes or sim-to-real"
+}

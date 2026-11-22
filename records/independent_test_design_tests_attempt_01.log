@@ -1,0 +1,93 @@
+........EEE.
+======================================================================
+ERROR: test_private_plan_tamper_is_detected_without_publishing_inputs (test_independent_test_design.IndependentTestDesignTests.test_private_plan_tamper_is_detected_without_publishing_inputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/tests/test_independent_test_design.py", line 152, in test_private_plan_tamper_is_detected_without_publishing_inputs
+    self.bundle_fixture(public, private)
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/tests/test_independent_test_design.py", line 144, in bundle_fixture
+    (public / name).write_bytes(payload(value))
+                                ^^^^^^^^^^^^^^
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/design_independent_test.py", line 27, in payload
+    return (json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n").encode()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 398, in _iterencode_dict
+    yield _floatstr(value)
+          ^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 240, in floatstr
+    raise ValueError(
+ValueError: Out of range float values are not JSON compliant: inf
+
+======================================================================
+ERROR: test_public_commitment_cannot_contain_private_seed (test_independent_test_design.IndependentTestDesignTests.test_public_commitment_cannot_contain_private_seed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/tests/test_independent_test_design.py", line 165, in test_public_commitment_cannot_contain_private_seed
+    commitment = self.bundle_fixture(public, private)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/tests/test_independent_test_design.py", line 144, in bundle_fixture
+    (public / name).write_bytes(payload(value))
+                                ^^^^^^^^^^^^^^
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/design_independent_test.py", line 27, in payload
+    return (json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n").encode()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 398, in _iterencode_dict
+    yield _floatstr(value)
+          ^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 240, in floatstr
+    raise ValueError(
+ValueError: Out of range float values are not JSON compliant: inf
+
+======================================================================
+ERROR: test_relaxed_private_file_permissions_block_approval (test_independent_test_design.IndependentTestDesignTests.test_relaxed_private_file_permissions_block_approval)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/tests/test_independent_test_design.py", line 174, in test_relaxed_private_file_permissions_block_approval
+    self.bundle_fixture(public, private)
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/tests/test_independent_test_design.py", line 144, in bundle_fixture
+    (public / name).write_bytes(payload(value))
+                                ^^^^^^^^^^^^^^
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/design_independent_test.py", line 27, in payload
+    return (json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n").encode()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 398, in _iterencode_dict
+    yield _floatstr(value)
+          ^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py", line 240, in floatstr
+    raise ValueError(
+ValueError: Out of range float values are not JSON compliant: inf
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.676s
+
+FAILED (errors=3)

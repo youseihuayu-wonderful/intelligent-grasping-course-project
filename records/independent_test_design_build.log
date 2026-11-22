@@ -1,0 +1,57 @@
+{
+  "final": {
+    "collector_spec_contract_checked": true,
+    "condition_groups": 240,
+    "distinct_controls_per_family": {
+      "bottle": 54,
+      "bowl": 54,
+      "glass": 54,
+      "pen": 54,
+      "spoon": 54
+    },
+    "groups_per_family": {
+      "bottle": 48,
+      "bowl": 48,
+      "glass": 48,
+      "pen": 48,
+      "spoon": 48
+    },
+    "historical_condition_or_nuisance_seed_reuse": 0,
+    "minimum_matched_property_xy_separation_m": 0.005016059499617627,
+    "outcomes_present": false,
+    "physical_initialization_checked": false,
+    "planned_attempts": 3840,
+    "role": "final",
+    "simulation_trials_executed": 0
+  },
+  "final_plan_sha256": "8862c4d40fbfa71d5bcf7e22ef84c574d29a53232783357cf5419ec404b8919c",
+  "labels_generated": 0,
+  "models_trained_or_scored": 0,
+  "pilot": {
+    "collector_spec_contract_checked": true,
+    "condition_groups": 20,
+    "distinct_controls_per_family": {
+      "bottle": 16,
+      "bowl": 16,
+      "glass": 16,
+      "pen": 16,
+      "spoon": 16
+    },
+    "groups_per_family": {
+      "bottle": 4,
+      "bowl": 4,
+      "glass": 4,
+      "pen": 4,
+      "spoon": 4
+    },
+    "historical_condition_or_nuisance_seed_reuse": 0,
+    "minimum_matched_property_xy_separation_m": 0.005401705236786809,
+    "outcomes_present": false,
+    "physical_initialization_checked": false,
+    "planned_attempts": 320,
+    "role": "pilot",
+    "simulation_trials_executed": 0
+  },
+  "policy_sha256": "db190249e6d202a0a07ee474aabd13132593be13dc5eaa68485a7b6638c48e99",
+  "status": "passed_design_checks_only_not_physics"
+}
