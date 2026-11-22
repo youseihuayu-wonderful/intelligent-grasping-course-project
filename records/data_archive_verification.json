@@ -1,0 +1,19 @@
+{
+  "file": "/Users/shihuayu/Projects/intelligent-grasping-course-project/grasp_dataset_v1.zip",
+  "bytes": 159599,
+  "sha256": "1ab8b22003dd44c7503e9d4bdca1a8ff087c6c07d1d317e7c30516f97798e2f1",
+  "members": [
+    "PACKAGE_MANIFEST.json",
+    "README.md",
+    "data/v1/cv_manifest.json",
+    "data/v1/dataset.csv",
+    "data/v1/manifest.json",
+    "data/v1/source_collection_summary.json",
+    "data/v1/source_environment.json",
+    "data/v1/split_assignments.csv",
+    "docs/DATASET.md"
+  ],
+  "rows": 3840,
+  "groups": 240,
+  "verified": "All source bytes, ZIP CRC, extracted frozen data, partitions and grouped CV"
+}

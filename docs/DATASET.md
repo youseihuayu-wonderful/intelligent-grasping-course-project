@@ -2,6 +2,7 @@
 
 ## Download and provenance
 
+- **[Complete v1 data: one ZIP file](https://github.com/youseihuayu-wonderful/intelligent-grasping-course-project/raw/refs/heads/main/grasp_dataset_v1.zip)** — includes every frozen data file and this feature/label guide.
 - [Raw CSV download](https://raw.githubusercontent.com/youseihuayu-wonderful/intelligent-grasping-course-project/main/data/v1/dataset.csv)
 - [Local CSV](../data/v1/dataset.csv) · [Package manifest](../data/v1/manifest.json)
 - [Frozen row assignments](../data/v1/split_assignments.csv) · [Frozen three-fold CV manifest](../data/v1/cv_manifest.json)

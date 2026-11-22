@@ -12,6 +12,7 @@ The animation loops through the complete recorded Experiment 2 mission. It uses 
 
 ## Start here
 
+- **[Download all v1 data as one ZIP](https://github.com/youseihuayu-wonderful/intelligent-grasping-course-project/raw/refs/heads/main/grasp_dataset_v1.zip)** — complete CSV, fixed splits/CV, source metadata and feature/label documentation; no videos or model artifacts.
 - **[Download the raw v1 CSV](https://raw.githubusercontent.com/youseihuayu-wonderful/intelligent-grasping-course-project/main/data/v1/dataset.csv)** · [Browse the data](data/v1/dataset.csv) · [Frozen manifest](data/v1/manifest.json)
 - [Dataset, feature units, physical labels, and provenance](docs/DATASET.md)
 - [Team roles, leakage prevention, metrics, and attribution rules](docs/TEAM_PROTOCOL.md)
@@ -53,6 +54,8 @@ The shared prediction interface is `row_index,trial_id,group_id,split,success,p_
 Version **v1** is an unchanged copy of upstream `results/grasp_classifier_five_objects_20261121/dataset.csv` at commit [`7a2c5642113d0d3b9c5b5d5205feda843b2c043a`](https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms/tree/7a2c5642113d0d3b9c5b5d5205feda843b2c043a). Its SHA-256 is `d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a`.
 
 There are **3,840 rows, 240 condition groups, and five target families**: bowl, bottle, spoon, glass, and pen, with 768 rows each. Preserve the upstream row order, group identities, train/validation/test assignments, and CV folds. Labels describe individual **grasp-and-hold**, not completed drawer storage.
+
+The root-level `grasp_dataset_v1.zip` is a convenient single-file export; `data/v1/` remains the authoritative frozen package. To regenerate and verify a separate copy, run `uv run --locked python package_data.py --output grasp_dataset_v1_local.zip` with a new output filename.
 
 **The existing test partition has already been published and inspected. It is a historical reference, not an untouched final test.** Do not use it for tuning. This foundation reports training CV and validation only. A genuinely fresh final performance claim would require newly held-out conditions later; collecting them is not part of the current steps 1–3.
 

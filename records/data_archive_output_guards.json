@@ -1,0 +1,5 @@
+{
+  "existing_archive": "refused and unchanged",
+  "dangling_output_symlink": "refused; target not created",
+  "observed_result": "passed"
+}
