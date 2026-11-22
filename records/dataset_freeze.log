@@ -1,0 +1,46 @@
+{
+  "dataset": "/Users/shihuayu/Projects/intelligent-grasping-course-project/data/v1/dataset.csv",
+  "sha256": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+  "rows": 3840,
+  "splits": {
+    "train": {
+      "rows": 2560,
+      "groups": 160,
+      "successes": 1109,
+      "failures": 1451,
+      "targets": {
+        "bottle": 512,
+        "bowl": 512,
+        "glass": 512,
+        "pen": 512,
+        "spoon": 512
+      }
+    },
+    "validation": {
+      "rows": 640,
+      "groups": 40,
+      "successes": 243,
+      "failures": 397,
+      "targets": {
+        "bottle": 128,
+        "bowl": 128,
+        "glass": 128,
+        "pen": 128,
+        "spoon": 128
+      }
+    },
+    "test": {
+      "rows": 640,
+      "groups": 40,
+      "successes": 217,
+      "failures": 423,
+      "targets": {
+        "bottle": 128,
+        "bowl": 128,
+        "glass": 128,
+        "pen": 128,
+        "spoon": 128
+      }
+    }
+  }
+}

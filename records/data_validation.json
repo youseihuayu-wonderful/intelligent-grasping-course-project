@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "train": {
+      "rows": 2560,
+      "groups": 160,
+      "successes": 1109,
+      "failures": 1451
+    },
+    "validation": {
+      "rows": 640,
+      "groups": 40,
+      "successes": 243,
+      "failures": 397
+    },
+    "test": {
+      "rows": 640,
+      "groups": 40,
+      "successes": 217,
+      "failures": 423
+    }
+  },
+  "sha256": {
+    "manifest.json": "7722200a3f0a6138fa494a66958327115ad0ad924ff26d2249080db55fd52f7f",
+    "dataset.csv": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+    "split_assignments.csv": "5a45cd13537248b9d4228a00113bee962815fe28a34d4324ededf11afb561c93",
+    "cv_manifest.json": "7952deb8129dce436b3c1a26bc40a4d0f43186ff41b4b63bdbd96a11e18323a6"
+  },
+  "cv_folds": 3,
+  "cv_index_space": "global CSV IDs remapped to TRAIN-local indices",
+  "historical_test_already_inspected": true
+}

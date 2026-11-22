@@ -1,0 +1,11 @@
+{
+  "attempted": 3840,
+  "labelled": 3840,
+  "successes": 1569,
+  "failures": 2271,
+  "statuses": {
+    "completed": 3840
+  },
+  "numerical_warning_trials": 0,
+  "wall_s": 3116.4065848339815
+}

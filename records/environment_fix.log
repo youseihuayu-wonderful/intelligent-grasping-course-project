@@ -1,0 +1,10 @@
+Resolved 8 packages in 436ms
+Updated numpy v2.2.6 -> v2.5.0
+Resolved 8 packages in 3ms
+Downloading numpy (5.1MiB)
+ Downloaded numpy
+Prepared 1 package in 443ms
+Uninstalled 1 package in 69ms
+Installed 1 package in 13ms
+ - numpy==2.2.6
+ + numpy==2.5.0

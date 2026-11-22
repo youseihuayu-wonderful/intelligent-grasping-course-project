@@ -1,0 +1,180 @@
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: divide by zero encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: overflow encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:219: RuntimeWarning: invalid value encountered in matmul
+  raw_prediction = X @ weights_xp + intercept_xp
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: divide by zero encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: overflow encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/linear_model/_linear_loss.py:356: RuntimeWarning: invalid value encountered in matmul
+  X_grad = X.T @ grad_pointwise
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: divide by zero encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: overflow encountered in matmul
+  ret = a @ b
+/Users/shihuayu/Projects/intelligent-grasping-course-project/.venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:229: RuntimeWarning: invalid value encountered in matmul
+  ret = a @ b

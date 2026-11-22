@@ -1,0 +1,29 @@
+{
+  "scope": "Executed shared course foundation, steps 1–3; not the final four-model course submission",
+  "dataset_version": "v1",
+  "dataset_sha256": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+  "dataset_rows": 3840,
+  "baseline_command": "uv run --locked python baseline.py --output results/logistic_baseline_v1",
+  "baseline_observed_exit_code": 0,
+  "baseline_report": "results/logistic_baseline_v1/report.json",
+  "validation_prediction_rows": 640,
+  "test_rows_fitted_or_scored": 0,
+  "cv": "Three original frozen configuration-grouped training folds, with fold-local preprocessing",
+  "unit_test_command": "uv run --locked python -m unittest discover -s tests -p test_baseline.py",
+  "unit_tests_observed_passing": 6,
+  "unit_test_log": "records/baseline_tests_final.log",
+  "numerical_environment_fix": {
+    "initial_attempt": "records/numerical_warning_attempt_01/",
+    "reason": "The NumPy 2.2.6 Apple Accelerate run completed with matrix-operation warnings and is not the release baseline.",
+    "release_numpy": "2.5.0",
+    "dependency_log": "records/environment_fix.log",
+    "final_run_log": "records/baseline_run_final.log",
+    "final_observation": "The complete baseline and all six tests passed after the dependency fix, with runtime numerical and convergence warnings configured as errors during fitting/prediction. No such warnings were observed in the final run.",
+    "upstream_reference": "https://github.com/numpy/numpy/issues/29820"
+  },
+  "limits": [
+    "The historical upstream test partition was already published and inspected; it is not a new blind final test.",
+    "Validation prediction metrics are not a physical grasp or drawer-storage success rate.",
+    "No new simulation trials were added to dataset v1, and no historical labels or splits were changed."
+  ]
+}

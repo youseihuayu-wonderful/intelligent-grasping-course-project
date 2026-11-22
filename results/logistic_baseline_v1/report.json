@@ -1,0 +1,144 @@
+{
+  "protocol": {
+    "fit_partition": "train",
+    "score_partition": "validation",
+    "selection": "maximum TRAIN-CV negative log loss; fold-local preprocessing",
+    "features": [
+      "target",
+      "scale",
+      "mass_kg",
+      "sliding_friction",
+      "x_m",
+      "y_m",
+      "yaw_rad",
+      "opening_m",
+      "closing_force_n",
+      "close_trigger_m",
+      "descent_speed_m_s"
+    ],
+    "decision_threshold": 0.5,
+    "seed": 5644,
+    "historical_test_already_inspected": true
+  },
+  "audit": {
+    "counts": {
+      "train": {
+        "rows": 2560,
+        "groups": 160,
+        "successes": 1109,
+        "failures": 1451
+      },
+      "validation": {
+        "rows": 640,
+        "groups": 40,
+        "successes": 243,
+        "failures": 397
+      },
+      "test": {
+        "rows": 640,
+        "groups": 40,
+        "successes": 217,
+        "failures": 423
+      }
+    },
+    "sha256": {
+      "manifest.json": "7722200a3f0a6138fa494a66958327115ad0ad924ff26d2249080db55fd52f7f",
+      "dataset.csv": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+      "split_assignments.csv": "5a45cd13537248b9d4228a00113bee962815fe28a34d4324ededf11afb561c93",
+      "cv_manifest.json": "7952deb8129dce436b3c1a26bc40a4d0f43186ff41b4b63bdbd96a11e18323a6"
+    },
+    "cv_folds": 3,
+    "cv_index_space": "global CSV IDs remapped to TRAIN-local indices",
+    "historical_test_already_inspected": true
+  },
+  "code_sha256": "d365edd7aab91ced54d7f0dac715a6edf8b474e1fd86c3048c0f11f18513ab5c",
+  "versions": {
+    "python": "3.12.12",
+    "numpy": "2.5.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "selection": {
+    "C": 0.1,
+    "best_cv_neg_log_loss": -0.5148314666931875
+  },
+  "cv_results": [
+    {
+      "C": 0.1,
+      "mean_cv_neg_log_loss": -0.5148314666931875,
+      "std_cv_neg_log_loss": 0.026008008078172436,
+      "fold_0_neg_log_loss": -0.5506439320917517,
+      "fold_1_neg_log_loss": -0.5041864472430051,
+      "fold_2_neg_log_loss": -0.4896640207448055
+    },
+    {
+      "C": 1.0,
+      "mean_cv_neg_log_loss": -0.5169862029250002,
+      "std_cv_neg_log_loss": 0.029668789817174267,
+      "fold_0_neg_log_loss": -0.5584570682477255,
+      "fold_1_neg_log_loss": -0.501771742176425,
+      "fold_2_neg_log_loss": -0.49072979835085034
+    },
+    {
+      "C": 10.0,
+      "mean_cv_neg_log_loss": -0.517406124076453,
+      "std_cv_neg_log_loss": 0.030165257653708158,
+      "fold_0_neg_log_loss": -0.5596326156726821,
+      "fold_1_neg_log_loss": -0.5015470870272466,
+      "fold_2_neg_log_loss": -0.49103866952943065
+    }
+  ],
+  "validation": {
+    "roc_auc": 0.838225995376849,
+    "balanced_accuracy": 0.7094308134050646,
+    "failure_recall": 0.871536523929471,
+    "brier": 0.16358147344570706,
+    "log_loss": 0.49400918341243527,
+    "confusion_matrix": [
+      [
+        346,
+        51
+      ],
+      [
+        110,
+        133
+      ]
+    ],
+    "confusion_matrix_labels": [
+      0,
+      1
+    ],
+    "undefined": {}
+  },
+  "constant_train_prior": {
+    "p_success": 0.433203125,
+    "validation": {
+      "roc_auc": 0.5,
+      "balanced_accuracy": 0.5,
+      "failure_recall": 1.0,
+      "brier": 0.23838882446289061,
+      "log_loss": 0.6698121072842929,
+      "confusion_matrix": [
+        [
+          397,
+          0
+        ],
+        [
+          243,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "undefined": {}
+    }
+  },
+  "limitations": [
+    "Historical test results were already published and inspected; no test scoring here.",
+    "Simulation grasp-and-hold labels do not establish storage-task or real-world validity.",
+    "Undefined metrics are JSON null; confusion rows are actual labels and columns predicted labels."
+  ]
+}

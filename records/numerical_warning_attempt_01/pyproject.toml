@@ -1,0 +1,11 @@
+[project]
+name = "intelligent-grasping-course-project"
+version = "0.1.0"
+description = "Frozen robotic grasp data and a reproducible grouped Logistic Regression baseline for the ML course project"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy==2.2.6",
+  "scipy==1.18.1",
+  "scikit-learn==1.9.1",
+  "joblib==1.6.0",
+]

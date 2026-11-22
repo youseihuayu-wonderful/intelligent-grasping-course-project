@@ -1,0 +1,263 @@
+{
+  "categorical_features": [
+    "target"
+  ],
+  "cv_folds": 3,
+  "cv_manifest_file": "cv_manifest.json",
+  "cv_manifest_sha256": "7952deb8129dce436b3c1a26bc40a4d0f43186ff41b4b63bdbd96a11e18323a6",
+  "cv_row_index_convention": "Global zero-based CSV row_index, not train-local offsets",
+  "cv_seed": 5644,
+  "dataset_file": "dataset.csv",
+  "dataset_sha256": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+  "dataset_version": "v1",
+  "decision_threshold": 0.5,
+  "failure_class": 0,
+  "feature_ranges": {
+    "close_trigger_m": {
+      "distinct_values": 3,
+      "levels": [
+        0.0,
+        0.01,
+        0.02
+      ],
+      "max": 0.02,
+      "min": 0.0
+    },
+    "closing_force_n": {
+      "distinct_values": 3,
+      "levels": [
+        2.0,
+        4.0,
+        8.0
+      ],
+      "max": 8.0,
+      "min": 2.0
+    },
+    "descent_speed_m_s": {
+      "distinct_values": 3,
+      "levels": [
+        0.04,
+        0.1,
+        0.2
+      ],
+      "max": 0.2,
+      "min": 0.04
+    },
+    "mass_kg": {
+      "distinct_values": 15,
+      "levels": [
+        0.005,
+        0.01,
+        0.015,
+        0.02,
+        0.025,
+        0.03,
+        0.04,
+        0.06,
+        0.08,
+        0.15,
+        0.18,
+        0.25,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "max": 0.45,
+      "min": 0.005
+    },
+    "opening_m": {
+      "distinct_values": 2,
+      "levels": [
+        0.04,
+        0.08
+      ],
+      "max": 0.08,
+      "min": 0.04
+    },
+    "scale": {
+      "distinct_values": 3,
+      "levels": [
+        0.8,
+        1.0,
+        1.2
+      ],
+      "max": 1.2,
+      "min": 0.8
+    },
+    "sliding_friction": {
+      "distinct_values": 4,
+      "levels": [
+        0.2,
+        0.4,
+        0.8,
+        1.2
+      ],
+      "max": 1.2,
+      "min": 0.2
+    },
+    "x_m": {
+      "distinct_values": 240,
+      "max": 0.5247358603124281,
+      "min": 0.4751313123998309
+    },
+    "y_m": {
+      "distinct_values": 240,
+      "max": -0.06015908437566852,
+      "min": -0.09972108377341976
+    },
+    "yaw_rad": {
+      "distinct_values": 240,
+      "max": 0.14933234821393102,
+      "min": -0.1490987648000005
+    }
+  },
+  "features": [
+    "target",
+    "scale",
+    "mass_kg",
+    "sliding_friction",
+    "x_m",
+    "y_m",
+    "yaw_rad",
+    "opening_m",
+    "closing_force_n",
+    "close_trigger_m",
+    "descent_speed_m_s"
+  ],
+  "files": {
+    "cv_manifest.json": {
+      "bytes": 128595,
+      "sha256": "7952deb8129dce436b3c1a26bc40a4d0f43186ff41b4b63bdbd96a11e18323a6"
+    },
+    "dataset.csv": {
+      "bytes": 1418329,
+      "sha256": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a"
+    },
+    "source_collection_summary.json": {
+      "bytes": 193,
+      "sha256": "bead2e020161b64cae7219c022f90e855ce90aec6d03ce42328eef9e0486aaac"
+    },
+    "source_environment.json": {
+      "bytes": 17215,
+      "sha256": "9034867a74742c9b6bb03cff1b245962baf76b1bbb6827240a1f53801f40ec5b"
+    },
+    "split_assignments.csv": {
+      "bytes": 510668,
+      "sha256": "5a45cd13537248b9d4228a00113bee962815fe28a34d4324ededf11afb561c93"
+    }
+  },
+  "group_column": "group_id",
+  "groups": 240,
+  "label": "success",
+  "label_rule": "Controller succeeded and an independent observer continuously verifies bilateral_grip, clear_of_table, target_lifted and relative_pose_stable for at least 2 simulation seconds in hold/done.",
+  "limits": [
+    "No new simulation trials, label changes, resplitting or model-result copying occur in this export.",
+    "CSV evidence_source paths are preserved original-machine provenance, not portable paths. Use the pinned upstream raw-trial links instead.",
+    "Configured speed, force and friction are not measured constant TCP velocity, measured pinch force or measured effective contact friction.",
+    "Grasp-and-hold labels do not measure drawer-storage mission success or establish sim-to-real performance."
+  ],
+  "numeric_features": [
+    "scale",
+    "mass_kg",
+    "sliding_friction",
+    "x_m",
+    "y_m",
+    "yaw_rad",
+    "opening_m",
+    "closing_force_n",
+    "close_trigger_m",
+    "descent_speed_m_s"
+  ],
+  "positive_class": 1,
+  "rows": 3840,
+  "schema_version": 1,
+  "source": {
+    "commit": "7a2c5642113d0d3b9c5b5d5205feda843b2c043a",
+    "dataset_path": "results/grasp_classifier_five_objects_20261121/dataset.csv",
+    "label_implementation_path": "grasp_study_physics.py",
+    "original_files": [
+      {
+        "bytes": 1418329,
+        "local_file": "dataset.csv",
+        "sha256": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+        "upstream_git_blob_sha1": "af54a6320ff8feca5169e29ea56c3cc5fb38334e",
+        "upstream_path": "results/grasp_classifier_five_objects_20261121/dataset.csv"
+      },
+      {
+        "bytes": 128595,
+        "local_file": "cv_manifest.json",
+        "sha256": "7952deb8129dce436b3c1a26bc40a4d0f43186ff41b4b63bdbd96a11e18323a6",
+        "upstream_git_blob_sha1": "139b898202733bddd56e8067b32b9cb489ed2478",
+        "upstream_path": "results/grasp_classifier_five_objects_20261121/cv_manifest.json"
+      },
+      {
+        "bytes": 17215,
+        "local_file": "source_environment.json",
+        "sha256": "9034867a74742c9b6bb03cff1b245962baf76b1bbb6827240a1f53801f40ec5b",
+        "upstream_git_blob_sha1": "2078253a51d0017eec10d90079ae6d77818df3ea",
+        "upstream_path": "results/grasp_classifier_five_objects_20261121/environment.json"
+      },
+      {
+        "bytes": 193,
+        "local_file": "source_collection_summary.json",
+        "sha256": "bead2e020161b64cae7219c022f90e855ce90aec6d03ce42328eef9e0486aaac",
+        "upstream_git_blob_sha1": "505246323e38c9ee06349543bf2a84fb62d8a269",
+        "upstream_path": "results/grasp_classifier_five_objects_20261121/collection/summary.json"
+      }
+    ],
+    "raw_trials_path": "results/grasp_classifier_five_objects_20261121/collection/trials.json",
+    "repository": "https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms"
+  },
+  "split_assignments_file": "split_assignments.csv",
+  "split_assignments_sha256": "5a45cd13537248b9d4228a00113bee962815fe28a34d4324ededf11afb561c93",
+  "split_column": "split",
+  "splits": {
+    "test": {
+      "failures": 423,
+      "groups": 40,
+      "rows": 640,
+      "successes": 217,
+      "targets": {
+        "bottle": 128,
+        "bowl": 128,
+        "glass": 128,
+        "pen": 128,
+        "spoon": 128
+      }
+    },
+    "train": {
+      "failures": 1451,
+      "groups": 160,
+      "rows": 2560,
+      "successes": 1109,
+      "targets": {
+        "bottle": 512,
+        "bowl": 512,
+        "glass": 512,
+        "pen": 512,
+        "spoon": 512
+      }
+    },
+    "validation": {
+      "failures": 397,
+      "groups": 40,
+      "rows": 640,
+      "successes": 243,
+      "targets": {
+        "bottle": 128,
+        "bowl": 128,
+        "glass": 128,
+        "pen": 128,
+        "spoon": 128
+      }
+    }
+  },
+  "targets": [
+    "bottle",
+    "bowl",
+    "glass",
+    "pen",
+    "spoon"
+  ],
+  "test_policy": "Historical upstream test results have already been published and inspected. Preserve this split for reference; no test fitting, scoring or prediction in the shared baseline. This is not a fresh blind final test."
+}
