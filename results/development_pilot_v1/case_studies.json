@@ -1,0 +1,682 @@
+[
+  {
+    "dense_audit": {
+      "active_contact_count": 55794,
+      "contact_record_count": 55794,
+      "execution_step_count": 6292,
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.000000000000668,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 1001,
+        "final_window_start_s": 11.584000000000538,
+        "final_window_step_count": 1001,
+        "maximum_relative_displacement_from_saved_reference_m": 0.00022596955660367788,
+        "minimum_lift_m": 0.14960547894157772,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": true,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 2473,
+        "clear_of_table": 2362,
+        "relative_pose_stable": 1001,
+        "target_lifted": 1522
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 6792,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 6792,
+      "table_support_step_count": 4430,
+      "trial_id": "course_independent_test_v1.pilot.bottle_00.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": 0.0,
+      "closing_force_n": 4.0,
+      "descent_speed_m_s": 0.1,
+      "mass_kg": 0.06,
+      "opening_m": 0.08,
+      "scale": 0.8,
+      "sliding_friction": 1.2,
+      "target": "bottle",
+      "x_m": 0.4970553777488761,
+      "y_m": -0.09601178358623005,
+      "yaw_rad": 0.01694143951525724
+    },
+    "last_active_phase": "hold",
+    "postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.bottle_00.control_0.draw_0.json",
+    "recorded_failure_kind": null,
+    "success": true,
+    "target": "bottle",
+    "trial_id": "course_independent_test_v1.pilot.bottle_00.control_0.draw_0"
+  },
+  {
+    "dense_audit": {
+      "active_contact_count": 75478,
+      "contact_record_count": 75478,
+      "execution_step_count": 4171,
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 0,
+        "final_window_start_s": null,
+        "final_window_step_count": 0,
+        "maximum_relative_displacement_from_saved_reference_m": null,
+        "minimum_lift_m": null,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": false,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 922,
+        "clear_of_table": 50,
+        "relative_pose_stable": 0,
+        "target_lifted": 0
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 4671,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 4671,
+      "table_support_step_count": 4621,
+      "trial_id": "course_independent_test_v1.pilot.bottle_00.control_6.draw_1"
+    },
+    "features": {
+      "close_trigger_m": 0.01,
+      "closing_force_n": 4.0,
+      "descent_speed_m_s": 0.2,
+      "mass_kg": 0.06,
+      "opening_m": 0.04,
+      "scale": 0.8,
+      "sliding_friction": 1.2,
+      "target": "bottle",
+      "x_m": 0.4970553777488761,
+      "y_m": -0.09601178358623005,
+      "yaw_rad": 0.01694143951525724
+    },
+    "last_active_phase": "descend",
+    "postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.bottle_00.control_6.draw_1.json",
+    "recorded_failure_kind": "motion_or_preparation",
+    "success": false,
+    "target": "bottle",
+    "trial_id": "course_independent_test_v1.pilot.bottle_00.control_6.draw_1"
+  },
+  {
+    "dense_audit": {
+      "active_contact_count": 126494,
+      "contact_record_count": 126494,
+      "execution_step_count": 6963,
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.000000000000668,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 1001,
+        "final_window_start_s": 12.926000000000986,
+        "final_window_step_count": 1001,
+        "maximum_relative_displacement_from_saved_reference_m": 0.0014928688539593454,
+        "minimum_lift_m": 0.14140051183843383,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": true,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 2457,
+        "clear_of_table": 2118,
+        "relative_pose_stable": 1001,
+        "target_lifted": 1484
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 7463,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 7463,
+      "table_support_step_count": 5345,
+      "trial_id": "course_independent_test_v1.pilot.bowl_00.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": 0.0,
+      "closing_force_n": 4.0,
+      "descent_speed_m_s": 0.1,
+      "mass_kg": 0.06,
+      "opening_m": 0.08,
+      "scale": 0.8,
+      "sliding_friction": 1.2,
+      "target": "bowl",
+      "x_m": 0.4797671295394643,
+      "y_m": -0.060538283315339315,
+      "yaw_rad": -0.004491927516369578
+    },
+    "last_active_phase": "hold",
+    "postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.bowl_00.control_0.draw_0.json",
+    "recorded_failure_kind": null,
+    "success": true,
+    "target": "bowl",
+    "trial_id": "course_independent_test_v1.pilot.bowl_00.control_0.draw_0"
+  },
+  {
+    "dense_audit": {
+      "active_contact_count": 104836,
+      "contact_record_count": 104836,
+      "execution_step_count": 5502,
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 0,
+        "final_window_start_s": null,
+        "final_window_step_count": 0,
+        "maximum_relative_displacement_from_saved_reference_m": null,
+        "minimum_lift_m": null,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": false,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 691,
+        "clear_of_table": 268,
+        "relative_pose_stable": 0,
+        "target_lifted": 0
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 6002,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 6002,
+      "table_support_step_count": 5734,
+      "trial_id": "course_independent_test_v1.pilot.bowl_01.control_2.draw_0"
+    },
+    "features": {
+      "close_trigger_m": 0.0,
+      "closing_force_n": 2.0,
+      "descent_speed_m_s": 0.1,
+      "mass_kg": 0.18,
+      "opening_m": 0.08,
+      "scale": 1.0,
+      "sliding_friction": 0.8,
+      "target": "bowl",
+      "x_m": 0.49782420604381994,
+      "y_m": -0.07421983683972563,
+      "yaw_rad": 0.11673255689493478
+    },
+    "last_active_phase": "lift",
+    "postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.bowl_01.control_2.draw_0.json",
+    "recorded_failure_kind": "unplanned_contact",
+    "success": false,
+    "target": "bowl",
+    "trial_id": "course_independent_test_v1.pilot.bowl_01.control_2.draw_0"
+  },
+  {
+    "dense_audit": {
+      "active_contact_count": 63381,
+      "contact_record_count": 63381,
+      "execution_step_count": 6678,
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.000000000000668,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 1001,
+        "final_window_start_s": 12.356000000000796,
+        "final_window_step_count": 1001,
+        "maximum_relative_displacement_from_saved_reference_m": 2.821117434456225e-05,
+        "minimum_lift_m": 0.14958535484365953,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": true,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 2457,
+        "clear_of_table": 2390,
+        "relative_pose_stable": 1001,
+        "target_lifted": 1527
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 7178,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 7178,
+      "table_support_step_count": 4788,
+      "trial_id": "course_independent_test_v1.pilot.glass_00.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": 0.0,
+      "closing_force_n": 4.0,
+      "descent_speed_m_s": 0.1,
+      "mass_kg": 0.08,
+      "opening_m": 0.08,
+      "scale": 0.8,
+      "sliding_friction": 1.2,
+      "target": "glass",
+      "x_m": 0.4795762765743381,
+      "y_m": -0.0760627315922999,
+      "yaw_rad": 0.04247773370303221
+    },
+    "last_active_phase": "hold",
+    "postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.glass_00.control_0.draw_0.json",
+    "recorded_failure_kind": null,
+    "success": true,
+    "target": "glass",
+    "trial_id": "course_independent_test_v1.pilot.glass_00.control_0.draw_0"
+  },
+  {
+    "dense_audit": {
+      "active_contact_count": 70212,
+      "contact_record_count": 70212,
+      "execution_step_count": 5340,
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 0,
+        "final_window_start_s": null,
+        "final_window_step_count": 0,
+        "maximum_relative_displacement_from_saved_reference_m": null,
+        "minimum_lift_m": null,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": false,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 1387,
+        "clear_of_table": 49,
+        "relative_pose_stable": 0,
+        "target_lifted": 0
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 5840,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 5840,
+      "table_support_step_count": 5791,
+      "trial_id": "course_independent_test_v1.pilot.glass_00.control_2.draw_0"
+    },
+    "features": {
+      "close_trigger_m": 0.0,
+      "closing_force_n": 4.0,
+      "descent_speed_m_s": 0.1,
+      "mass_kg": 0.08,
+      "opening_m": 0.04,
+      "scale": 0.8,
+      "sliding_friction": 1.2,
+      "target": "glass",
+      "x_m": 0.4795762765743381,
+      "y_m": -0.0760627315922999,
+      "yaw_rad": 0.04247773370303221
+    },
+    "last_active_phase": "descend",
+    "postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.glass_00.control_2.draw_0.json",
+    "recorded_failure_kind": "motion_or_preparation",
+    "success": false,
+    "target": "glass",
+    "trial_id": "course_independent_test_v1.pilot.glass_00.control_2.draw_0"
+  },
+  {
+    "dense_audit": {
+      "active_contact_count": 78308,
+      "contact_record_count": 78308,
+      "execution_step_count": 7168,
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.000000000000668,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 1001,
+        "final_window_start_s": 13.336000000001123,
+        "final_window_step_count": 1001,
+        "maximum_relative_displacement_from_saved_reference_m": 2.5419303086138294e-05,
+        "minimum_lift_m": 0.14974970673202703,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": true,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 2457,
+        "clear_of_table": 2343,
+        "relative_pose_stable": 1001,
+        "target_lifted": 1531
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 7668,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 7668,
+      "table_support_step_count": 5325,
+      "trial_id": "course_independent_test_v1.pilot.pen_00.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": 0.0,
+      "closing_force_n": 4.0,
+      "descent_speed_m_s": 0.1,
+      "mass_kg": 0.005,
+      "opening_m": 0.08,
+      "scale": 0.8,
+      "sliding_friction": 1.2,
+      "target": "pen",
+      "x_m": 0.5001328967990892,
+      "y_m": -0.08239977368752156,
+      "yaw_rad": -0.07321733755063914
+    },
+    "last_active_phase": "hold",
+    "postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.pen_00.control_0.draw_0.json",
+    "recorded_failure_kind": null,
+    "success": true,
+    "target": "pen",
+    "trial_id": "course_independent_test_v1.pilot.pen_00.control_0.draw_0"
+  },
+  {
+    "dense_audit": {
+      "active_contact_count": 37211,
+      "contact_record_count": 37211,
+      "execution_step_count": 5029,
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 0,
+        "final_window_start_s": null,
+        "final_window_step_count": 0,
+        "maximum_relative_displacement_from_saved_reference_m": null,
+        "minimum_lift_m": null,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": false,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 522,
+        "clear_of_table": 49,
+        "relative_pose_stable": 0,
+        "target_lifted": 0
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 5529,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 5529,
+      "table_support_step_count": 5480,
+      "trial_id": "course_independent_test_v1.pilot.pen_00.control_7.draw_0"
+    },
+    "features": {
+      "close_trigger_m": 0.02,
+      "closing_force_n": 8.0,
+      "descent_speed_m_s": 0.1,
+      "mass_kg": 0.005,
+      "opening_m": 0.08,
+      "scale": 0.8,
+      "sliding_friction": 1.2,
+      "target": "pen",
+      "x_m": 0.5001328967990892,
+      "y_m": -0.08239977368752156,
+      "yaw_rad": -0.07321733755063914
+    },
+    "last_active_phase": "lift",
+    "postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.pen_00.control_7.draw_0.json",
+    "recorded_failure_kind": "unplanned_contact",
+    "success": false,
+    "target": "pen",
+    "trial_id": "course_independent_test_v1.pilot.pen_00.control_7.draw_0"
+  },
+  {
+    "dense_audit": {
+      "active_contact_count": 24804,
+      "contact_record_count": 24804,
+      "execution_step_count": 5712,
+      "final_controller_status": "failed",
+      "final_observer_hold_s": 0.0,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 0,
+        "final_window_start_s": null,
+        "final_window_step_count": 0,
+        "maximum_relative_displacement_from_saved_reference_m": null,
+        "minimum_lift_m": null,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": false,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 0,
+        "clear_of_table": 49,
+        "relative_pose_stable": 0,
+        "target_lifted": 0
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 6212,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 6212,
+      "table_support_step_count": 6163,
+      "trial_id": "course_independent_test_v1.pilot.spoon_00.control_0.draw_0"
+    },
+    "features": {
+      "close_trigger_m": 0.0,
+      "closing_force_n": 4.0,
+      "descent_speed_m_s": 0.1,
+      "mass_kg": 0.015,
+      "opening_m": 0.08,
+      "scale": 0.8,
+      "sliding_friction": 1.2,
+      "target": "spoon",
+      "x_m": 0.4835030645094108,
+      "y_m": -0.06914367122460321,
+      "yaw_rad": -0.13023515507489494
+    },
+    "last_active_phase": "close",
+    "postconditions": {
+      "bilateral_grip": false,
+      "clear_of_table": false,
+      "relative_pose_stable": false,
+      "target_lifted": false,
+      "verified_hold": false
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.spoon_00.control_0.draw_0.json",
+    "recorded_failure_kind": "unplanned_contact",
+    "success": false,
+    "target": "spoon",
+    "trial_id": "course_independent_test_v1.pilot.spoon_00.control_0.draw_0"
+  },
+  {
+    "dense_audit": {
+      "active_contact_count": 92316,
+      "contact_record_count": 92316,
+      "execution_step_count": 9408,
+      "final_controller_status": "succeeded",
+      "final_observer_hold_s": 2.0019999999988904,
+      "full_step_label_consistent": true,
+      "hold_observations": {
+        "all_physics_ticks_present": true,
+        "eligible_step_count": 1002,
+        "final_window_start_s": 17.814000000001005,
+        "final_window_step_count": 1002,
+        "maximum_relative_displacement_from_saved_reference_m": 0.00015867515244317895,
+        "minimum_lift_m": 0.14841120534543162,
+        "timer_reset_count": 0
+      },
+      "inactive_contact_count": 0,
+      "limitations": [
+        "Independent reconstruction uses recorded MuJoCo contacts/forces and controller-supplied references, not independent sensors or a full dynamics replay.",
+        "Read-only guards attest recorded qpos/qvel/ctrl/time checks, not every possible simulator field.",
+        "Relative stability concerns position, not orientation; this is not sim-to-real proof.",
+        "Controller verified_hold is recorded metadata, not the independently reconstructed two-second timer."
+      ],
+      "max_step_gap_s": 0.002000000000000668,
+      "observed_success": true,
+      "physical_predicate_true_step_counts": {
+        "bilateral_grip": 3118,
+        "clear_of_table": 2256,
+        "relative_pose_stable": 1002,
+        "target_lifted": 1523
+      },
+      "physics_step_s": 0.002,
+      "positive_label_consistent": true,
+      "read_only_checks_passed": 9908,
+      "schema_version": 1,
+      "settling_step_count": 500,
+      "step_count": 9908,
+      "table_support_step_count": 7652,
+      "trial_id": "course_independent_test_v1.pilot.spoon_00.control_7.draw_0"
+    },
+    "features": {
+      "close_trigger_m": 0.01,
+      "closing_force_n": 4.0,
+      "descent_speed_m_s": 0.04,
+      "mass_kg": 0.015,
+      "opening_m": 0.08,
+      "scale": 0.8,
+      "sliding_friction": 1.2,
+      "target": "spoon",
+      "x_m": 0.4835030645094108,
+      "y_m": -0.06914367122460321,
+      "yaw_rad": -0.13023515507489494
+    },
+    "last_active_phase": "hold",
+    "postconditions": {
+      "bilateral_grip": true,
+      "clear_of_table": true,
+      "relative_pose_stable": true,
+      "target_lifted": true,
+      "verified_hold": true
+    },
+    "raw_record_path": "collection/trials/course_independent_test_v1.pilot.spoon_00.control_7.draw_0.json",
+    "recorded_failure_kind": null,
+    "success": true,
+    "target": "spoon",
+    "trial_id": "course_independent_test_v1.pilot.spoon_00.control_7.draw_0"
+  }
+]

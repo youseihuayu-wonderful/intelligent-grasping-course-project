@@ -1,0 +1,75 @@
+{
+  "archive": {
+    "all_member_bytes_verified": true,
+    "bytes": 323830679,
+    "download_url": "https://github.com/youseihuayu-wonderful/intelligent-grasping-course-project/releases/download/development-pilot-v1/development_pilot_v1_evidence.tar.gz",
+    "filename": "development_pilot_v1_evidence.tar.gz",
+    "logical_files": 1290,
+    "release_url": "https://github.com/youseihuayu-wonderful/intelligent-grasping-course-project/releases/tag/development-pilot-v1",
+    "sha256": "163405103a30dd6056b6a5eb9cb4bb5b13591b44f319699a0766e3b9cfbcb96c"
+  },
+  "attempt_records": 320,
+  "audit_and_archive_wall_s": 46.04893087502569,
+  "audit_issues": 0,
+  "dataset_sha256": "9ebd410dee2d5eaa8fcda61c9ed792a67cbf17dcfe93b32abdd6f87bfc7a1445",
+  "dense_samples_verified": 2205159,
+  "failure_last_active_phase_counts": {
+    "close": 39,
+    "descend": 32,
+    "hold": 22,
+    "lift": 87
+  },
+  "failures": 180,
+  "families": {
+    "bottle": {
+      "attempts": 64,
+      "failures": 41,
+      "successes": 23
+    },
+    "bowl": {
+      "attempts": 64,
+      "failures": 40,
+      "successes": 24
+    },
+    "glass": {
+      "attempts": 64,
+      "failures": 38,
+      "successes": 26
+    },
+    "pen": {
+      "attempts": 64,
+      "failures": 19,
+      "successes": 45
+    },
+    "spoon": {
+      "attempts": 64,
+      "failures": 42,
+      "successes": 22
+    }
+  },
+  "final_test_plan_opened": false,
+  "final_test_trials_executed": 0,
+  "implementation_sha256": {
+    "audit_development_pilot.py": "3bb875b02ae8d539ce13e53e65abeedddd1ef781786d588e398c272a4eda8932",
+    "audit_trace.py": "6bc6718c61aa6682dd27c38734ba7ad0a28e15b05523c6bb553780888eadcb16",
+    "pilot_evidence_audit.py": "a04f2f79bc41584001d968289b3e7dff8bee25cbfcaf0b0ba718d3ca38cce9ce"
+  },
+  "limits": [
+    "Nonrepresentative four-corner development pilot, not final-test or classifier performance.",
+    "20 condition groups with paired commands/errors; 320 trials are not 320 independent conditions.",
+    "Every saved physics tick is checked, but contacts come from the same simulator solver and reference values from the controller, not independent real-world sensors.",
+    "Per-step measurements reconstruct the declared predicates, not the full dynamics or sim-to-real validity.",
+    "Raw original labels are preserved; unusable/unverifiable attempts remain explicit issues and never become convenient failed grasps."
+  ],
+  "models_trained_or_scored": 0,
+  "physics_step_s": 0.002,
+  "planned_attempts": 320,
+  "protected_inputs_unchanged": true,
+  "role": "development_pilot_only_not_final_test",
+  "runtime_input_files_matched": 140,
+  "sparse_samples_verified": 221821,
+  "status": "passed_pilot_evidence_quality_checks",
+  "success_rate_on_usable_pilot_trials": 0.4375,
+  "successes": 140,
+  "verified_labelled_rows": 320
+}

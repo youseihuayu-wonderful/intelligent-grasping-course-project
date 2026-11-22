@@ -1,0 +1,18 @@
+{
+  "dataset_sha256": "9ebd410dee2d5eaa8fcda61c9ed792a67cbf17dcfe93b32abdd6f87bfc7a1445",
+  "final_test_plan_opened": false,
+  "groups": 20,
+  "historical_actual_observable_vector_overlap": 0,
+  "historical_full_physical_input_overlap": 0,
+  "historical_group_overlap": 0,
+  "historical_raw_sha256": "d3d61a18f885c4f66ad92a63840743dd1a73c1d0b24e4966b30cf25fd67c5e56",
+  "historical_trial_id_overlap": 0,
+  "implementation_sha256": "8ce89b8428a6777d03f13b8aa011d0a29a43694888c9ba1a48528d44b5c2cf3b",
+  "max_predictor_difference_from_legacy_extractor": 0.0,
+  "models_trained_or_scored": 0,
+  "pilot_full_physical_duplicates": 0,
+  "reference_extractor_sha256": "c384573782912fdd0e83e598580c934efa2a1f043e2d528567f328306d395262",
+  "rows_checked": 320,
+  "status": "passed_independent_export_and_overlap_checks",
+  "trials_per_group": 16
+}

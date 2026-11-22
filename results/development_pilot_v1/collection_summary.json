@@ -1,0 +1,18 @@
+{
+  "dense_samples": 2205159,
+  "final_test_trials_executed": 0,
+  "mujoco_warning_trials": 0,
+  "planned_attempts": 320,
+  "protected_inputs_unchanged": true,
+  "python_numeric_warning_trials": 0,
+  "raw_failures": 180,
+  "raw_statuses": {
+    "completed": 320
+  },
+  "raw_successes": 140,
+  "returned_attempt_records": 320,
+  "status": "collection_complete_pending_independent_audit",
+  "unusable_attempts": 0,
+  "usable_label_candidates": 320,
+  "wall_s": 756.9120655830484
+}

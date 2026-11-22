@@ -1,5 +1,7 @@
 # Independent test design v1
 
+Execution update: the separate development pilot has now been completed and audited; see [its actual results and evidence](DEVELOPMENT_PILOT.md). This page preserves the preregistered design and its design-only verification history. The independent final test remains unexecuted and sealed.
+
 ## 1. Research question and scope
 
 How well do the frozen course classifiers predict **single-object grasp-and-hold success** under new initial poses and new latent execution errors in the existing five-family MuJoCo/Panda domain?
@@ -56,7 +58,7 @@ The 5 mm constraint makes this a **constrained same-domain test design**, not II
 
 ### Public versus private artifacts
 
-The [public policy](../protocols/independent_test_v1/policy.json), [unexecuted pilot plan](../protocols/independent_test_v1/pilot_plan.json), [final-plan commitment](../protocols/independent_test_v1/final_commitment.json) and [design validation](../protocols/independent_test_v1/design_validation.json) are committed here.
+The [public policy](../protocols/independent_test_v1/policy.json), [frozen pilot plan](../protocols/independent_test_v1/pilot_plan.json), [final-plan commitment](../protocols/independent_test_v1/final_commitment.json) and [design validation](../protocols/independent_test_v1/design_validation.json) are committed here.
 
 The **actual final plan and its 256-bit random planning seed stay outside every Git checkout**, in a custodian-only local directory. The directory/file permissions exclude other OS users. Publishing a reproducible final seed now would let teammates run the deterministic simulator and obtain labels before model freeze, even if no label CSV were uploaded. Therefore the final seed and concrete final inputs are deliberately withheld, not merely the labels.
 
@@ -141,4 +143,4 @@ uv run --locked python design_independent_test.py build \
 
 That produces a different random final commitment; it does not replace the committed preregistration or qualify as another untouched test after results are known. Existing output paths, symlinks, frozen-data destinations and private destinations inside Git are refused. The committed design is bound to its planning-code hash; check out its corresponding code revision when reproducing it after future code changes.
 
-**Next action:** run the 320-trial development pilot with the existing physical collector, preserve all attempts and audit its initialization/runtime/evidence. Keep those labels separate from final test data. Do not start the independent final batch until the model-freeze prerequisites above are satisfied.
+**Current handoff:** the development pilot has been executed with all-attempt preservation and independently audited; consult [the pilot report](DEVELOPMENT_PILOT.md) before considering any coordinated development-data expansion. Keep its labels separate from final-test evidence. Do not start the independent final batch until the model-freeze prerequisites above are satisfied.
