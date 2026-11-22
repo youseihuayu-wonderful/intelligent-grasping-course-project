@@ -19,6 +19,7 @@ The animation loops through the complete recorded Experiment 2 mission. It uses 
 - **[Independent test preregistration and collection handoff](docs/INDEPENDENT_TEST_PROTOCOL.md)** — frozen design; the final test remains sealed and unexecuted.
 - **[Executed development pilot: results, CSV and complete raw evidence](docs/DEVELOPMENT_PILOT.md)** — all 320 attempts audited at every 2 ms physics tick; development-only data, not final-test or classifier performance.
 - **[Unified model evaluation: submission format, verified comparison and uncertainty](docs/UNIFIED_EVALUATION.md)** — one validation-only scorer, strict row/provenance checks, paired group intervals and complete error cases; current real reference is Logistic Regression plus the training-prior baseline.
+- **[Start model work: training, tuning and delivery specification](docs/MODEL_TRAINING_AND_DELIVERY.md)** — B/C/D assignments, predeclared 12-candidate searches per route, fold-local leakage controls and A's acceptance checklist; a plan, not new model results.
 - [Team roles, leakage prevention, metrics, and attribution rules](docs/TEAM_PROTOCOL.md)
 - **[Both original simulations: Experiment 1 and Experiment 2](https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms/blob/main/docs/SIMULATIONS.md)** — runnable code, assets and authoritative execution evidence remain upstream; this repository mirrors the recorded Experiment 2 demo above.
 

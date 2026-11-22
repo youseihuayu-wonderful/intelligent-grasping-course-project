@@ -152,4 +152,6 @@ The [actual trusted-reference replay record](../records/reference_prediction_rep
 
 Members B/C/D should develop and tune their assigned methods under the same frozen data/folds and shared training rules, then submit actual artifacts/reports/predictions. A can run one comparison over all submitted manifests without changing metric code. The current smoke contains only the real Logistic Regression and training-prior reference; Random Forest, XGBoost and LASSO results are not implied to exist.
 
+Start with the [training and delivery specification](MODEL_TRAINING_AND_DELIVERY.md), including its predeclared route budgets and A's acceptance gate. It distinguishes automatically checked submission fields from source/CV/environment evidence that still requires review.
+
 Keep the 320-trial pilot separate unless the whole team agrees on a new coordinated development-data version. Do not collect/open the sealed independent final test until model freeze. This delivery does not alter v1, the pilot, the physical simulator or the final-test plan.

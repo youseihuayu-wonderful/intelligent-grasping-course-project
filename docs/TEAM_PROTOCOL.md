@@ -23,6 +23,8 @@ All teammates must use the same:
 - Probability and prediction schema, fixed decision threshold, metrics, and class conventions described below.
 - Declared tuning budget and comparison procedure. Agree on search spaces, candidate counts, randomness, compute limits, and selection/tie-break rules before comparing a new set of methods. Report actual differences rather than calling unequal searches a controlled comparison.
 
+For the next shared comparison, use the [model training and delivery specification](MODEL_TRAINING_AND_DELIVERY.md) and its [versioned search plan](../protocols/model_training_v1.json): twelve attempted candidates per route, the existing three folds, explicit edge-case/selection rules and reviewed real artifacts. The old three-candidate Logistic run remains a separate reference. Automatic submission checks do not replace the additional training-history review.
+
 The current reference baseline searches three `C` values (`0.1`, `1.0`, `10.0`) with negative log loss on the frozen CV folds and refits on training rows only. The pipeline is `DictVectorizer(sparse=False) → StandardScaler → LogisticRegression`, using `lbfgs`, `max_iter=5000`, `tol=1e-8`, and random state 5644. These settings describe this reference, not a requirement to apply inappropriate logistic hyperparameters to other model families.
 
 CV manifest row values are global zero-based CSV indices. Consumers working on training-only arrays must remap them, not treat them as local positions. Nuisance draws are paired across controls within a condition; they are not independent globally seeded groups. Preserve the supplied group identities even when settled predictor poses differ slightly.

@@ -1,0 +1,69 @@
+{
+  "stage": "frozen_data_and_search_plan",
+  "plan_sha256": "a6f61ea220a0742922f8a58d16b8c9e9357a7319a286d3b34066298107145156",
+  "data_sha256": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+  "routes": [
+    {
+      "model_id": "logistic",
+      "candidates": 12,
+      "maximum_fold_pipeline_fits": 36,
+      "estimator_constructor_checked": true,
+      "estimator_fitted": false
+    },
+    {
+      "model_id": "lasso_logistic",
+      "candidates": 12,
+      "maximum_fold_pipeline_fits": 36,
+      "estimator_constructor_checked": true,
+      "estimator_fitted": false
+    },
+    {
+      "model_id": "random_forest",
+      "candidates": 12,
+      "maximum_fold_pipeline_fits": 36,
+      "estimator_constructor_checked": true,
+      "estimator_fitted": false
+    },
+    {
+      "model_id": "xgboost",
+      "candidates": 12,
+      "maximum_fold_pipeline_fits": 36,
+      "estimator_constructor_checked": false,
+      "estimator_fitted": false
+    }
+  ],
+  "xgboost_limit": "Grid checked only; extra dependency was not installed, imported or runtime-validated."
+}
+{"stage": "local_markdown_links", "checked": 53, "files": 4}
+EXECUTE (temporary destinations only): uv run --locked python evaluation_submission.py create --model-id logistic_reference --predictions results/logistic_baseline_v1/validation_predictions.csv --run-report results/logistic_baseline_v1/report.json --training-code baseline.py --model-artifact results/logistic_baseline_v1/model.joblib --output /var/folders/7b/d1s4j6zs5hv2lpmq_6j6tg8r0000gn/T/grasp-training-spec-52vto0vu/logistic_reference.json
+{"created": "/var/folders/7b/d1s4j6zs5hv2lpmq_6j6tg8r0000gn/T/grasp-training-spec-52vto0vu/logistic_reference.json", "model_id": "logistic_reference"}
+EXECUTE (temporary destinations only): uv run --locked python evaluate_models.py --submission /var/folders/7b/d1s4j6zs5hv2lpmq_6j6tg8r0000gn/T/grasp-training-spec-52vto0vu/logistic_reference.json --reference logistic_reference --output /var/folders/7b/d1s4j6zs5hv2lpmq_6j6tg8r0000gn/T/grasp-training-spec-52vto0vu/comparison
+{
+  "status": "passed_validation_prediction_and_metric_checks",
+  "support": {
+    "rows": 640,
+    "groups": 40,
+    "failures_0": 397,
+    "successes_1": 243
+  },
+  "models": {
+    "constant_train_prior": {
+      "log_loss": 0.6698121072842929,
+      "brier": 0.23838882446289061,
+      "roc_auc": 0.5,
+      "balanced_accuracy": 0.5,
+      "failure_recall": 1.0
+    },
+    "logistic_reference": {
+      "log_loss": 0.49400918341243527,
+      "brier": 0.16358147344570706,
+      "roc_auc": 0.838225995376849,
+      "balanced_accuracy": 0.7094308134050646,
+      "failure_recall": 0.871536523929471
+    }
+  },
+  "bootstrap_resamples": 2000,
+  "output": "/var/folders/7b/d1s4j6zs5hv2lpmq_6j6tg8r0000gn/T/grasp-training-spec-52vto0vu/comparison"
+}
+{"stage": "real_documented_example", "models": ["logistic_reference", "constant_train_prior"], "validation_rows": 640, "fitted_new_models": 0, "private_final_accessed": false, "temporary_outputs_removed_on_exit": true}
+PASS: training specification, existing submission interface and real example verified; no new model training or final-test access.

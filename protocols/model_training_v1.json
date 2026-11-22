@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "protocol_id": "model_training_v1",
+  "status": "predeclared_plan_not_training_results",
+  "data": {
+    "directory": "data/v1",
+    "dataset_version": "v1",
+    "dataset_sha256": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+    "features": ["target", "scale", "mass_kg", "sliding_friction", "x_m", "y_m", "yaw_rad", "opening_m", "closing_force_n", "close_trigger_m", "descent_speed_m_s"],
+    "label": "success",
+    "positive_class": 1,
+    "fit_partition": "train",
+    "fit_rows": 2560,
+    "fit_condition_groups": 160,
+    "score_partition": "validation",
+    "score_rows": 640,
+    "score_condition_groups": 40,
+    "allow_pilot_append": false,
+    "allow_historical_test_scoring": false,
+    "allow_private_final_access": false
+  },
+  "cross_validation": {
+    "manifest": "data/v1/cv_manifest.json",
+    "folds": 3,
+    "index_space": "global CSV indices; use baseline.load_dataset()['cv'] for TRAIN-local arrays",
+    "preserve_condition_groups": true,
+    "fit_preprocessing_and_selection_inside_each_fold": true,
+    "primary_metric": "log_loss",
+    "direction": "minimize",
+    "aggregation": "unweighted arithmetic mean of the three held-out-fold log losses",
+    "candidate_order": "sort parameter names lexicographically; retain each value list order; rightmost parameter changes fastest",
+    "tie_break": "smallest zero-based candidate_index among exactly equal mean losses",
+    "candidate_budget_per_route": 12,
+    "maximum_fold_pipeline_fits_per_route": 36,
+    "selected_pipeline_refits": 1,
+    "refit_partition": "train",
+    "adaptive_candidate_replacement": false
+  },
+  "common_training": {
+    "seed": 5644,
+    "search_jobs": 1,
+    "estimator_jobs_when_supported": 1,
+    "accelerator": "CPU",
+    "encoding": "fold-local DictVectorizer(sparse=False) applied only to the raw allowlist",
+    "numeric_scaling": "fold-local StandardScaler on all encoded columns for both linear routes; no scaling for tree routes",
+    "class_reweighting": false,
+    "dataset_level_row_resampling": false,
+    "probability_calibration": false,
+    "early_stopping": false,
+    "decision_threshold": 0.5,
+    "threshold_tie_class": 1,
+    "numerical_warning_policy": "ConvergenceWarning, RuntimeWarning, nonfinite scores or unexpected fit errors fail the run; preserve evidence, do not silently drop them",
+    "known_zero_feature_policy": "LASSO candidates selecting zero encoded features on any fold are explicitly ineligible; record every fold status and never substitute all features, a constant model or replacement candidates",
+    "ineligible_candidate_scoring": "no partial-fold mean; eligibility requires all three fold fits to complete without the known zero-feature condition",
+    "no_valid_candidate_policy": "no completed model or validation claim; preserve the unsuccessful run and review a versioned plan before another search",
+    "final_refit_zero_feature_policy": "if the selected LASSO configuration retains zero features on all TRAIN rows, fail the run; do not select another candidate using validation"
+  },
+  "routes": [
+    {
+      "model_id": "logistic",
+      "owner": "B",
+      "method": "L2 Logistic Regression",
+      "estimator": "sklearn.linear_model.LogisticRegression",
+      "fixed_parameters": {
+        "solver": "lbfgs",
+        "l1_ratio": 0.0,
+        "fit_intercept": true,
+        "class_weight": null,
+        "max_iter": 5000,
+        "tol": 1e-8,
+        "random_state": 5644
+      },
+      "parameter_grid": {
+        "C": [0.0001, 0.0003, 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0, 3.0, 10.0, 30.0]
+      },
+      "expected_candidates": 12
+    },
+    {
+      "model_id": "lasso_logistic",
+      "owner": "B",
+      "method": "Squared-loss LASSO encoded-feature selector followed by L2 Logistic Regression",
+      "estimator": "sklearn.linear_model.LogisticRegression",
+      "fixed_parameters": {
+        "solver": "lbfgs",
+        "l1_ratio": 0.0,
+        "fit_intercept": true,
+        "class_weight": null,
+        "max_iter": 5000,
+        "tol": 1e-8,
+        "random_state": 5644
+      },
+      "selector": {
+        "estimator": "sklearn.linear_model.Lasso",
+        "fixed_parameters": {
+          "fit_intercept": true,
+          "max_iter": 20000,
+          "tol": 1e-6,
+          "selection": "cyclic",
+          "random_state": 5644
+        },
+        "retain_rule": "absolute coefficient strictly greater than coefficient_threshold; exclude the intercept",
+        "coefficient_threshold": 1e-8
+      },
+      "parameter_grid": {
+        "C": [0.1, 1.0, 10.0],
+        "alpha": [0.0001, 0.001, 0.01, 0.1]
+      },
+      "parameter_mapping": {
+        "C": "downstream LogisticRegression.C",
+        "alpha": "fold-local Lasso.alpha"
+      },
+      "expected_candidates": 12
+    },
+    {
+      "model_id": "random_forest",
+      "owner": "C",
+      "method": "Random Forest probability classifier",
+      "estimator": "sklearn.ensemble.RandomForestClassifier",
+      "fixed_parameters": {
+        "n_estimators": 300,
+        "criterion": "gini",
+        "bootstrap": true,
+        "class_weight": null,
+        "random_state": 5644,
+        "n_jobs": 1
+      },
+      "parameter_grid": {
+        "max_depth": [8, 16, null],
+        "max_features": ["sqrt", 1.0],
+        "min_samples_leaf": [1, 5]
+      },
+      "expected_candidates": 12
+    },
+    {
+      "model_id": "xgboost",
+      "owner": "D",
+      "method": "Gradient-boosted tree probability classifier",
+      "estimator": "xgboost.XGBClassifier",
+      "fixed_parameters": {
+        "objective": "binary:logistic",
+        "eval_metric": "logloss",
+        "tree_method": "hist",
+        "device": "cpu",
+        "n_estimators": 300,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_alpha": 0.0,
+        "reg_lambda": 1.0,
+        "gamma": 0.0,
+        "scale_pos_weight": 1.0,
+        "random_state": 5644,
+        "n_jobs": 1
+      },
+      "parameter_grid": {
+        "learning_rate": [0.03, 0.1],
+        "max_depth": [3, 5, 8],
+        "min_child_weight": [1, 5]
+      },
+      "dependency_handoff": "D must pin an exact XGBoost version compatible with these parameters and the shared core environment before fitting; XGBoost is not installed or locked by this plan",
+      "expected_candidates": 12
+    }
+  ],
+  "limits": [
+    "This JSON predeclares a search; it is not an implemented training launcher or evidence of completed training.",
+    "Twelve attempted candidates per route is not equal wall-clock cost, estimator complexity or effective search capacity; report eligible counts and measured timings.",
+    "The committed three-candidate Logistic Regression is a separate historical reference, not the newly budget-matched twelve-candidate route.",
+    "Validation comparisons are development evidence; repeated inspection cannot create an untouched final assessment.",
+    "Changing data, grids, calibration, seeds, preprocessing or budgets requires a coordinated new protocol version, not a silent method-specific change."
+  ]
+}
