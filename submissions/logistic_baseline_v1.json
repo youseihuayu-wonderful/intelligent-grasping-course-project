@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "model_id": "logistic",
+  "probability_class": 1,
+  "files": {
+    "predictions": {
+      "path": "../results/logistic_baseline_v1/validation_predictions.csv",
+      "sha256": "2a7a371c967181ea2462131dd9c239061ae453c8b0f7aa28a2380c3b43c4c36f"
+    },
+    "run_report": {
+      "path": "../results/logistic_baseline_v1/report.json",
+      "sha256": "9aa53e61eb9541d1d24d7c1872221938c5f815a3cf96321f4d2aff8707c0d245"
+    },
+    "training_code": {
+      "path": "../baseline.py",
+      "sha256": "d365edd7aab91ced54d7f0dac715a6edf8b474e1fd86c3048c0f11f18513ab5c"
+    },
+    "model_artifact": {
+      "path": "../results/logistic_baseline_v1/model.joblib",
+      "sha256": "487a03486b52b84613015c4d2ae9aa805b808557286821485f34db1582e7300d"
+    }
+  }
+}

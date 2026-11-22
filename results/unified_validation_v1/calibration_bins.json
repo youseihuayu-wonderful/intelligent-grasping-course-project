@@ -1,0 +1,186 @@
+{
+  "constant_train_prior": [
+    {
+      "bin": 0,
+      "count": 0,
+      "lower": 0.0,
+      "mean_p_success": null,
+      "observed_success_fraction": null,
+      "right_closed": false,
+      "upper": 0.1
+    },
+    {
+      "bin": 1,
+      "count": 0,
+      "lower": 0.1,
+      "mean_p_success": null,
+      "observed_success_fraction": null,
+      "right_closed": false,
+      "upper": 0.2
+    },
+    {
+      "bin": 2,
+      "count": 0,
+      "lower": 0.2,
+      "mean_p_success": null,
+      "observed_success_fraction": null,
+      "right_closed": false,
+      "upper": 0.3
+    },
+    {
+      "bin": 3,
+      "count": 0,
+      "lower": 0.3,
+      "mean_p_success": null,
+      "observed_success_fraction": null,
+      "right_closed": false,
+      "upper": 0.4
+    },
+    {
+      "bin": 4,
+      "count": 640,
+      "lower": 0.4,
+      "mean_p_success": 0.433203125,
+      "observed_success_fraction": 0.3796875,
+      "right_closed": false,
+      "upper": 0.5
+    },
+    {
+      "bin": 5,
+      "count": 0,
+      "lower": 0.5,
+      "mean_p_success": null,
+      "observed_success_fraction": null,
+      "right_closed": false,
+      "upper": 0.6
+    },
+    {
+      "bin": 6,
+      "count": 0,
+      "lower": 0.6,
+      "mean_p_success": null,
+      "observed_success_fraction": null,
+      "right_closed": false,
+      "upper": 0.7
+    },
+    {
+      "bin": 7,
+      "count": 0,
+      "lower": 0.7,
+      "mean_p_success": null,
+      "observed_success_fraction": null,
+      "right_closed": false,
+      "upper": 0.8
+    },
+    {
+      "bin": 8,
+      "count": 0,
+      "lower": 0.8,
+      "mean_p_success": null,
+      "observed_success_fraction": null,
+      "right_closed": false,
+      "upper": 0.9
+    },
+    {
+      "bin": 9,
+      "count": 0,
+      "lower": 0.9,
+      "mean_p_success": null,
+      "observed_success_fraction": null,
+      "right_closed": true,
+      "upper": 1.0
+    }
+  ],
+  "logistic": [
+    {
+      "bin": 0,
+      "count": 124,
+      "lower": 0.0,
+      "mean_p_success": 0.05466607936968965,
+      "observed_success_fraction": 0.03225806451612903,
+      "right_closed": false,
+      "upper": 0.1
+    },
+    {
+      "bin": 1,
+      "count": 108,
+      "lower": 0.1,
+      "mean_p_success": 0.144826355227172,
+      "observed_success_fraction": 0.10185185185185185,
+      "right_closed": false,
+      "upper": 0.2
+    },
+    {
+      "bin": 2,
+      "count": 94,
+      "lower": 0.2,
+      "mean_p_success": 0.24120950551422574,
+      "observed_success_fraction": 0.26595744680851063,
+      "right_closed": false,
+      "upper": 0.3
+    },
+    {
+      "bin": 3,
+      "count": 62,
+      "lower": 0.3,
+      "mean_p_success": 0.34130552442583884,
+      "observed_success_fraction": 0.532258064516129,
+      "right_closed": false,
+      "upper": 0.4
+    },
+    {
+      "bin": 4,
+      "count": 68,
+      "lower": 0.4,
+      "mean_p_success": 0.4500677668136217,
+      "observed_success_fraction": 0.5441176470588235,
+      "right_closed": false,
+      "upper": 0.5
+    },
+    {
+      "bin": 5,
+      "count": 52,
+      "lower": 0.5,
+      "mean_p_success": 0.5589404754387293,
+      "observed_success_fraction": 0.6346153846153846,
+      "right_closed": false,
+      "upper": 0.6
+    },
+    {
+      "bin": 6,
+      "count": 24,
+      "lower": 0.6,
+      "mean_p_success": 0.6547357063251072,
+      "observed_success_fraction": 0.75,
+      "right_closed": false,
+      "upper": 0.7
+    },
+    {
+      "bin": 7,
+      "count": 26,
+      "lower": 0.7,
+      "mean_p_success": 0.7386683759934708,
+      "observed_success_fraction": 0.6923076923076923,
+      "right_closed": false,
+      "upper": 0.8
+    },
+    {
+      "bin": 8,
+      "count": 46,
+      "lower": 0.8,
+      "mean_p_success": 0.8514577175610522,
+      "observed_success_fraction": 0.7608695652173914,
+      "right_closed": false,
+      "upper": 0.9
+    },
+    {
+      "bin": 9,
+      "count": 36,
+      "lower": 0.9,
+      "mean_p_success": 0.9322721022175019,
+      "observed_success_fraction": 0.8055555555555556,
+      "right_closed": true,
+      "upper": 1.0
+    }
+  ]
+}

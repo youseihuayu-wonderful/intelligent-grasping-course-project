@@ -1,0 +1,272 @@
+{
+  "bottle": {
+    "models": {
+      "constant_train_prior": {
+        "balanced_accuracy": 0.5,
+        "brier": 0.24611221313476564,
+        "confusion_matrix": [
+          [
+            72,
+            0
+          ],
+          [
+            56,
+            0
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 1.0,
+        "log_loss": 0.6853517757604666,
+        "roc_auc": 0.5,
+        "undefined": {}
+      },
+      "logistic": {
+        "balanced_accuracy": 0.8353174603174603,
+        "brier": 0.11405403917395669,
+        "confusion_matrix": [
+          [
+            65,
+            7
+          ],
+          [
+            13,
+            43
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 0.9027777777777778,
+        "log_loss": 0.38625482685311074,
+        "roc_auc": 0.9077380952380952,
+        "undefined": {}
+      }
+    },
+    "support": {
+      "failures_0": 72,
+      "groups": 8,
+      "rows": 128,
+      "successes_1": 56
+    }
+  },
+  "bowl": {
+    "models": {
+      "constant_train_prior": {
+        "balanced_accuracy": 0.5,
+        "brier": 0.23150039672851563,
+        "confusion_matrix": [
+          [
+            86,
+            0
+          ],
+          [
+            42,
+            0
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 1.0,
+        "log_loss": 0.6559524029677052,
+        "roc_auc": 0.5,
+        "undefined": {}
+      },
+      "logistic": {
+        "balanced_accuracy": 0.7148394241417497,
+        "brier": 0.13916276120569826,
+        "confusion_matrix": [
+          [
+            82,
+            4
+          ],
+          [
+            22,
+            20
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 0.9534883720930233,
+        "log_loss": 0.4267711711574985,
+        "roc_auc": 0.8881506090808415,
+        "undefined": {}
+      }
+    },
+    "support": {
+      "failures_0": 86,
+      "groups": 8,
+      "rows": 128,
+      "successes_1": 42
+    }
+  },
+  "glass": {
+    "models": {
+      "constant_train_prior": {
+        "balanced_accuracy": 0.5,
+        "brier": 0.21897598266601562,
+        "confusion_matrix": [
+          [
+            98,
+            0
+          ],
+          [
+            30,
+            0
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 1.0,
+        "log_loss": 0.6307529405739095,
+        "roc_auc": 0.5,
+        "undefined": {}
+      },
+      "logistic": {
+        "balanced_accuracy": 0.8462585034013606,
+        "brier": 0.07254739121994669,
+        "confusion_matrix": [
+          [
+            94,
+            4
+          ],
+          [
+            8,
+            22
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 0.9591836734693877,
+        "log_loss": 0.26230895461548837,
+        "roc_auc": 0.9755102040816327,
+        "undefined": {}
+      }
+    },
+    "support": {
+      "failures_0": 98,
+      "groups": 8,
+      "rows": 128,
+      "successes_1": 30
+    }
+  },
+  "pen": {
+    "models": {
+      "constant_train_prior": {
+        "balanced_accuracy": 0.5,
+        "brier": 0.2701173400878906,
+        "confusion_matrix": [
+          [
+            49,
+            0
+          ],
+          [
+            79,
+            0
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 1.0,
+        "log_loss": 0.7336507453485754,
+        "roc_auc": 0.5,
+        "undefined": {}
+      },
+      "logistic": {
+        "balanced_accuracy": 0.4896667527770602,
+        "brier": 0.30872071839510346,
+        "confusion_matrix": [
+          [
+            30,
+            19
+          ],
+          [
+            50,
+            29
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 0.6122448979591837,
+        "log_loss": 0.8495391877542023,
+        "roc_auc": 0.5224748127098942,
+        "undefined": {}
+      }
+    },
+    "support": {
+      "failures_0": 49,
+      "groups": 8,
+      "rows": 128,
+      "successes_1": 79
+    }
+  },
+  "spoon": {
+    "models": {
+      "constant_train_prior": {
+        "balanced_accuracy": 0.5,
+        "brier": 0.2252381896972656,
+        "confusion_matrix": [
+          [
+            92,
+            0
+          ],
+          [
+            36,
+            0
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 1.0,
+        "log_loss": 0.6433526717708073,
+        "roc_auc": 0.5,
+        "undefined": {}
+      },
+      "logistic": {
+        "balanced_accuracy": 0.6714975845410628,
+        "brier": 0.18342245723383027,
+        "confusion_matrix": [
+          [
+            75,
+            17
+          ],
+          [
+            17,
+            19
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 0.8152173913043478,
+        "log_loss": 0.5451717766818764,
+        "roc_auc": 0.7391304347826086,
+        "undefined": {}
+      }
+    },
+    "support": {
+      "failures_0": 92,
+      "groups": 8,
+      "rows": 128,
+      "successes_1": 36
+    }
+  }
+}

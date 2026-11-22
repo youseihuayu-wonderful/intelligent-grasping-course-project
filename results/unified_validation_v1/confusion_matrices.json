@@ -1,0 +1,42 @@
+{
+  "constant_train_prior": {
+    "matrix": [
+      [
+        397,
+        0
+      ],
+      [
+        243,
+        0
+      ]
+    ],
+    "predicted_column_labels": [
+      0,
+      1
+    ],
+    "true_row_labels": [
+      0,
+      1
+    ]
+  },
+  "logistic": {
+    "matrix": [
+      [
+        346,
+        51
+      ],
+      [
+        110,
+        133
+      ]
+    ],
+    "predicted_column_labels": [
+      0,
+      1
+    ],
+    "true_row_labels": [
+      0,
+      1
+    ]
+  }
+}

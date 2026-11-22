@@ -1,0 +1,36 @@
+{
+  "classes": [
+    0,
+    1
+  ],
+  "dataset_sha256": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+  "encoded_input_features": [
+    "close_trigger_m",
+    "closing_force_n",
+    "descent_speed_m_s",
+    "mass_kg",
+    "opening_m",
+    "scale",
+    "sliding_friction",
+    "target=bottle",
+    "target=bowl",
+    "target=glass",
+    "target=pen",
+    "target=spoon",
+    "x_m",
+    "y_m",
+    "yaw_rad"
+  ],
+  "historical_test_rows_scored": 0,
+  "implementation_sha256": "b90aac4691539b9e499a748dec1d44d535a34665c4f652ac6e97fe44d64c950b",
+  "maximum_absolute_probability_difference": 0.0,
+  "model_sha256": "487a03486b52b84613015c4d2ae9aa805b808557286821485f34db1582e7300d",
+  "models_trained": 0,
+  "only_allowed_observables_encoded": true,
+  "partition": "validation",
+  "private_final_opened": false,
+  "probability_class": 1,
+  "rows": 640,
+  "scope": "Separate trusted-reference replay; the generic evaluator never deserializes model artifacts. This does not certify arbitrary submissions' training history.",
+  "status": "passed_trusted_reference_prediction_replay"
+}

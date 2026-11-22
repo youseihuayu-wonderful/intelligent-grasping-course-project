@@ -1,0 +1,27 @@
+{
+  "status": "passed_validation_prediction_and_metric_checks",
+  "support": {
+    "rows": 640,
+    "groups": 40,
+    "failures_0": 397,
+    "successes_1": 243
+  },
+  "models": {
+    "constant_train_prior": {
+      "log_loss": 0.6698121072842929,
+      "brier": 0.23838882446289061,
+      "roc_auc": 0.5,
+      "balanced_accuracy": 0.5,
+      "failure_recall": 1.0
+    },
+    "logistic": {
+      "log_loss": 0.49400918341243527,
+      "brier": 0.16358147344570706,
+      "roc_auc": 0.838225995376849,
+      "balanced_accuracy": 0.7094308134050646,
+      "failure_recall": 0.871536523929471
+    }
+  },
+  "bootstrap_resamples": 2000,
+  "output": "results/unified_validation_v1"
+}

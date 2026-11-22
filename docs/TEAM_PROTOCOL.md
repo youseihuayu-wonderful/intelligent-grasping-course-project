@@ -69,6 +69,11 @@ Report both class supports so success and failure performance are explicit. If a
 
 Always include the constant-probability reference based **only on training success prevalence**. Do not estimate its probability from validation or test labels. Read actual values from [the reference report](../results/logistic_baseline_v1/report.json); do not copy upstream historical numbers into a new-run report.
 
+### Executable shared evaluator
+
+Use the [unified evaluation guide](UNIFIED_EVALUATION.md) to package real predictions, run report, training source and model artifact into a hash-bound submission. `evaluate_models.py` aligns complete frozen validation rows by identity, recomputes the common metrics, preserves all errors and applies shared whole-condition bootstrap draws. It never scores historical/pilot/final rows or loads arbitrary model artifacts. Declarations and file hashes do not independently prove training execution; review that evidence before claiming fully controlled model development.
+
+
 ### LASSO is not L1 Logistic Regression
 
 The original [`grasp_classifier_linear.py`](https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms/blob/7a2c5642113d0d3b9c5b5d5205feda843b2c043a/grasp_classifier_linear.py#L106-L138) uses **squared-loss `Lasso` as a feature selector**, retaining nonzero coefficients, followed by **L2 Logistic Regression**. Encoding, scaling, selector fitting, and classifier fitting belong inside each CV pipeline. Report selection strength, retained encoded features, classifier settings, and any zero-feature/intercept-only case honestly.

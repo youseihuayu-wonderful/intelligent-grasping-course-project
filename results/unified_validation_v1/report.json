@@ -1,0 +1,253 @@
+{
+  "artifacts_sha256": {
+    "bootstrap_group_weights.csv": "2e03357db8a59d3e121dd53464bb2687dbb8118f612329d61591db37ebfcb6d1",
+    "calibration_bins.json": "b4616329bd7bf2c539d4192b3dc5f98d4463b7b5ed1a8fb2baedcc96f062116c",
+    "comparison.csv": "138beece9f7fd04e9a67a3cd2e6abbbe20da2d1df52811443bee3160edddffc3",
+    "confusion_matrices.json": "544f4468ab700afad4aedd6e05d1e820a73a7b60b755990bb1143c42eea2468d",
+    "error_summary.json": "2acb397c7d358bfa3123d9221eafd2fe8fb9f6099438bc9186781c5849cca2aa",
+    "errors/constant_train_prior.csv": "72606673f8767422851af6f94717dee641ac904130f6932872524bb72b7cdc82",
+    "errors/logistic.csv": "37ba83ca0defc1e8851dd5e046a8825d61317373d5437c090c3a0a2f891c0daa",
+    "family_metrics.json": "13c1f1bcb7cf3b43e87fd8e19698120155c2a340b8cf101fc13e1bb7f6bdadef",
+    "predictions/constant_train_prior.csv": "dc1459682553b82261f71e13da9a4490a0a2d17c4a36ec5475d29f51d128e109",
+    "predictions/logistic.csv": "2a7a371c967181ea2462131dd9c239061ae453c8b0f7aa28a2380c3b43c4c36f",
+    "summary.md": "f664be48ec217189715c5938f71d9c79e8fae0cda68457012181d5a8ee1310b4",
+    "uncertainty.json": "7b8935fb69cec6105167a80495c2ed536d9b067a408b14fc32a23b3a6e22cfde"
+  },
+  "command": [
+    "evaluate_models.py",
+    "--submission",
+    "submissions/logistic_baseline_v1.json",
+    "--reference",
+    "logistic",
+    "--output",
+    "results/unified_validation_v1"
+  ],
+  "constant_train_prior": {
+    "fit_support": {
+      "failures_0": 1451,
+      "groups": 160,
+      "rows": 2560,
+      "successes_1": 1109
+    },
+    "metrics": {
+      "balanced_accuracy": 0.5,
+      "brier": 0.23838882446289061,
+      "confusion_matrix": [
+        [
+          397,
+          0
+        ],
+        [
+          243,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        0,
+        1
+      ],
+      "failure_recall": 1.0,
+      "log_loss": 0.6698121072842929,
+      "roc_auc": 0.5,
+      "undefined": {}
+    },
+    "p_success": 0.433203125
+  },
+  "frozen_data_audit": {
+    "counts": {
+      "test": {
+        "failures": 423,
+        "groups": 40,
+        "rows": 640,
+        "successes": 217
+      },
+      "train": {
+        "failures": 1451,
+        "groups": 160,
+        "rows": 2560,
+        "successes": 1109
+      },
+      "validation": {
+        "failures": 397,
+        "groups": 40,
+        "rows": 640,
+        "successes": 243
+      }
+    },
+    "cv_folds": 3,
+    "cv_index_space": "global CSV IDs remapped to TRAIN-local indices",
+    "historical_test_already_inspected": true,
+    "sha256": {
+      "cv_manifest.json": "7952deb8129dce436b3c1a26bc40a4d0f43186ff41b4b63bdbd96a11e18323a6",
+      "dataset.csv": "d218aca702d21fcd0bfe55d60b8022939e732a33c5cb81e42cf07f319716064a",
+      "manifest.json": "7722200a3f0a6138fa494a66958327115ad0ad924ff26d2249080db55fd52f7f",
+      "split_assignments.csv": "5a45cd13537248b9d4228a00113bee962815fe28a34d4324ededf11afb561c93"
+    }
+  },
+  "implementation_sha256": {
+    "baseline.py": "d365edd7aab91ced54d7f0dac715a6edf8b474e1fd86c3048c0f11f18513ab5c",
+    "evaluate_models.py": "85f7759fe5906f34888c8e5ac591252875cf6de953b5bcf544dbec35d2f8d704",
+    "evaluation_submission.py": "1be5f9f1b453fc41ae677be412462475fa5e597d8fda33b9366d731f7ccdcf8b",
+    "evaluation_uncertainty.py": "726e94143ba06a22fdfb2a5c9f3f07c6f5d0a44f9b9ec3c089bc3b4d60a5df55",
+    "uv.lock": "ea6a66b404391748ed436b615e53f178d86f59fcf064700036161eb36ff65d23"
+  },
+  "limitations": [
+    "This is repeatedly usable development validation, not an untouched final assessment or proof of real-robot success.",
+    "Only submitted models have results. No LASSO/Random Forest/XGBoost run is fabricated or inferred from another model.",
+    "Artifact hashes and feature/training declarations are checked, but arbitrary training execution, fold-local transformations and prediction origin are not independently proven from CSV/report files.",
+    "No artifact is unpickled. Review producer code and training evidence before claiming fully controlled or leakage-free model development.",
+    "Tuning budgets and hardware may differ; provenance records actual supplied information, not a certification of equal training effort.",
+    "Group-bootstrap intervals are approximate descriptive uncertainty, not row-IID or multiplicity-adjusted significance guarantees.",
+    "Failure recall alone can favour a constant all-failure classifier; interpret it with the other metrics and supports.",
+    "Calibration bins are descriptive diagnostics, not a fitted calibrator or proof of calibrated probabilities."
+  ],
+  "models": {
+    "logistic": {
+      "declared_cv_candidate_count": 3,
+      "declared_training_metadata": {
+        "protocol": {
+          "decision_threshold": 0.5,
+          "features": [
+            "target",
+            "scale",
+            "mass_kg",
+            "sliding_friction",
+            "x_m",
+            "y_m",
+            "yaw_rad",
+            "opening_m",
+            "closing_force_n",
+            "close_trigger_m",
+            "descent_speed_m_s"
+          ],
+          "fit_partition": "train",
+          "historical_test_already_inspected": true,
+          "score_partition": "validation",
+          "seed": 5644,
+          "selection": "maximum TRAIN-CV negative log loss; fold-local preprocessing"
+        },
+        "selection": {
+          "C": 0.1,
+          "best_cv_neg_log_loss": -0.5148314666931875
+        },
+        "versions": {
+          "joblib": "1.6.0",
+          "numpy": "2.5.0",
+          "python": "3.12.12",
+          "scikit-learn": "1.9.1",
+          "scipy": "1.18.1"
+        }
+      },
+      "metrics": {
+        "balanced_accuracy": 0.7094308134050646,
+        "brier": 0.16358147344570706,
+        "confusion_matrix": [
+          [
+            346,
+            51
+          ],
+          [
+            110,
+            133
+          ]
+        ],
+        "confusion_matrix_labels": [
+          0,
+          1
+        ],
+        "failure_recall": 0.871536523929471,
+        "log_loss": 0.49400918341243527,
+        "roc_auc": 0.838225995376849,
+        "undefined": {}
+      },
+      "provenance": {
+        "feature_declaration_checked": true,
+        "files": {
+          "model_artifact": {
+            "path": "../results/logistic_baseline_v1/model.joblib",
+            "sha256": "487a03486b52b84613015c4d2ae9aa805b808557286821485f34db1582e7300d"
+          },
+          "predictions": {
+            "path": "../results/logistic_baseline_v1/validation_predictions.csv",
+            "sha256": "2a7a371c967181ea2462131dd9c239061ae453c8b0f7aa28a2380c3b43c4c36f"
+          },
+          "run_report": {
+            "path": "../results/logistic_baseline_v1/report.json",
+            "sha256": "9aa53e61eb9541d1d24d7c1872221938c5f815a3cf96321f4d2aff8707c0d245"
+          },
+          "training_code": {
+            "path": "../baseline.py",
+            "sha256": "d365edd7aab91ced54d7f0dac715a6edf8b474e1fd86c3048c0f11f18513ab5c"
+          }
+        },
+        "limitations": [
+          "Feature names and training protocol are checked declarations, not model introspection.",
+          "Hash binding does not prove fit data, fold-local preprocessing, or probability origin.",
+          "Prediction validation cannot rule out malicious or misreported training leakage."
+        ],
+        "manifest_path_relative_to_repository": "submissions/logistic_baseline_v1.json",
+        "manifest_sha256": "79128cf315218883c1945614cca6763f0adf08e4b32a1d43e959c42441e3ba2e",
+        "model_artifact_deserialized": false,
+        "probability_class": 1,
+        "schema_version": 1,
+        "training_execution_independently_verified": false
+      }
+    }
+  },
+  "protocol": {
+    "bootstrap_resamples": 2000,
+    "bootstrap_seed": 5644,
+    "dataset": "frozen_v1",
+    "decision_threshold": 0.5,
+    "features": [
+      "target",
+      "scale",
+      "mass_kg",
+      "sliding_friction",
+      "x_m",
+      "y_m",
+      "yaw_rad",
+      "opening_m",
+      "closing_force_n",
+      "close_trigger_m",
+      "descent_speed_m_s"
+    ],
+    "historical_test_rows_scored": 0,
+    "log_loss_clipping_epsilon": 2.220446049250313e-16,
+    "lower_is_better": [
+      "log_loss",
+      "brier"
+    ],
+    "metric_keys": [
+      "log_loss",
+      "brier",
+      "roc_auc",
+      "balanced_accuracy",
+      "failure_recall"
+    ],
+    "model_artifacts_deserialized": false,
+    "models_trained": 0,
+    "pilot_rows_scored": 0,
+    "primary_metric": "log_loss",
+    "probability_class": 1,
+    "reference": "logistic",
+    "score_partition": "validation",
+    "sealed_final_plan_opened": false,
+    "threshold_tie_class": 1
+  },
+  "software": {
+    "joblib": "1.6.0",
+    "numpy": "2.5.0",
+    "python": "3.12.12",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "status": "passed_validation_prediction_and_metric_checks",
+  "support": {
+    "failures_0": 397,
+    "groups": 40,
+    "rows": 640,
+    "successes_1": 243
+  },
+  "wall_s": 6.585055415984243
+}

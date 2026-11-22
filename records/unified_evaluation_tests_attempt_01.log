@@ -1,0 +1,32 @@
+...usage: python3 -m unittest [-h] {create} ...
+python3 -m unittest: error: Refusing an existing or symlink submission output
+..E..........................
+======================================================================
+ERROR: test_create_is_portable_and_checks_before_writing (test_evaluation_submission.SubmissionTests.test_create_is_portable_and_checks_before_writing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/tests/test_evaluation_submission.py", line 325, in test_create_is_portable_and_checks_before_writing
+    manifest = self.create(output)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/tests/test_evaluation_submission.py", line 86, in create
+    return create_submission(**arguments)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/evaluation_submission.py", line 267, in create_submission
+    _validate_submission(manifest, output.parent, validation_rows, package_audit)
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/evaluation_submission.py", line 200, in _validate_submission
+    path = _file_path(parent, files[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/Projects/intelligent-grasping-course-project/evaluation_submission.py", line 78, in _file_path
+    path = (parent / relative).resolve(strict=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shihuayu/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/pathlib.py", line 1240, in resolve
+    s = self._flavour.realpath(self, strict=strict)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 427, in realpath
+  File "<frozen posixpath>", line 471, in _joinrealpath
+FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/7b/d1s4j6zs5hv2lpmq_6j6tg8r0000gn/T/tmp4zam2xoj/new-submissions'
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.607s
+
+FAILED (errors=1)
