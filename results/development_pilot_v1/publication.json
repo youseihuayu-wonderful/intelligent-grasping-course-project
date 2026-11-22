@@ -1,0 +1,19 @@
+{
+  "status": "published_and_server_digest_verified",
+  "source_commit": "21c5f06cb4f7f49f7b9a3352b8159a15873113fb",
+  "release_tag": "development-pilot-v1",
+  "release_url": "https://github.com/youseihuayu-wonderful/intelligent-grasping-course-project/releases/tag/development-pilot-v1",
+  "release_draft": false,
+  "asset": {
+    "name": "development_pilot_v1_evidence.tar.gz",
+    "state": "uploaded",
+    "bytes": 323830679,
+    "sha256": "163405103a30dd6056b6a5eb9cb4bb5b13591b44f319699a0766e3b9cfbcb96c",
+    "github_reported_digest": "sha256:163405103a30dd6056b6a5eb9cb4bb5b13591b44f319699a0766e3b9cfbcb96c",
+    "download_url": "https://github.com/youseihuayu-wonderful/intelligent-grasping-course-project/releases/download/development-pilot-v1/development_pilot_v1_evidence.tar.gz"
+  },
+  "local_archive_record": "results/development_pilot_v1/archive.json",
+  "github_size_and_digest_match_local_archive": true,
+  "verification_source": "GitHub Releases API: repos/youseihuayu-wonderful/intelligent-grasping-course-project/releases/tags/development-pilot-v1",
+  "scope": "Publication receipt only; no additional simulation, label changes or model evaluation."
+}
