@@ -1,0 +1,28 @@
+{
+  "kind": "unchanged_recorded_simulation_media_mirror",
+  "upstream_repository": "https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms",
+  "upstream_commit": "7a2c5642113d0d3b9c5b5d5205feda843b2c043a",
+  "upstream_evidence": "https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms/tree/7a2c5642113d0d3b9c5b5d5205feda843b2c043a/results/experiment_02_five_object_storage",
+  "files": {
+    "experiment-02-five-object-storage-en.mp4": {
+      "sha256": "0b19d337db22fda3b5b8e7ca5b4e1384a42c851aaab2356a54edc0f74491153a",
+      "bytes": 5367276,
+      "upstream_path": "media/experiment-02-five-object-storage-en.mp4"
+    },
+    "experiment-02-five-object-storage.webp": {
+      "sha256": "2a1d07ff758bc399e94932f39ff0bd993aaec0e2a6fb56b0b7d23ee0bcf14e7d",
+      "bytes": 3210998,
+      "upstream_path": "media/experiment-02-five-object-storage.webp"
+    },
+    "experiment-02-five-object-storage-en.provenance.json": {
+      "sha256": "404d3f7eef48a89e213a3edf889b925b49fdc7446ced8a2c4d28811eaccabc65",
+      "bytes": 62244,
+      "upstream_path": "media/experiment-02-five-object-storage-en.provenance.json"
+    }
+  },
+  "duration_s": 140.35,
+  "playback_rate": 2,
+  "mp4_frames": 2807,
+  "scope": "Complete recorded physical-state replay of Experiment02, not a live simulator or classifier-driven execution. No new trials or labels were generated.",
+  "provenance_path_base": "Inputs and source paths inside the unchanged original provenance refer to the upstream repository at the pinned commit, not to this CSV-only course checkout."
+}

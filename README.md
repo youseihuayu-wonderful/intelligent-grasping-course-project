@@ -1,13 +1,21 @@
 # Intelligent Grasping — Course Project
 
-A lightweight, reproducible machine-learning foundation for predicting whether a simulated Panda grasp will succeed. This repository supplies a frozen CSV, shared evaluation rules, and one Logistic Regression reference baseline. It does not run a robot simulation, collect new trials, or implement every teammate's final model.
+A lightweight, reproducible machine-learning foundation for predicting whether a simulated Panda grasp will succeed. This repository supplies a frozen CSV, shared evaluation rules, and one Logistic Regression reference baseline. Training remains CSV-only; the recorded demonstration below links to the separate live simulation runtime.
+
+## Simulation demo
+
+![Experiment 2: five-object drawer storage](media/experiment-02-five-object-storage.webp)
+
+[Full English video (MP4)](media/experiment-02-five-object-storage-en.mp4) · [Recording source and hashes](media/manifest.json) · [Run the live simulator](https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms/blob/simulation-delivery-v1/docs/SIMULATIONS.md)
+
+The animation loops through the complete recorded Experiment 2 mission. It uses a fixed controller, not the classifier baseline. Playback is 2×, not physical acceleration. GitHub displays a recording, not live MuJoCo.
 
 ## Start here
 
 - **[Download the raw v1 CSV](https://raw.githubusercontent.com/youseihuayu-wonderful/intelligent-grasping-course-project/main/data/v1/dataset.csv)** · [Browse the data](data/v1/dataset.csv) · [Frozen manifest](data/v1/manifest.json)
 - [Dataset, feature units, physical labels, and provenance](docs/DATASET.md)
 - [Team roles, leakage prevention, metrics, and attribution rules](docs/TEAM_PROTOCOL.md)
-- **[Both original simulations: Experiment 1 and Experiment 2](https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms/blob/main/docs/SIMULATIONS.md)** — upstream code, assets, reproduction instructions, and recordings remain in the original repository.
+- **[Both original simulations: Experiment 1 and Experiment 2](https://github.com/youseihuayu-wonderful/Intelligent-Grasping-Predicting-Success-and-Selecting-Approach-Speeds-of-Robotic-Arms/blob/main/docs/SIMULATIONS.md)** — runnable code, assets and authoritative execution evidence remain upstream; this repository mirrors the recorded Experiment 2 demo above.
 
 ## Install, validate, and run
 

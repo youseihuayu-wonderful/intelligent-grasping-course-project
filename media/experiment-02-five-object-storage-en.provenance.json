@@ -1,0 +1,1684 @@
+{
+  "kind": "experiment_02_recorded_physical_trajectory_render",
+  "inputs": {
+    "verification": {
+      "path": "results/experiment_02_five_object_storage/final/verification.json",
+      "sha256": "4d6c222d017392fa354b5296d1c8ef8c77b91017c9aaad63d153aacd572022dc",
+      "bytes": 31201
+    },
+    "trajectory": {
+      "path": "results/experiment_02_five_object_storage/final/trajectory.npz",
+      "sha256": "5248c064d9ec564accd2497564fc71ae9bee727bdf063d63f6c2e2694221900c",
+      "bytes": 1780224
+    },
+    "compiled_model": {
+      "encoding": "gzip",
+      "logical": {
+        "path": "results/experiment_02_five_object_storage/final/model.mjb",
+        "sha256": "c377219fb4fb24beae39724c9cbca2bec5108d1c22ffc048b47e0774e3c496d7",
+        "bytes": 122913099
+      },
+      "stored": {
+        "path": "results/experiment_02_five_object_storage/final/model.mjb.gz",
+        "sha256": "50fdcc3af35342f1e69872ff8d469c4a0541b108dc78dec2835850037709dbd4",
+        "bytes": 41039268
+      },
+      "storage_descriptor": {
+        "path": "results/experiment_02_five_object_storage/final/model_storage.json",
+        "sha256": "46afd6cd93b7b3bf55979531a7f430d8df3e6e7b7d863c311d7be8766d8ebe6e",
+        "bytes": 327
+      },
+      "declaration": {
+        "encoding": "gzip",
+        "logical_path": "model.mjb",
+        "logical_sha256": "c377219fb4fb24beae39724c9cbca2bec5108d1c22ffc048b47e0774e3c496d7",
+        "stored_bytes": 41039268,
+        "stored_path": "model.mjb.gz",
+        "stored_sha256": "50fdcc3af35342f1e69872ff8d469c4a0541b108dc78dec2835850037709dbd4",
+        "uncompressed_bytes": 122913099
+      }
+    }
+  },
+  "source_sha256": {
+    "assets/grasp_study/glass.xml": "b8441416c44548fc628d5eddb38d9c19a142820fbe10b15b00c6ce77f7d42a6d",
+    "assets/grasp_study/pen.xml": "b3a9a81d2834508c72e17027a7c746e26f2b0e57e584199bb5d4594e2071e693",
+    "assets/grasp_study/spoon.xml": "9d4c425a8a8a8b47f1e571d74034d72afb6d7035be0b2a3169b43bea9ff48120",
+    "assets/grasp_study/tabletop_cabinet.xml": "bdaa8b16559dea438dfc58ec6ca7ca1cecd1b0dab4448783a9da715987c5bfcd",
+    "drawer_storage_checks.py": "7072b79249f6737ada4b6b9193d2c76c25a45c625103ece9e8dfc8ba3966ff25",
+    "grasp.py": "4ddc10acf904456661c89fbcb595e2677f5e1a8029abd0cb3ad059c4bfc75114",
+    "grasp_study_objects.py": "a1a7a76f01b282710cc95384735cc9fe0303d4bee3ea9a4357314a55208e63eb",
+    "grasp_study_physics.py": "b6f1907750c681d987547e4dfdb0d404ed6131453975057c5f2294f302fbd92b",
+    "grasp_tabletop.py": "6d7b6fe2dd368481e06900496904df6519eea5e1117c78d7475651a452874415",
+    "scene.xml": "7ca71b6a86f587f0f1ab1758f7722b92aebdfbf0973262b238591407d0190b32",
+    "simulation.py": "b7a24a6a6cb304b80322e6b2f089cbe7ade29dec99cbf0051173c494134a0ef2",
+    "tabletop_storage.py": "0bafe29c2fc1e1c989601329684fcf077c72e2d2c6078aec8769fde9dceb78de",
+    "vendor/libero/stable_scanned_objects/akita_black_bowl/akita_black_bowl.mtl": "00c6007476fbec0bf87390e24ab9e029369a5d8a3dfa8caf4fa1c8b17aa66367",
+    "vendor/libero/stable_scanned_objects/akita_black_bowl/akita_black_bowl.obj": "026d7a302a831a595cf011580ff8fbe6f4c0234c478af96d6f42344822bc18a5",
+    "vendor/libero/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda",
+    "vendor/libero/stable_scanned_objects/akita_black_bowl/akita_black_bowl_col.obj": "ac0a7aff7543aa32c65cf64d39191ca5127763a39b3ab25329b9fa828224cc39",
+    "vendor/libero/stable_scanned_objects/akita_black_bowl/texture.png": "8a646d98b084b7400dd91beed9c83e10b4a4dca572896b3974356b7937a4bd85",
+    "vendor/libero/stable_scanned_objects/akita_black_bowl/visual/akita_black_bowl_vis.msh": "6474d536a740e995c3a2eaeb74c61e14da94131b0b222c250b61b30b13d11229",
+    "vendor/libero/turbosquid_objects/wine_bottle/Cork_Texture_by_faycop.jpg": "a59f0b4204a858367bb7d41c94b2d4b5f27b2b30859637a6c8d072d3122a53d9",
+    "vendor/libero/turbosquid_objects/wine_bottle/cork_texture.png": "93a9c1d22c7256e423a1473b2bf9107b4e120cd249423f7e01289f9c6fd63feb",
+    "vendor/libero/turbosquid_objects/wine_bottle/label_wine.png": "a8caed4b3414dcf4b72558e339ce1cad1b90b4f159d0d293f06ed04a1f473241",
+    "vendor/libero/turbosquid_objects/wine_bottle/visual/wine_bottle_red_cork_vis.msh": "2b993448e727c8abf8c25a5ed28699e4594dc692e3eaad76a957627f0afcc474",
+    "vendor/libero/turbosquid_objects/wine_bottle/visual/wine_bottle_red_logo_vis.msh": "99e4f2bec9c76a5277dc40efe774f47e9f079ced13b4197f0ac79bb36bc54e47",
+    "vendor/libero/turbosquid_objects/wine_bottle/visual/wine_bottle_red_main_vis.msh": "92a7a897bdac34f47161cb418fbe6f7fc9056d2f0e93647beb8139cffeed270a",
+    "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle.xml": "9bdae6cb59f9260544cb802d4babe32c23b9dd66e0a5fb2bdb4662b468ce1a17",
+    "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_cork.mtl": "41f70e38e3baaa87ccf3355baace8c5cad3ba5c56d3ecf2761e959adf562a067",
+    "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_cork.obj": "15bee8cd7d34ac18c24ed4463e167120a5cea18d85977539645d22839394ca0c",
+    "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_logo.mtl": "840f57e0ed5a46824e63be68e0bf8b6ee997f5c46dd7960839fe5478bd7e1c47",
+    "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_logo.obj": "52637c8f1247ab63414a5d8238f3f160dccab55d4890f5fa54177a4bd106a2aa",
+    "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_main.mtl": "a0757c429b887630a1380b61a85fa01aaaba31a8f489c512883c26eb510df024",
+    "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_main.obj": "2bf2c1ff42873ccf923c8eeacff782839ca2383d4b866f486f51ee28d4a6fdc6",
+    "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_main.xml": "460636a34ffe0ececda20fa00f27591b6999861c8f4cdf3d410f605ca2320bda",
+    "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_main_col.obj": "07b00931aa9bf469db23062a556c5608786ce4bdfc1b9028017fc8fff37e2049",
+    "vendor/libero/turbosquid_objects/wine_rack/light-wood.png": "967be64bdb170d36283bc43c2ae5d525ec88f78bc837dc7d0efc9a28d68caad1",
+    "vendor/libero/turbosquid_objects/wine_rack/light_yellow_metal.png": "b8d8abf32b1940b938c097e6955ef7c5e0b84ab97296e53aa65315efbf1f1359",
+    "vendor/libero/turbosquid_objects/wine_rack/mahogany.png": "702a734fef1bf0df4e446f98f571628f81e423caba64b5fcfd683bae42135c3b",
+    "vendor/libero/turbosquid_objects/wine_rack/metal.png": "93784216a66b52be9c8ccc3732e50f511815291e32f34f97bd139ed7229061fa",
+    "vendor/libero/turbosquid_objects/wine_rack/visual/wine_rack_planes_vis.msh": "f3daf4c20ed4b513b0d3b19d5580aa6f9c677ab6935a138f316b00852714d936",
+    "vendor/libero/turbosquid_objects/wine_rack/visual/wine_rack_stand_vis.msh": "6b4cf3bd2a65f93f41563e86b55b4789965001f78473268b592e59abad9c64fd",
+    "vendor/libero/turbosquid_objects/wine_rack/visual/wine_rack_stoppers_vis.msh": "8647657c858c45b6a55e507689888dffaf80d68d9395f9c7eb5a40eb64e17c62",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack.xml": "18f97cd8bb76ed18b2f11d047c5abbe0a2d9490d53ac167e0657c596dd450c3e",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_planes.mtl": "5e2d9bf426ad5322b4600057cc8bbf81d08a08e09f65f180b94d811591f54ced",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_planes.obj": "7036695e41b2217c478947fd2255a3c0319668ff25dc36de757ce3fe60610678",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_planes.xml": "d1e664d1aebb10264f71acae4acf5cc5f3b38a4b81d5900f0f53371e43cce3d9",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_planes_col.obj": "882f02cbada03748eeb37570cfd7c6dd0713bd696c49767f8ecdcd0a47ab110d",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stand.mtl": "a0b3318177e43bec62eed04780a6b3f5bc743b4552b6c07f62356bf3962e2154",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stand.obj": "7dc7631e3a266e808b45c57429eae08187ccff9c21232377d43ed4a0da289412",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stand.xml": "6d5bf2f0056fcd8867f507302d78567bec7dad28521aa2ecb9e07b313d04f53d",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stand_col.obj": "4baf8eb03f738303a2ac193eadb477534c953279027361b1798a0539fef470da",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stoppers.mtl": "4f3c4cacb1f063dfe973a772612d6c6a7ba1532010ec05c49be904c347505521",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stoppers.obj": "426683bd92d0782c89aab0cab2194e235f35fe9fed9cbab6f9c93fc67b167779",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stoppers.xml": "f3dd125a83f55535044d9e7d6b9db7b5aebf5c6a403f17e269596d2c31526a27",
+    "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stoppers_col.obj": "5635e8414ff7539ee310d00e274d9d0bd5906a190e711870c45d35c7706ab829",
+    "vendor/panda/LICENSE": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+    "vendor/panda/assets/finger_0.obj": "215098c0fcdf7192f6c503a37cf49e3efecf8a9e1320f02b17c5584d89cc5b2c",
+    "vendor/panda/assets/finger_1.obj": "cf239e9aca26bba09dbbf1c544c47d87cfc9a2f0637c8bb786af750b6d4eca44",
+    "vendor/panda/assets/hand.stl": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+    "vendor/panda/assets/hand_0.obj": "b94aab901086f85df04c019b30f43bf9aa23a7ad0443ec80a8c14662a41cabd2",
+    "vendor/panda/assets/hand_1.obj": "cd76f7494bb314406a1819c46eb826ee254894f87235714f604a470653d9badb",
+    "vendor/panda/assets/hand_2.obj": "e0f44a71712afa5b98eb20355eff17763d3e2e19f459b2bef19abed3727e64b3",
+    "vendor/panda/assets/hand_3.obj": "a431a06d99e88a1b322b3122a01424ee7704daeaad0bc343b90b9604f014ad0c",
+    "vendor/panda/assets/hand_4.obj": "21f96ef6a8de082e41b1ea9834f1043de359e5d60305541bcb63539581f53bff",
+    "vendor/panda/assets/link0.stl": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+    "vendor/panda/assets/link0_0.obj": "6b9f41a4c203540daaeb7a33cc3d0d6c6a32dc8bba187074eeaf97b3e36b3f9c",
+    "vendor/panda/assets/link0_1.obj": "57673d2ee2a9db2e10c8986ae57c56a7c39c012b60fd26d7d8549553b664a5ed",
+    "vendor/panda/assets/link0_10.obj": "c9198b9d8534d628d097b0f2b239bb30343353182df098ce0d9db6bc13326848",
+    "vendor/panda/assets/link0_11.obj": "f0adec78d6677b7799d25121981270e8bfe119b5c18d08a91ee37a54ad75f65c",
+    "vendor/panda/assets/link0_2.obj": "1ca435a2a87a9608a146a47955724d43dd7ce10fc3dd3018800aa98f8ba86e05",
+    "vendor/panda/assets/link0_3.obj": "3e9c6334d2b3b47944af3458ee5f20519abc20fe7ee23063bb53405ccab28046",
+    "vendor/panda/assets/link0_4.obj": "215d25789704936120f119c0bc1cc7f68516dd3f8f1df61457b71acac3873f26",
+    "vendor/panda/assets/link0_5.obj": "9361b104e93743045107aa5b15fb1a0835ba9c1f355aae71f56403cf6a9c33f6",
+    "vendor/panda/assets/link0_7.obj": "2dc0b8ebbbc80e4c065d71e195adbc384f673438641fac82b07b801b4d2837cb",
+    "vendor/panda/assets/link0_8.obj": "3b8c436999db5586b8eb47bed2b0aa7de6993868b2681b4c04246eeac42fdb7a",
+    "vendor/panda/assets/link0_9.obj": "45178f97d2b5da6bce11f610212c4ef7d08c73db33a4fc38e1b7f66b93d023f5",
+    "vendor/panda/assets/link1.obj": "51091e776b16babdbe2f3849b5c041f921d1f11dd94ac19a0f1c81abf496fbae",
+    "vendor/panda/assets/link1.stl": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+    "vendor/panda/assets/link2.obj": "5c9f8e715de52c3eb71b475de35993b3b96081e02abea9f28c414768877fc59b",
+    "vendor/panda/assets/link2.stl": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+    "vendor/panda/assets/link3.stl": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+    "vendor/panda/assets/link3_0.obj": "ce2da87f51708e11b189249d41401065dabe89a06e251185a06cef4d5ff27178",
+    "vendor/panda/assets/link3_1.obj": "2880b7753a7173f38fa87ee21da4dfc7fa7be46fbe07bac5aef9e128513cb118",
+    "vendor/panda/assets/link3_2.obj": "670cff81ae84693769ca4ae658c154cf909d81167e7c8d22b70ea977f2504efa",
+    "vendor/panda/assets/link3_3.obj": "30ede0c812efd0e0b767d134a4eae0b84e0fa407bb6325a5a555e0569b3a3ffd",
+    "vendor/panda/assets/link4.stl": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+    "vendor/panda/assets/link4_0.obj": "443bf6d178177cf347951ecf107ccd10ca444e605e375b67304579e5f948806f",
+    "vendor/panda/assets/link4_1.obj": "ca935ec7cc8b3f0e86aa079c76b0b3bf593b1e9830bab0fa7131ac51577c74f0",
+    "vendor/panda/assets/link4_2.obj": "c89caf26d379c35bb9e191ee2d91d09ab29ecc792b48d8bc10b39e5b38222175",
+    "vendor/panda/assets/link4_3.obj": "1495d17f45bdb230cf58b0beef9da4e8c9cfe76a3d2d38da89017efe5e093136",
+    "vendor/panda/assets/link5_0.obj": "a3238b8f2af0f2eb66d9fe63dc5d41ac52d5d38507241b5ed10e3cb019ab3e71",
+    "vendor/panda/assets/link5_1.obj": "9d994bbf83ec241e301b5197a6846da13f2a4a0582edb2c0f76962c5549649d6",
+    "vendor/panda/assets/link5_2.obj": "83b4ffe9f772cd7fe182e98640650eebc899aaf01842656574b0416c90dd40a4",
+    "vendor/panda/assets/link5_collision_0.obj": "3e5aa75fb13f193555c3dfb999df91d81df25006a5c3af5338297d78137c129b",
+    "vendor/panda/assets/link5_collision_1.obj": "87cd8f621071df010f774cbde789282b8463840dfe704f8bdfa2e29be0142e15",
+    "vendor/panda/assets/link5_collision_2.obj": "823ab6c8f7b1d79e0844fa071d82a03499ff68e34fddb1ba3451032c22736040",
+    "vendor/panda/assets/link6.stl": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+    "vendor/panda/assets/link6_0.obj": "0504c70ebf1b284ee8faae7dcb896b8830bc672a6552015dd5dbd121fa031fb9",
+    "vendor/panda/assets/link6_1.obj": "45f7ca77695198b6d86ec2417ad4e42e6275044f0f96266699ee8e1057757ac1",
+    "vendor/panda/assets/link6_10.obj": "365f26c21d10332cab8d8704645cb46930c30b3085956f2d097498c793f24db4",
+    "vendor/panda/assets/link6_11.obj": "8ae61e08b3ad064f25bbf03b22e59cc15d65883b5a7ce92711aff29df2493901",
+    "vendor/panda/assets/link6_12.obj": "f28d1bfd62b0244ffd19fb35fe9edefdf583d3c9167db944e87185d919e1d021",
+    "vendor/panda/assets/link6_13.obj": "0a55fa92dccb261d07200e6565fca4c850fd17f0c1ecf38821c0b97d51796c7d",
+    "vendor/panda/assets/link6_14.obj": "750ae3ee4781e62e3a045c662195247b03f6642b05aa93104f08258e5f6eba26",
+    "vendor/panda/assets/link6_15.obj": "5999c1c2497a004a7c4bbe034cdf13744f839d85ae7a11b1bc386c48a3e642e6",
+    "vendor/panda/assets/link6_16.obj": "551d7a8b37c53e7a152d008b4e36992e5b5abe74a4be18b57ee6319c27def09f",
+    "vendor/panda/assets/link6_2.obj": "e54eee4d8232947ee8af65afd5a067e09dac2da6e7e585cb1dccb65496457da0",
+    "vendor/panda/assets/link6_3.obj": "d4f6a25ef32fa1fa4734146981994ee760232cb077c80fea6487d78a077c7f27",
+    "vendor/panda/assets/link6_4.obj": "be353480fe71d46f7a96f0a3cbb7e112caaf8d88368826f321a36a253c8749b2",
+    "vendor/panda/assets/link6_5.obj": "7c87664623c3e1a6cb330db273227a69626dc5e53b4caff1d4ee7911eb3340c6",
+    "vendor/panda/assets/link6_6.obj": "8fbc031e0d07b795ebf99115c75223141caaba317cab569159f3d477a7821681",
+    "vendor/panda/assets/link6_7.obj": "7dc5ebb799fe281aab27d6e84e7a4efa0a8e42da2369ec83de3ea3f206f62d73",
+    "vendor/panda/assets/link6_8.obj": "e3f77381817a341030f9dcc4c4aa7c559f80411b453fd87eb0fefecca82151bf",
+    "vendor/panda/assets/link6_9.obj": "25a56ea9b02a03b6cb5a81f31c54f54d0185e1a0b3937c37e4289d896e50215a",
+    "vendor/panda/assets/link7.stl": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+    "vendor/panda/assets/link7_0.obj": "04586b0bde011715cfc22072ac72fe0717eb4d4817bcf665987ce6cd88eb2b93",
+    "vendor/panda/assets/link7_1.obj": "c3f72289f394c9d6749a4a327fb11f05b203c37c95032c92f28019b40ebe7e00",
+    "vendor/panda/assets/link7_2.obj": "d2faecedb304d0989040d082410378dc949dbbda23bd18c05134f08aae984db5",
+    "vendor/panda/assets/link7_3.obj": "b62d87c4d4bdb7b281ed341d347c39dad0e50bf36aed8ac11d050073701d5f70",
+    "vendor/panda/assets/link7_4.obj": "cb78ccb61fd4ad6c7bff4c4d2e6cb41e1964a5a3e1a28e67c0c6202371cfc018",
+    "vendor/panda/assets/link7_5.obj": "099071d3090b51471ba52f4f90814fd3089f4975d196e4d488117073d0bfe491",
+    "vendor/panda/assets/link7_6.obj": "99469e2d95ab74ce0292f2f16954c87a8a7dc16652e62e970fe37c94330a81bb",
+    "vendor/panda/assets/link7_7.obj": "426c3db8a19373f3dc73d4bec672e948121b2914c10e2e7b9c7ea80643a19e54",
+    "vendor/panda/panda.xml": "96ad67da03710f17f798c9478fd9e9efdf24a3bf8359f05e456dd9fb158ea273"
+  },
+  "renderer": {
+    "path": "render_tabletop_storage_video_en.py",
+    "sha256": "dfb6ad1746ae04e0608aa0fa07033dade4b6891c4fc93c6977bbde4fd2a83c0f",
+    "presentation_helpers": {
+      "path": "render_storage_video_en.py",
+      "sha256": "e71ae94a7097bf59249ea80ab5d9723bce005b1e118253f6aef6673ef2233500",
+      "bytes": 15227
+    },
+    "dependencies": {
+      "av": "19.0.2",
+      "mujoco": "3.3.7",
+      "numpy": "2.2.6",
+      "pillow": "12.3.0"
+    },
+    "font": {
+      "path": "/System/Library/Fonts/Supplemental/Arial.ttf",
+      "sha256": "525979822591a3447cfc49d943d6f7683508e25543407871c0ed8fed05fd2bd9",
+      "bytes": 773236
+    },
+    "bold_font": {
+      "path": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+      "sha256": "d72db21f9242aedd6b917d8549ad5921766b24d5f8d0becfda2ff4c620b3c2e0",
+      "bytes": 750984
+    }
+  },
+  "timing": {
+    "frame_count": 2807,
+    "first_time_s": 0.7000000000000005,
+    "last_time_s": 281.30000000061506,
+    "source_time_span_s": 280.60000000061507,
+    "source_sample_rate_hz": 10,
+    "playback_rate": 2,
+    "output_fps": 20,
+    "output_duration_s": 140.35,
+    "last_sample_display_duration_s": 0.05,
+    "timestamp_quantization_max_error_s": 3.0755131774640176e-10,
+    "time_base": "1/1000000",
+    "state_arrays": [
+      "ctrl",
+      "object_order",
+      "predicate_names",
+      "predicates",
+      "qpos",
+      "qvel",
+      "support_force_n",
+      "time_s"
+    ],
+    "object_order": [
+      "spoon",
+      "pen",
+      "bowl",
+      "glass",
+      "bottle"
+    ],
+    "predicate_names": [
+      "inside",
+      "supported",
+      "detached",
+      "stable"
+    ]
+  },
+  "camera": {
+    "azimuth": 135,
+    "elevation": -38,
+    "distance": 1.95,
+    "lookat": [
+      0.33,
+      -0.03,
+      0.86
+    ],
+    "viewport": [
+      800,
+      600
+    ]
+  },
+  "canvas": [
+    960,
+    840
+  ],
+  "events": [
+    {
+      "time_s": 0.6000000000000004,
+      "target": "spoon",
+      "phase": "settling"
+    },
+    {
+      "time_s": 1.0000000000000007,
+      "target": "spoon",
+      "phase": "prepare"
+    },
+    {
+      "time_s": 1.0600000000000007,
+      "target": "spoon",
+      "phase": "approach"
+    },
+    {
+      "time_s": 7.3319999999994145,
+      "target": "spoon",
+      "phase": "descend"
+    },
+    {
+      "time_s": 10.33400000000012,
+      "target": "spoon",
+      "phase": "close"
+    },
+    {
+      "time_s": 10.518000000000182,
+      "target": "spoon",
+      "phase": "lift"
+    },
+    {
+      "time_s": 13.330000000001121,
+      "target": "spoon",
+      "phase": "hold"
+    },
+    {
+      "time_s": 14.330000000001455,
+      "target": "spoon",
+      "phase": "done"
+    },
+    {
+      "time_s": 15.330000000001789,
+      "target": "spoon",
+      "phase": "raise"
+    },
+    {
+      "time_s": 18.47200000000064,
+      "target": "spoon",
+      "phase": "rotate"
+    },
+    {
+      "time_s": 19.276000000000195,
+      "target": "spoon",
+      "phase": "transfer"
+    },
+    {
+      "time_s": 24.963999999997043,
+      "target": "spoon",
+      "phase": "entry"
+    },
+    {
+      "time_s": 33.39799999999485,
+      "target": "spoon",
+      "phase": "insert"
+    },
+    {
+      "time_s": 35.63799999999759,
+      "target": "spoon",
+      "phase": "release"
+    },
+    {
+      "time_s": 35.99999999999803,
+      "target": "spoon",
+      "phase": "withdraw"
+    },
+    {
+      "time_s": 39.85000000000274,
+      "target": "spoon",
+      "phase": "verify_release"
+    },
+    {
+      "time_s": 40.250000000003226,
+      "target": "spoon",
+      "phase": "clear"
+    },
+    {
+      "time_s": 45.21400000000929,
+      "target": "pen",
+      "phase": "prepare"
+    },
+    {
+      "time_s": 45.274000000009366,
+      "target": "pen",
+      "phase": "approach"
+    },
+    {
+      "time_s": 49.04400000001397,
+      "target": "pen",
+      "phase": "descend"
+    },
+    {
+      "time_s": 52.048000000017645,
+      "target": "pen",
+      "phase": "close"
+    },
+    {
+      "time_s": 52.26600000001791,
+      "target": "pen",
+      "phase": "lift"
+    },
+    {
+      "time_s": 55.07800000002135,
+      "target": "pen",
+      "phase": "hold"
+    },
+    {
+      "time_s": 56.07800000002257,
+      "target": "pen",
+      "phase": "done"
+    },
+    {
+      "time_s": 57.07800000002379,
+      "target": "pen",
+      "phase": "raise"
+    },
+    {
+      "time_s": 60.26800000002769,
+      "target": "pen",
+      "phase": "rotate"
+    },
+    {
+      "time_s": 63.610000000031775,
+      "target": "pen",
+      "phase": "transfer"
+    },
+    {
+      "time_s": 70.24600000001769,
+      "target": "pen",
+      "phase": "entry"
+    },
+    {
+      "time_s": 79.1679999999969,
+      "target": "pen",
+      "phase": "insert"
+    },
+    {
+      "time_s": 79.97199999999502,
+      "target": "pen",
+      "phase": "release"
+    },
+    {
+      "time_s": 80.2799999999943,
+      "target": "pen",
+      "phase": "withdraw"
+    },
+    {
+      "time_s": 84.37599999998476,
+      "target": "pen",
+      "phase": "verify_release"
+    },
+    {
+      "time_s": 84.77599999998382,
+      "target": "pen",
+      "phase": "clear"
+    },
+    {
+      "time_s": 89.61399999997255,
+      "target": "bowl",
+      "phase": "prepare"
+    },
+    {
+      "time_s": 89.67399999997241,
+      "target": "bowl",
+      "phase": "approach"
+    },
+    {
+      "time_s": 94.42999999996132,
+      "target": "bowl",
+      "phase": "descend"
+    },
+    {
+      "time_s": 97.43199999995433,
+      "target": "bowl",
+      "phase": "close"
+    },
+    {
+      "time_s": 97.6599999999538,
+      "target": "bowl",
+      "phase": "lift"
+    },
+    {
+      "time_s": 100.47399999994724,
+      "target": "bowl",
+      "phase": "hold"
+    },
+    {
+      "time_s": 101.47399999994491,
+      "target": "bowl",
+      "phase": "done"
+    },
+    {
+      "time_s": 102.47599999994257,
+      "target": "bowl",
+      "phase": "raise"
+    },
+    {
+      "time_s": 105.09799999993646,
+      "target": "bowl",
+      "phase": "rotate"
+    },
+    {
+      "time_s": 108.729999999928,
+      "target": "bowl",
+      "phase": "transfer"
+    },
+    {
+      "time_s": 116.05999999991091,
+      "target": "bowl",
+      "phase": "entry"
+    },
+    {
+      "time_s": 124.7339999998907,
+      "target": "bowl",
+      "phase": "insert"
+    },
+    {
+      "time_s": 125.53799999988883,
+      "target": "bowl",
+      "phase": "lower"
+    },
+    {
+      "time_s": 126.96999999988549,
+      "target": "bowl",
+      "phase": "release"
+    },
+    {
+      "time_s": 127.18799999988498,
+      "target": "bowl",
+      "phase": "withdraw"
+    },
+    {
+      "time_s": 131.53599999989996,
+      "target": "bowl",
+      "phase": "verify_release"
+    },
+    {
+      "time_s": 131.93599999990187,
+      "target": "bowl",
+      "phase": "clear"
+    },
+    {
+      "time_s": 135.65999999991965,
+      "target": "bottle",
+      "phase": "prepare"
+    },
+    {
+      "time_s": 135.71999999991993,
+      "target": "bottle",
+      "phase": "approach"
+    },
+    {
+      "time_s": 138.89999999993512,
+      "target": "bottle",
+      "phase": "descend"
+    },
+    {
+      "time_s": 141.90199999994945,
+      "target": "bottle",
+      "phase": "close"
+    },
+    {
+      "time_s": 142.11799999995048,
+      "target": "bottle",
+      "phase": "lift"
+    },
+    {
+      "time_s": 144.9299999999639,
+      "target": "bottle",
+      "phase": "hold"
+    },
+    {
+      "time_s": 145.9299999999687,
+      "target": "bottle",
+      "phase": "done"
+    },
+    {
+      "time_s": 146.92999999997346,
+      "target": "bottle",
+      "phase": "raise"
+    },
+    {
+      "time_s": 148.81199999998245,
+      "target": "bottle",
+      "phase": "rotate"
+    },
+    {
+      "time_s": 152.45599999999985,
+      "target": "bottle",
+      "phase": "transfer"
+    },
+    {
+      "time_s": 158.51600000002878,
+      "target": "bottle",
+      "phase": "entry"
+    },
+    {
+      "time_s": 166.29400000006592,
+      "target": "bottle",
+      "phase": "insert"
+    },
+    {
+      "time_s": 169.35200000008052,
+      "target": "bottle",
+      "phase": "lower"
+    },
+    {
+      "time_s": 170.6900000000869,
+      "target": "bottle",
+      "phase": "release"
+    },
+    {
+      "time_s": 170.916000000088,
+      "target": "bottle",
+      "phase": "withdraw"
+    },
+    {
+      "time_s": 173.62800000010094,
+      "target": "bottle",
+      "phase": "verify_release"
+    },
+    {
+      "time_s": 174.02800000010285,
+      "target": "bottle",
+      "phase": "clear"
+    },
+    {
+      "time_s": 179.93200000013104,
+      "target": "glass",
+      "phase": "prepare"
+    },
+    {
+      "time_s": 179.99200000013133,
+      "target": "glass",
+      "phase": "approach"
+    },
+    {
+      "time_s": 183.7340000001492,
+      "target": "glass",
+      "phase": "descend"
+    },
+    {
+      "time_s": 186.73800000016354,
+      "target": "glass",
+      "phase": "close"
+    },
+    {
+      "time_s": 186.8760000001642,
+      "target": "glass",
+      "phase": "lift"
+    },
+    {
+      "time_s": 189.68800000017762,
+      "target": "glass",
+      "phase": "hold"
+    },
+    {
+      "time_s": 190.6880000001824,
+      "target": "glass",
+      "phase": "done"
+    },
+    {
+      "time_s": 191.68800000018717,
+      "target": "glass",
+      "phase": "raise"
+    },
+    {
+      "time_s": 193.8500000001975,
+      "target": "glass",
+      "phase": "rotate"
+    },
+    {
+      "time_s": 194.65200000020133,
+      "target": "glass",
+      "phase": "transfer"
+    },
+    {
+      "time_s": 199.7960000002259,
+      "target": "glass",
+      "phase": "entry"
+    },
+    {
+      "time_s": 207.72200000026373,
+      "target": "glass",
+      "phase": "insert"
+    },
+    {
+      "time_s": 208.52400000026756,
+      "target": "glass",
+      "phase": "lower"
+    },
+    {
+      "time_s": 209.6020000002727,
+      "target": "glass",
+      "phase": "release"
+    },
+    {
+      "time_s": 209.85800000027393,
+      "target": "glass",
+      "phase": "withdraw"
+    },
+    {
+      "time_s": 213.7700000002926,
+      "target": "glass",
+      "phase": "verify_release"
+    },
+    {
+      "time_s": 214.17000000029452,
+      "target": "glass",
+      "phase": "clear"
+    },
+    {
+      "time_s": 219.43200000031965,
+      "target": "glass",
+      "phase": "prepush_home"
+    },
+    {
+      "time_s": 223.20200000033765,
+      "target": "glass",
+      "phase": "push_approach"
+    },
+    {
+      "time_s": 232.05800000037993,
+      "target": "glass",
+      "phase": "push_drawer"
+    },
+    {
+      "time_s": 251.8020000004742,
+      "target": "glass",
+      "phase": "push_withdraw"
+    },
+    {
+      "time_s": 266.28400000054336,
+      "target": "glass",
+      "phase": "return_home"
+    },
+    {
+      "time_s": 271.6720000005691,
+      "target": "glass",
+      "phase": "verify"
+    },
+    {
+      "time_s": 281.27800000061495,
+      "target": "glass",
+      "phase": "done"
+    }
+  ],
+  "recorded_final_evidence": {
+    "objects": [
+      {
+        "target": "spoon",
+        "name": "spoon_object",
+        "position_m": [
+          0.6101506940442865,
+          0.3478777483455433,
+          0.7421101831171565
+        ],
+        "quaternion_wxyz": [
+          0.9999942303069372,
+          8.410023138957463e-05,
+          0.0024184512932854253,
+          0.002383982661119349
+        ],
+        "bounds_min_m": [
+          0.535123818700117,
+          0.3300277985317079,
+          0.7419881928913478
+        ],
+        "bounds_max_m": [
+          0.6853003619608362,
+          0.3662243009636707,
+          0.7594584461502412
+        ],
+        "inside": true,
+        "supported": true,
+        "stable": true,
+        "detached": true,
+        "stored": true,
+        "support_force_n": 0.24831707773394926,
+        "linear_speed_m_s": 1.962222802189861e-05,
+        "angular_speed_rad_s": 0.0024964695222055387
+      },
+      {
+        "target": "pen",
+        "name": "pen_object",
+        "position_m": [
+          0.6963302157969066,
+          0.2946543185114535,
+          0.7422376308982668
+        ],
+        "quaternion_wxyz": [
+          0.6795246173634758,
+          -0.09322467327848426,
+          -0.09910064581116547,
+          0.7209261520356657
+        ],
+        "bounds_min_m": [
+          0.6845883504109495,
+          0.22467607483032395,
+          0.7419995029654879
+        ],
+        "bounds_max_m": [
+          0.704251785687319,
+          0.36478943514021817,
+          0.7540341406349292
+        ],
+        "inside": true,
+        "supported": true,
+        "stable": true,
+        "detached": true,
+        "stored": true,
+        "support_force_n": 0.0942403845785462,
+        "linear_speed_m_s": 8.705605172111493e-05,
+        "angular_speed_rad_s": 0.003417013322730435
+      },
+      {
+        "target": "bowl",
+        "name": "bowl_object",
+        "position_m": [
+          0.603482519097902,
+          0.28030820025909337,
+          0.740409978878077
+        ],
+        "quaternion_wxyz": [
+          0.6981331463203412,
+          2.8266769501783876e-07,
+          -3.3060983908734584e-07,
+          0.7159679531994935
+        ],
+        "bounds_min_m": [
+          0.5501528455176613,
+          0.2266446554630755,
+          0.7419999580507209
+        ],
+        "bounds_max_m": [
+          0.6574154557754204,
+          0.333890306820655,
+          0.7925418908940915
+        ],
+        "inside": true,
+        "supported": true,
+        "stable": true,
+        "detached": true,
+        "stored": true,
+        "support_force_n": 0.5878092839358455,
+        "linear_speed_m_s": 1.3990839291948685e-07,
+        "angular_speed_rad_s": 6.112518533150972e-05
+      },
+      {
+        "target": "glass",
+        "name": "glass_object",
+        "position_m": [
+          0.7525944540114999,
+          0.260089468619068,
+          0.7420312039836294
+        ],
+        "quaternion_wxyz": [
+          0.999999867795317,
+          0.0003959209832854228,
+          -0.00028834098725788725,
+          -0.00015657394135443095
+        ],
+        "bounds_min_m": [
+          0.7205405565779135,
+          0.22801622787814457,
+          0.7419998574466263
+        ],
+        "bounds_max_m": [
+          0.784594448688219,
+          0.29208945858913765,
+          0.8320630955703431
+        ],
+        "inside": true,
+        "supported": true,
+        "stable": true,
+        "detached": true,
+        "stored": true,
+        "support_force_n": 1.4696577393408423,
+        "linear_speed_m_s": 3.898087572855957e-06,
+        "angular_speed_rad_s": 1.2232836261340178e-10
+      },
+      {
+        "target": "bottle",
+        "name": "bottle_object",
+        "position_m": [
+          0.7220369912553535,
+          0.3263044434580687,
+          0.7408899093675688
+        ],
+        "quaternion_wxyz": [
+          0.725794832749506,
+          2.4273638616676637e-07,
+          -1.0003974555891469e-07,
+          0.6879112302863268
+        ],
+        "bounds_min_m": [
+          0.6996951794148263,
+          0.3052018456668684,
+          0.7419998989383187
+        ],
+        "bounds_max_m": [
+          0.7438267930485646,
+          0.3479470429616527,
+          0.8989299133141022
+        ],
+        "inside": true,
+        "supported": true,
+        "stable": true,
+        "detached": true,
+        "stored": true,
+        "support_force_n": 1.7657998028775634,
+        "linear_speed_m_s": 1.8010369028007676e-08,
+        "angular_speed_rad_s": 3.2808919921474633e-06
+      }
+    ],
+    "all_stored": true,
+    "hand_empty": true,
+    "drawer_closed": true,
+    "scene_mode": "continuous_drawer_storage",
+    "target": "glass",
+    "targets": [
+      "spoon",
+      "pen",
+      "bowl",
+      "bottle",
+      "glass"
+    ],
+    "phase": "done",
+    "controller_status": "succeeded",
+    "current_index": 5,
+    "completed_targets": [
+      "spoon",
+      "pen",
+      "bowl",
+      "bottle",
+      "glass"
+    ],
+    "stored_count": 5,
+    "cabinet": {
+      "position_m": [
+        0.69,
+        0.32,
+        0.72
+      ],
+      "bounds_min_m": [
+        0.48999999999999994,
+        0.16700003604782546,
+        0.72
+      ],
+      "bounds_max_m": [
+        0.89,
+        0.435,
+        0.96
+      ],
+      "drawer_position_m": 3.604782546323508e-08,
+      "drawer_velocity_m_s": -8.878313744643389e-09,
+      "fully_open": false,
+      "interior_min_m": [
+        0.5129999999999999,
+        0.21500003604782544,
+        0.742
+      ],
+      "interior_max_m": [
+        0.867,
+        0.4150000360478254,
+        0.942
+      ],
+      "interior_size_m": [
+        0.354,
+        0.2,
+        0.2
+      ]
+    },
+    "time_s": 281.30000000061506,
+    "failure_reason": null,
+    "finished": true,
+    "outcome": true,
+    "grasp_hold_s": 2.0000000000095497,
+    "verified_hold_s": 3.001999999999891,
+    "final_settle_timeout_s": 20.0,
+    "settings": {
+      "target": "glass",
+      "scale": 1.0,
+      "mass_kg": 0.15,
+      "sliding_friction": 0.8,
+      "x_m": 0.6199998437637522,
+      "y_m": -0.21994482203765092,
+      "yaw_rad": 0.0,
+      "bias_x_m": 0.0,
+      "bias_y_m": 0.0,
+      "bias_z_m": 0.0,
+      "opening_m": 0.08,
+      "closing_force_n": 4.0,
+      "close_trigger_m": 0.0,
+      "descent_speed_m_s": 0.1
+    },
+    "push_contact_peak_n": 7.591155733123365,
+    "joint_positions_rad": [
+      -9.669700201457052e-05,
+      -0.4994875511523532,
+      -8.402034199589844e-05,
+      -2.1995884238038195,
+      0.00037223344447779883,
+      1.7998633265495494,
+      0.7846361564646522
+    ],
+    "gripper_opening_m": 0.014000000000000033,
+    "lift_m": 0.022033718582938233,
+    "warnings": [],
+    "scene_resets_during_mission": 0,
+    "events": [
+      {
+        "time_s": 0.6000000000000004,
+        "target": "spoon",
+        "phase": "settling"
+      },
+      {
+        "time_s": 1.0000000000000007,
+        "target": "spoon",
+        "phase": "prepare"
+      },
+      {
+        "time_s": 1.0600000000000007,
+        "target": "spoon",
+        "phase": "approach"
+      },
+      {
+        "time_s": 7.3319999999994145,
+        "target": "spoon",
+        "phase": "descend"
+      },
+      {
+        "time_s": 10.33400000000012,
+        "target": "spoon",
+        "phase": "close"
+      },
+      {
+        "time_s": 10.518000000000182,
+        "target": "spoon",
+        "phase": "lift"
+      },
+      {
+        "time_s": 13.330000000001121,
+        "target": "spoon",
+        "phase": "hold"
+      },
+      {
+        "time_s": 14.330000000001455,
+        "target": "spoon",
+        "phase": "done"
+      },
+      {
+        "time_s": 15.330000000001789,
+        "target": "spoon",
+        "phase": "raise"
+      },
+      {
+        "time_s": 18.47200000000064,
+        "target": "spoon",
+        "phase": "rotate"
+      },
+      {
+        "time_s": 19.276000000000195,
+        "target": "spoon",
+        "phase": "transfer"
+      },
+      {
+        "time_s": 24.963999999997043,
+        "target": "spoon",
+        "phase": "entry"
+      },
+      {
+        "time_s": 33.39799999999485,
+        "target": "spoon",
+        "phase": "insert"
+      },
+      {
+        "time_s": 35.63799999999759,
+        "target": "spoon",
+        "phase": "release"
+      },
+      {
+        "time_s": 35.99999999999803,
+        "target": "spoon",
+        "phase": "withdraw"
+      },
+      {
+        "time_s": 39.85000000000274,
+        "target": "spoon",
+        "phase": "verify_release"
+      },
+      {
+        "time_s": 40.250000000003226,
+        "target": "spoon",
+        "phase": "clear"
+      },
+      {
+        "time_s": 45.21400000000929,
+        "target": "pen",
+        "phase": "prepare"
+      },
+      {
+        "time_s": 45.274000000009366,
+        "target": "pen",
+        "phase": "approach"
+      },
+      {
+        "time_s": 49.04400000001397,
+        "target": "pen",
+        "phase": "descend"
+      },
+      {
+        "time_s": 52.048000000017645,
+        "target": "pen",
+        "phase": "close"
+      },
+      {
+        "time_s": 52.26600000001791,
+        "target": "pen",
+        "phase": "lift"
+      },
+      {
+        "time_s": 55.07800000002135,
+        "target": "pen",
+        "phase": "hold"
+      },
+      {
+        "time_s": 56.07800000002257,
+        "target": "pen",
+        "phase": "done"
+      },
+      {
+        "time_s": 57.07800000002379,
+        "target": "pen",
+        "phase": "raise"
+      },
+      {
+        "time_s": 60.26800000002769,
+        "target": "pen",
+        "phase": "rotate"
+      },
+      {
+        "time_s": 63.610000000031775,
+        "target": "pen",
+        "phase": "transfer"
+      },
+      {
+        "time_s": 70.24600000001769,
+        "target": "pen",
+        "phase": "entry"
+      },
+      {
+        "time_s": 79.1679999999969,
+        "target": "pen",
+        "phase": "insert"
+      },
+      {
+        "time_s": 79.97199999999502,
+        "target": "pen",
+        "phase": "release"
+      },
+      {
+        "time_s": 80.2799999999943,
+        "target": "pen",
+        "phase": "withdraw"
+      },
+      {
+        "time_s": 84.37599999998476,
+        "target": "pen",
+        "phase": "verify_release"
+      },
+      {
+        "time_s": 84.77599999998382,
+        "target": "pen",
+        "phase": "clear"
+      },
+      {
+        "time_s": 89.61399999997255,
+        "target": "bowl",
+        "phase": "prepare"
+      },
+      {
+        "time_s": 89.67399999997241,
+        "target": "bowl",
+        "phase": "approach"
+      },
+      {
+        "time_s": 94.42999999996132,
+        "target": "bowl",
+        "phase": "descend"
+      },
+      {
+        "time_s": 97.43199999995433,
+        "target": "bowl",
+        "phase": "close"
+      },
+      {
+        "time_s": 97.6599999999538,
+        "target": "bowl",
+        "phase": "lift"
+      },
+      {
+        "time_s": 100.47399999994724,
+        "target": "bowl",
+        "phase": "hold"
+      },
+      {
+        "time_s": 101.47399999994491,
+        "target": "bowl",
+        "phase": "done"
+      },
+      {
+        "time_s": 102.47599999994257,
+        "target": "bowl",
+        "phase": "raise"
+      },
+      {
+        "time_s": 105.09799999993646,
+        "target": "bowl",
+        "phase": "rotate"
+      },
+      {
+        "time_s": 108.729999999928,
+        "target": "bowl",
+        "phase": "transfer"
+      },
+      {
+        "time_s": 116.05999999991091,
+        "target": "bowl",
+        "phase": "entry"
+      },
+      {
+        "time_s": 124.7339999998907,
+        "target": "bowl",
+        "phase": "insert"
+      },
+      {
+        "time_s": 125.53799999988883,
+        "target": "bowl",
+        "phase": "lower"
+      },
+      {
+        "time_s": 126.96999999988549,
+        "target": "bowl",
+        "phase": "release"
+      },
+      {
+        "time_s": 127.18799999988498,
+        "target": "bowl",
+        "phase": "withdraw"
+      },
+      {
+        "time_s": 131.53599999989996,
+        "target": "bowl",
+        "phase": "verify_release"
+      },
+      {
+        "time_s": 131.93599999990187,
+        "target": "bowl",
+        "phase": "clear"
+      },
+      {
+        "time_s": 135.65999999991965,
+        "target": "bottle",
+        "phase": "prepare"
+      },
+      {
+        "time_s": 135.71999999991993,
+        "target": "bottle",
+        "phase": "approach"
+      },
+      {
+        "time_s": 138.89999999993512,
+        "target": "bottle",
+        "phase": "descend"
+      },
+      {
+        "time_s": 141.90199999994945,
+        "target": "bottle",
+        "phase": "close"
+      },
+      {
+        "time_s": 142.11799999995048,
+        "target": "bottle",
+        "phase": "lift"
+      },
+      {
+        "time_s": 144.9299999999639,
+        "target": "bottle",
+        "phase": "hold"
+      },
+      {
+        "time_s": 145.9299999999687,
+        "target": "bottle",
+        "phase": "done"
+      },
+      {
+        "time_s": 146.92999999997346,
+        "target": "bottle",
+        "phase": "raise"
+      },
+      {
+        "time_s": 148.81199999998245,
+        "target": "bottle",
+        "phase": "rotate"
+      },
+      {
+        "time_s": 152.45599999999985,
+        "target": "bottle",
+        "phase": "transfer"
+      },
+      {
+        "time_s": 158.51600000002878,
+        "target": "bottle",
+        "phase": "entry"
+      },
+      {
+        "time_s": 166.29400000006592,
+        "target": "bottle",
+        "phase": "insert"
+      },
+      {
+        "time_s": 169.35200000008052,
+        "target": "bottle",
+        "phase": "lower"
+      },
+      {
+        "time_s": 170.6900000000869,
+        "target": "bottle",
+        "phase": "release"
+      },
+      {
+        "time_s": 170.916000000088,
+        "target": "bottle",
+        "phase": "withdraw"
+      },
+      {
+        "time_s": 173.62800000010094,
+        "target": "bottle",
+        "phase": "verify_release"
+      },
+      {
+        "time_s": 174.02800000010285,
+        "target": "bottle",
+        "phase": "clear"
+      },
+      {
+        "time_s": 179.93200000013104,
+        "target": "glass",
+        "phase": "prepare"
+      },
+      {
+        "time_s": 179.99200000013133,
+        "target": "glass",
+        "phase": "approach"
+      },
+      {
+        "time_s": 183.7340000001492,
+        "target": "glass",
+        "phase": "descend"
+      },
+      {
+        "time_s": 186.73800000016354,
+        "target": "glass",
+        "phase": "close"
+      },
+      {
+        "time_s": 186.8760000001642,
+        "target": "glass",
+        "phase": "lift"
+      },
+      {
+        "time_s": 189.68800000017762,
+        "target": "glass",
+        "phase": "hold"
+      },
+      {
+        "time_s": 190.6880000001824,
+        "target": "glass",
+        "phase": "done"
+      },
+      {
+        "time_s": 191.68800000018717,
+        "target": "glass",
+        "phase": "raise"
+      },
+      {
+        "time_s": 193.8500000001975,
+        "target": "glass",
+        "phase": "rotate"
+      },
+      {
+        "time_s": 194.65200000020133,
+        "target": "glass",
+        "phase": "transfer"
+      },
+      {
+        "time_s": 199.7960000002259,
+        "target": "glass",
+        "phase": "entry"
+      },
+      {
+        "time_s": 207.72200000026373,
+        "target": "glass",
+        "phase": "insert"
+      },
+      {
+        "time_s": 208.52400000026756,
+        "target": "glass",
+        "phase": "lower"
+      },
+      {
+        "time_s": 209.6020000002727,
+        "target": "glass",
+        "phase": "release"
+      },
+      {
+        "time_s": 209.85800000027393,
+        "target": "glass",
+        "phase": "withdraw"
+      },
+      {
+        "time_s": 213.7700000002926,
+        "target": "glass",
+        "phase": "verify_release"
+      },
+      {
+        "time_s": 214.17000000029452,
+        "target": "glass",
+        "phase": "clear"
+      },
+      {
+        "time_s": 219.43200000031965,
+        "target": "glass",
+        "phase": "prepush_home"
+      },
+      {
+        "time_s": 223.20200000033765,
+        "target": "glass",
+        "phase": "push_approach"
+      },
+      {
+        "time_s": 232.05800000037993,
+        "target": "glass",
+        "phase": "push_drawer"
+      },
+      {
+        "time_s": 251.8020000004742,
+        "target": "glass",
+        "phase": "push_withdraw"
+      },
+      {
+        "time_s": 266.28400000054336,
+        "target": "glass",
+        "phase": "return_home"
+      },
+      {
+        "time_s": 271.6720000005691,
+        "target": "glass",
+        "phase": "verify"
+      },
+      {
+        "time_s": 281.27800000061495,
+        "target": "glass",
+        "phase": "done"
+      }
+    ],
+    "contact_reports": [
+      {
+        "target": "spoon",
+        "contacts": {
+          "episodes": 0,
+          "duration_s": 0.0,
+          "peak_force_n": 0.0,
+          "pairs": [],
+          "force_threshold_n": 0.1
+        }
+      },
+      {
+        "target": "pen",
+        "contacts": {
+          "episodes": 0,
+          "duration_s": 0.0,
+          "peak_force_n": 0.0,
+          "pairs": [],
+          "force_threshold_n": 0.1
+        }
+      },
+      {
+        "target": "bowl",
+        "contacts": {
+          "episodes": 0,
+          "duration_s": 0.0,
+          "peak_force_n": 0.0,
+          "pairs": [],
+          "force_threshold_n": 0.1
+        }
+      },
+      {
+        "target": "bottle",
+        "contacts": {
+          "episodes": 2,
+          "duration_s": 0.004,
+          "peak_force_n": 5.5823385387861215,
+          "pairs": [
+            {
+              "body_a": "bottle_object",
+              "body_b": "pen_object",
+              "episodes": 2,
+              "duration_s": 0.004,
+              "peak_force_n": 5.5823385387861215
+            }
+          ],
+          "force_threshold_n": 0.1
+        }
+      },
+      {
+        "target": "glass",
+        "contacts": {
+          "episodes": 0,
+          "duration_s": 0.0,
+          "peak_force_n": 0.0,
+          "pairs": [],
+          "force_threshold_n": 0.1
+        }
+      }
+    ],
+    "physics_timestep_s": 0.002,
+    "experiment_id": "experiment_02_five_object_storage",
+    "experiment_label": "Experiment 02",
+    "recording_rate_hz": 10.0,
+    "recorded_frames": 2807,
+    "release_strategy": "open_and_withdraw_then_verify_actual_detachment",
+    "compiled_model": {
+      "path": "model.mjb",
+      "sha256": "c377219fb4fb24beae39724c9cbca2bec5108d1c22ffc048b47e0774e3c496d7"
+    },
+    "mujoco_version": "3.3.7",
+    "source_sha256": {
+      "assets/grasp_study/glass.xml": "b8441416c44548fc628d5eddb38d9c19a142820fbe10b15b00c6ce77f7d42a6d",
+      "assets/grasp_study/pen.xml": "b3a9a81d2834508c72e17027a7c746e26f2b0e57e584199bb5d4594e2071e693",
+      "assets/grasp_study/spoon.xml": "9d4c425a8a8a8b47f1e571d74034d72afb6d7035be0b2a3169b43bea9ff48120",
+      "assets/grasp_study/tabletop_cabinet.xml": "bdaa8b16559dea438dfc58ec6ca7ca1cecd1b0dab4448783a9da715987c5bfcd",
+      "drawer_storage_checks.py": "7072b79249f6737ada4b6b9193d2c76c25a45c625103ece9e8dfc8ba3966ff25",
+      "grasp.py": "4ddc10acf904456661c89fbcb595e2677f5e1a8029abd0cb3ad059c4bfc75114",
+      "grasp_study_objects.py": "a1a7a76f01b282710cc95384735cc9fe0303d4bee3ea9a4357314a55208e63eb",
+      "grasp_study_physics.py": "b6f1907750c681d987547e4dfdb0d404ed6131453975057c5f2294f302fbd92b",
+      "grasp_tabletop.py": "6d7b6fe2dd368481e06900496904df6519eea5e1117c78d7475651a452874415",
+      "scene.xml": "7ca71b6a86f587f0f1ab1758f7722b92aebdfbf0973262b238591407d0190b32",
+      "simulation.py": "b7a24a6a6cb304b80322e6b2f089cbe7ade29dec99cbf0051173c494134a0ef2",
+      "tabletop_storage.py": "0bafe29c2fc1e1c989601329684fcf077c72e2d2c6078aec8769fde9dceb78de",
+      "vendor/libero/stable_scanned_objects/akita_black_bowl/akita_black_bowl.mtl": "00c6007476fbec0bf87390e24ab9e029369a5d8a3dfa8caf4fa1c8b17aa66367",
+      "vendor/libero/stable_scanned_objects/akita_black_bowl/akita_black_bowl.obj": "026d7a302a831a595cf011580ff8fbe6f4c0234c478af96d6f42344822bc18a5",
+      "vendor/libero/stable_scanned_objects/akita_black_bowl/akita_black_bowl.xml": "18c1074cfa09baea739bb75928f9bd2bd80e22ac18655f6a27f005dbf77ccfda",
+      "vendor/libero/stable_scanned_objects/akita_black_bowl/akita_black_bowl_col.obj": "ac0a7aff7543aa32c65cf64d39191ca5127763a39b3ab25329b9fa828224cc39",
+      "vendor/libero/stable_scanned_objects/akita_black_bowl/texture.png": "8a646d98b084b7400dd91beed9c83e10b4a4dca572896b3974356b7937a4bd85",
+      "vendor/libero/stable_scanned_objects/akita_black_bowl/visual/akita_black_bowl_vis.msh": "6474d536a740e995c3a2eaeb74c61e14da94131b0b222c250b61b30b13d11229",
+      "vendor/libero/turbosquid_objects/wine_bottle/Cork_Texture_by_faycop.jpg": "a59f0b4204a858367bb7d41c94b2d4b5f27b2b30859637a6c8d072d3122a53d9",
+      "vendor/libero/turbosquid_objects/wine_bottle/cork_texture.png": "93a9c1d22c7256e423a1473b2bf9107b4e120cd249423f7e01289f9c6fd63feb",
+      "vendor/libero/turbosquid_objects/wine_bottle/label_wine.png": "a8caed4b3414dcf4b72558e339ce1cad1b90b4f159d0d293f06ed04a1f473241",
+      "vendor/libero/turbosquid_objects/wine_bottle/visual/wine_bottle_red_cork_vis.msh": "2b993448e727c8abf8c25a5ed28699e4594dc692e3eaad76a957627f0afcc474",
+      "vendor/libero/turbosquid_objects/wine_bottle/visual/wine_bottle_red_logo_vis.msh": "99e4f2bec9c76a5277dc40efe774f47e9f079ced13b4197f0ac79bb36bc54e47",
+      "vendor/libero/turbosquid_objects/wine_bottle/visual/wine_bottle_red_main_vis.msh": "92a7a897bdac34f47161cb418fbe6f7fc9056d2f0e93647beb8139cffeed270a",
+      "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle.xml": "9bdae6cb59f9260544cb802d4babe32c23b9dd66e0a5fb2bdb4662b468ce1a17",
+      "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_cork.mtl": "41f70e38e3baaa87ccf3355baace8c5cad3ba5c56d3ecf2761e959adf562a067",
+      "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_cork.obj": "15bee8cd7d34ac18c24ed4463e167120a5cea18d85977539645d22839394ca0c",
+      "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_logo.mtl": "840f57e0ed5a46824e63be68e0bf8b6ee997f5c46dd7960839fe5478bd7e1c47",
+      "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_logo.obj": "52637c8f1247ab63414a5d8238f3f160dccab55d4890f5fa54177a4bd106a2aa",
+      "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_main.mtl": "a0757c429b887630a1380b61a85fa01aaaba31a8f489c512883c26eb510df024",
+      "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_main.obj": "2bf2c1ff42873ccf923c8eeacff782839ca2383d4b866f486f51ee28d4a6fdc6",
+      "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_main.xml": "460636a34ffe0ececda20fa00f27591b6999861c8f4cdf3d410f605ca2320bda",
+      "vendor/libero/turbosquid_objects/wine_bottle/wine_bottle_red_main_col.obj": "07b00931aa9bf469db23062a556c5608786ce4bdfc1b9028017fc8fff37e2049",
+      "vendor/libero/turbosquid_objects/wine_rack/light-wood.png": "967be64bdb170d36283bc43c2ae5d525ec88f78bc837dc7d0efc9a28d68caad1",
+      "vendor/libero/turbosquid_objects/wine_rack/light_yellow_metal.png": "b8d8abf32b1940b938c097e6955ef7c5e0b84ab97296e53aa65315efbf1f1359",
+      "vendor/libero/turbosquid_objects/wine_rack/mahogany.png": "702a734fef1bf0df4e446f98f571628f81e423caba64b5fcfd683bae42135c3b",
+      "vendor/libero/turbosquid_objects/wine_rack/metal.png": "93784216a66b52be9c8ccc3732e50f511815291e32f34f97bd139ed7229061fa",
+      "vendor/libero/turbosquid_objects/wine_rack/visual/wine_rack_planes_vis.msh": "f3daf4c20ed4b513b0d3b19d5580aa6f9c677ab6935a138f316b00852714d936",
+      "vendor/libero/turbosquid_objects/wine_rack/visual/wine_rack_stand_vis.msh": "6b4cf3bd2a65f93f41563e86b55b4789965001f78473268b592e59abad9c64fd",
+      "vendor/libero/turbosquid_objects/wine_rack/visual/wine_rack_stoppers_vis.msh": "8647657c858c45b6a55e507689888dffaf80d68d9395f9c7eb5a40eb64e17c62",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack.xml": "18f97cd8bb76ed18b2f11d047c5abbe0a2d9490d53ac167e0657c596dd450c3e",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_planes.mtl": "5e2d9bf426ad5322b4600057cc8bbf81d08a08e09f65f180b94d811591f54ced",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_planes.obj": "7036695e41b2217c478947fd2255a3c0319668ff25dc36de757ce3fe60610678",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_planes.xml": "d1e664d1aebb10264f71acae4acf5cc5f3b38a4b81d5900f0f53371e43cce3d9",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_planes_col.obj": "882f02cbada03748eeb37570cfd7c6dd0713bd696c49767f8ecdcd0a47ab110d",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stand.mtl": "a0b3318177e43bec62eed04780a6b3f5bc743b4552b6c07f62356bf3962e2154",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stand.obj": "7dc7631e3a266e808b45c57429eae08187ccff9c21232377d43ed4a0da289412",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stand.xml": "6d5bf2f0056fcd8867f507302d78567bec7dad28521aa2ecb9e07b313d04f53d",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stand_col.obj": "4baf8eb03f738303a2ac193eadb477534c953279027361b1798a0539fef470da",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stoppers.mtl": "4f3c4cacb1f063dfe973a772612d6c6a7ba1532010ec05c49be904c347505521",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stoppers.obj": "426683bd92d0782c89aab0cab2194e235f35fe9fed9cbab6f9c93fc67b167779",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stoppers.xml": "f3dd125a83f55535044d9e7d6b9db7b5aebf5c6a403f17e269596d2c31526a27",
+      "vendor/libero/turbosquid_objects/wine_rack/wine_rack_stoppers_col.obj": "5635e8414ff7539ee310d00e274d9d0bd5906a190e711870c45d35c7706ab829",
+      "vendor/panda/LICENSE": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "vendor/panda/assets/finger_0.obj": "215098c0fcdf7192f6c503a37cf49e3efecf8a9e1320f02b17c5584d89cc5b2c",
+      "vendor/panda/assets/finger_1.obj": "cf239e9aca26bba09dbbf1c544c47d87cfc9a2f0637c8bb786af750b6d4eca44",
+      "vendor/panda/assets/hand.stl": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+      "vendor/panda/assets/hand_0.obj": "b94aab901086f85df04c019b30f43bf9aa23a7ad0443ec80a8c14662a41cabd2",
+      "vendor/panda/assets/hand_1.obj": "cd76f7494bb314406a1819c46eb826ee254894f87235714f604a470653d9badb",
+      "vendor/panda/assets/hand_2.obj": "e0f44a71712afa5b98eb20355eff17763d3e2e19f459b2bef19abed3727e64b3",
+      "vendor/panda/assets/hand_3.obj": "a431a06d99e88a1b322b3122a01424ee7704daeaad0bc343b90b9604f014ad0c",
+      "vendor/panda/assets/hand_4.obj": "21f96ef6a8de082e41b1ea9834f1043de359e5d60305541bcb63539581f53bff",
+      "vendor/panda/assets/link0.stl": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "vendor/panda/assets/link0_0.obj": "6b9f41a4c203540daaeb7a33cc3d0d6c6a32dc8bba187074eeaf97b3e36b3f9c",
+      "vendor/panda/assets/link0_1.obj": "57673d2ee2a9db2e10c8986ae57c56a7c39c012b60fd26d7d8549553b664a5ed",
+      "vendor/panda/assets/link0_10.obj": "c9198b9d8534d628d097b0f2b239bb30343353182df098ce0d9db6bc13326848",
+      "vendor/panda/assets/link0_11.obj": "f0adec78d6677b7799d25121981270e8bfe119b5c18d08a91ee37a54ad75f65c",
+      "vendor/panda/assets/link0_2.obj": "1ca435a2a87a9608a146a47955724d43dd7ce10fc3dd3018800aa98f8ba86e05",
+      "vendor/panda/assets/link0_3.obj": "3e9c6334d2b3b47944af3458ee5f20519abc20fe7ee23063bb53405ccab28046",
+      "vendor/panda/assets/link0_4.obj": "215d25789704936120f119c0bc1cc7f68516dd3f8f1df61457b71acac3873f26",
+      "vendor/panda/assets/link0_5.obj": "9361b104e93743045107aa5b15fb1a0835ba9c1f355aae71f56403cf6a9c33f6",
+      "vendor/panda/assets/link0_7.obj": "2dc0b8ebbbc80e4c065d71e195adbc384f673438641fac82b07b801b4d2837cb",
+      "vendor/panda/assets/link0_8.obj": "3b8c436999db5586b8eb47bed2b0aa7de6993868b2681b4c04246eeac42fdb7a",
+      "vendor/panda/assets/link0_9.obj": "45178f97d2b5da6bce11f610212c4ef7d08c73db33a4fc38e1b7f66b93d023f5",
+      "vendor/panda/assets/link1.obj": "51091e776b16babdbe2f3849b5c041f921d1f11dd94ac19a0f1c81abf496fbae",
+      "vendor/panda/assets/link1.stl": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+      "vendor/panda/assets/link2.obj": "5c9f8e715de52c3eb71b475de35993b3b96081e02abea9f28c414768877fc59b",
+      "vendor/panda/assets/link2.stl": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "vendor/panda/assets/link3.stl": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "vendor/panda/assets/link3_0.obj": "ce2da87f51708e11b189249d41401065dabe89a06e251185a06cef4d5ff27178",
+      "vendor/panda/assets/link3_1.obj": "2880b7753a7173f38fa87ee21da4dfc7fa7be46fbe07bac5aef9e128513cb118",
+      "vendor/panda/assets/link3_2.obj": "670cff81ae84693769ca4ae658c154cf909d81167e7c8d22b70ea977f2504efa",
+      "vendor/panda/assets/link3_3.obj": "30ede0c812efd0e0b767d134a4eae0b84e0fa407bb6325a5a555e0569b3a3ffd",
+      "vendor/panda/assets/link4.stl": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "vendor/panda/assets/link4_0.obj": "443bf6d178177cf347951ecf107ccd10ca444e605e375b67304579e5f948806f",
+      "vendor/panda/assets/link4_1.obj": "ca935ec7cc8b3f0e86aa079c76b0b3bf593b1e9830bab0fa7131ac51577c74f0",
+      "vendor/panda/assets/link4_2.obj": "c89caf26d379c35bb9e191ee2d91d09ab29ecc792b48d8bc10b39e5b38222175",
+      "vendor/panda/assets/link4_3.obj": "1495d17f45bdb230cf58b0beef9da4e8c9cfe76a3d2d38da89017efe5e093136",
+      "vendor/panda/assets/link5_0.obj": "a3238b8f2af0f2eb66d9fe63dc5d41ac52d5d38507241b5ed10e3cb019ab3e71",
+      "vendor/panda/assets/link5_1.obj": "9d994bbf83ec241e301b5197a6846da13f2a4a0582edb2c0f76962c5549649d6",
+      "vendor/panda/assets/link5_2.obj": "83b4ffe9f772cd7fe182e98640650eebc899aaf01842656574b0416c90dd40a4",
+      "vendor/panda/assets/link5_collision_0.obj": "3e5aa75fb13f193555c3dfb999df91d81df25006a5c3af5338297d78137c129b",
+      "vendor/panda/assets/link5_collision_1.obj": "87cd8f621071df010f774cbde789282b8463840dfe704f8bdfa2e29be0142e15",
+      "vendor/panda/assets/link5_collision_2.obj": "823ab6c8f7b1d79e0844fa071d82a03499ff68e34fddb1ba3451032c22736040",
+      "vendor/panda/assets/link6.stl": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "vendor/panda/assets/link6_0.obj": "0504c70ebf1b284ee8faae7dcb896b8830bc672a6552015dd5dbd121fa031fb9",
+      "vendor/panda/assets/link6_1.obj": "45f7ca77695198b6d86ec2417ad4e42e6275044f0f96266699ee8e1057757ac1",
+      "vendor/panda/assets/link6_10.obj": "365f26c21d10332cab8d8704645cb46930c30b3085956f2d097498c793f24db4",
+      "vendor/panda/assets/link6_11.obj": "8ae61e08b3ad064f25bbf03b22e59cc15d65883b5a7ce92711aff29df2493901",
+      "vendor/panda/assets/link6_12.obj": "f28d1bfd62b0244ffd19fb35fe9edefdf583d3c9167db944e87185d919e1d021",
+      "vendor/panda/assets/link6_13.obj": "0a55fa92dccb261d07200e6565fca4c850fd17f0c1ecf38821c0b97d51796c7d",
+      "vendor/panda/assets/link6_14.obj": "750ae3ee4781e62e3a045c662195247b03f6642b05aa93104f08258e5f6eba26",
+      "vendor/panda/assets/link6_15.obj": "5999c1c2497a004a7c4bbe034cdf13744f839d85ae7a11b1bc386c48a3e642e6",
+      "vendor/panda/assets/link6_16.obj": "551d7a8b37c53e7a152d008b4e36992e5b5abe74a4be18b57ee6319c27def09f",
+      "vendor/panda/assets/link6_2.obj": "e54eee4d8232947ee8af65afd5a067e09dac2da6e7e585cb1dccb65496457da0",
+      "vendor/panda/assets/link6_3.obj": "d4f6a25ef32fa1fa4734146981994ee760232cb077c80fea6487d78a077c7f27",
+      "vendor/panda/assets/link6_4.obj": "be353480fe71d46f7a96f0a3cbb7e112caaf8d88368826f321a36a253c8749b2",
+      "vendor/panda/assets/link6_5.obj": "7c87664623c3e1a6cb330db273227a69626dc5e53b4caff1d4ee7911eb3340c6",
+      "vendor/panda/assets/link6_6.obj": "8fbc031e0d07b795ebf99115c75223141caaba317cab569159f3d477a7821681",
+      "vendor/panda/assets/link6_7.obj": "7dc5ebb799fe281aab27d6e84e7a4efa0a8e42da2369ec83de3ea3f206f62d73",
+      "vendor/panda/assets/link6_8.obj": "e3f77381817a341030f9dcc4c4aa7c559f80411b453fd87eb0fefecca82151bf",
+      "vendor/panda/assets/link6_9.obj": "25a56ea9b02a03b6cb5a81f31c54f54d0185e1a0b3937c37e4289d896e50215a",
+      "vendor/panda/assets/link7.stl": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "vendor/panda/assets/link7_0.obj": "04586b0bde011715cfc22072ac72fe0717eb4d4817bcf665987ce6cd88eb2b93",
+      "vendor/panda/assets/link7_1.obj": "c3f72289f394c9d6749a4a327fb11f05b203c37c95032c92f28019b40ebe7e00",
+      "vendor/panda/assets/link7_2.obj": "d2faecedb304d0989040d082410378dc949dbbda23bd18c05134f08aae984db5",
+      "vendor/panda/assets/link7_3.obj": "b62d87c4d4bdb7b281ed341d347c39dad0e50bf36aed8ac11d050073701d5f70",
+      "vendor/panda/assets/link7_4.obj": "cb78ccb61fd4ad6c7bff4c4d2e6cb41e1964a5a3e1a28e67c0c6202371cfc018",
+      "vendor/panda/assets/link7_5.obj": "099071d3090b51471ba52f4f90814fd3089f4975d196e4d488117073d0bfe491",
+      "vendor/panda/assets/link7_6.obj": "99469e2d95ab74ce0292f2f16954c87a8a7dc16652e62e970fe37c94330a81bb",
+      "vendor/panda/assets/link7_7.obj": "426c3db8a19373f3dc73d4bec672e948121b2914c10e2e7b9c7ea80643a19e54",
+      "vendor/panda/panda.xml": "96ad67da03710f17f798c9478fd9e9efdf24a3bf8359f05e456dd9fb158ea273"
+    }
+  },
+  "policy": {
+    "one_mp4_frame_per_recorded_sample": true,
+    "cuts": [],
+    "interpolation": false,
+    "controller_reexecution": false,
+    "new_acceptance_labels": false,
+    "object_attachments": false,
+    "added_dwell": false,
+    "missing_qvel_or_ctrl": "MuJoCo reset defaults, never inferred; present arrays are restored",
+    "phase": "Latest logged event at or before each recorded simulation timestamp",
+    "done_caption": "Non-final done: Grasp hold verified; continuing. Final done: mission complete, supported by successful final evidence. Raw phase/event fields remain unchanged.",
+    "last_frame_duration": "One 10 Hz sample period at 2x; no extra terminal dwell",
+    "preview": "Full MP4 timeline converted to 480 px / 5 fps animated WebP at unchanged 2x timing"
+  },
+  "encoding": {
+    "codec": "libx264",
+    "pixel_format": "yuv420p",
+    "fps": 20,
+    "preset": "slow",
+    "crf": 23,
+    "profile": "high",
+    "b_frames": 0,
+    "faststart": true,
+    "audio": false
+  },
+  "output": {
+    "path": "media/experiment-02-five-object-storage-en.mp4",
+    "sha256": "0b19d337db22fda3b5b8e7ca5b4e1384a42c851aaab2356a54edc0f74491153a",
+    "bytes": 5367276,
+    "frame_count": 2807
+  },
+  "preview": {
+    "path": "media/experiment-02-five-object-storage.webp",
+    "sha256": "2a1d07ff758bc399e94932f39ff0bd993aaec0e2a6fb56b0b7d23ee0bcf14e7d",
+    "bytes": 3210998,
+    "apng_conversion_command": [
+      "/opt/homebrew/bin/ffmpeg",
+      "-nostdin",
+      "-hide_banner",
+      "-loglevel",
+      "error",
+      "-n",
+      "-i",
+      "/Users/shihuayu/Projects/robot-grasp-simulation/media/experiment-02-render-sx6hyxr8/experiment-02-five-object-storage-en.mp4",
+      "-an",
+      "-vf",
+      "fps=5:round=down:eof_action=pass,scale=480:-2:flags=lanczos",
+      "-c:v",
+      "apng",
+      "-plays",
+      "0",
+      "/Users/shihuayu/Projects/robot-grasp-simulation/media/experiment-02-render-sx6hyxr8/experiment-02-five-object-storage.apng"
+    ],
+    "webp_encoding": {
+      "library": "Pillow",
+      "version": "12.3.0",
+      "duration_policy": "200 ms frames; final frame trimmed to the MP4 duration",
+      "loop": 0,
+      "quality": 70,
+      "method": 5,
+      "lossless": false
+    },
+    "playback_rate": 2,
+    "fps": 5,
+    "width": 480
+  }
+}
