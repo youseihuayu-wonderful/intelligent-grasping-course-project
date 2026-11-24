@@ -1,0 +1,85 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.73in,headheight=14pt]{geometry}
+\usepackage{amsmath,newtxtext,newtxmath,microtype}
+\usepackage{booktabs,tabularx,array,enumitem,titlesec,fancyhdr,hyperref,needspace}
+\hypersetup{hidelinks,pdftitle={Supplementary study plan — proposal revision},pdfauthor={Matthew Mikalsen; Benjamin Heep; Francesco Di Mise; Shihua YU}}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,topsep=2pt,parsep=0pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\renewcommand{\arraystretch}{1.1}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small EECE 5644: Machine Learning --- Fall 2026}
+\fancyhead[R]{\small Research Proposal}
+\fancyfoot[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\begin{document}
+
+
+\begin{center}{\fontsize{16}{18}\selectfont\bfseries Supplementary study plan — proposal revision\par}\end{center}
+
+{\centering\small Status: planned extension, not implementation or completed results. The original data, first-comparison training protocol and independent-final design remain unchanged. This supplement must accompany the revised proposal when assigning the additional work.\par}
+
+\Needspace{4\baselineskip}\section*{Source and budget}
+
+The base is \texttt{protocols/model\_\allowbreak{}training\_\allowbreak{}v1.json} at course commit \texttt{17ad7fe70441d004\allowbreak{}587558a5c75092c2\allowbreak{}0e0805bd}, file SHA-256 \texttt{a6f61ea220a07429\allowbreak{}22f8a58d16b8c9e9\allowbreak{}357a7319a286d3b3\allowbreak{}4066298107145156}. It specifies the frozen v1 data, all three grouped folds, seed 5644, 12 candidate configurations per primary model route, deterministic mean-log-loss selection, and TRAIN-only refitting. Its fixed settings, warning/zero-feature policies and candidate ordering apply to the extensions below too. Grids cannot be changed after inspecting a preferred outcome without a new documented version.
+
+The old committed three-candidate Logistic result is a reference, not a newly trained budget-matched result. XGBoost's extra version/environment must be pinned and reviewed before fitting. Equal candidate counts do not mean equal computation.
+
+\Needspace{4\baselineskip}\section*{Additional learned routes}
+
+Keep the common 11-raw-input interface. Record the actual internal representation and any selected subset separately; never add forbidden predictors.
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}p{0.22\linewidth}YY@{}}\toprule
+
+\textbf{Route ID} & \textbf{Inputs / representation} & \textbf{Inherited search}\\\midrule
+
+\texttt{logistic\_\allowbreak{}speed\_\allowbreak{}only} & \texttt{descent\_\allowbreak{}speed\_\allowbreak{}m\_\allowbreak{}s} only & All 12 \texttt{C} values from the base \texttt{logistic} route\\
+
+\texttt{logistic\_\allowbreak{}object\_\allowbreak{}only} & \texttt{target}, \texttt{scale}, \texttt{mass\_\allowbreak{}kg}, \texttt{sliding\_\allowbreak{}friction}; no pose or commands & Base \texttt{logistic} grid\\
+
+\texttt{physics\_\allowbreak{}proxy\_\allowbreak{}logistic} & One scalar: log(sliding\_friction × closing\_force\_n / (mass\_kg × 9.81)); fold-local standardization then L2 Logistic & Base \texttt{logistic} grid\\
+
+\texttt{lasso\_\allowbreak{}interactions} & Original main effects plus all unordered pairwise products of the 10 numeric predictors, no squares or categorical products; fold-local scaling, LASSO selection, L2 Logistic & All 12 (\texttt{C}, \texttt{alpha}) combinations from base \texttt{lasso\_\allowbreak{}logistic}\\
+
+\bottomrule\end{tabularx}\end{center}
+
+The proxy is finite for the positive parameter values in frozen v1. It is a command-based heuristic, not an analytical test of force closure or contact safety. Its Logistic mapping provides comparable probabilities; raw proxy values are not probabilities. The interaction route adds 45 predefined numeric terms without consulting labels. Report per-fold/final selected names and selection frequencies; do not interpret correlated coefficients causally.
+
+The four primary full-feature routes plus these four extensions are eight learned routes: at most 288 fold-level pipeline fits and eight selected TRAIN refits, excluding the old reference and automatic constant prior. This is a planned maximum, not a claim that training occurred. The generic evaluator checks declarations/hashes and scores; A must also review source, full CV outcomes, failed attempts, versions and provenance.
+
+\Needspace{4\baselineskip}\section*{Matched execution experiment}
+
+This is a separate small policy study, not a modification of the frozen 3,840-trial classification-final plan. Before collection, freeze the best primary full-feature pipeline by development-validation log loss; exact ties follow the base route order. Freeze its artifact/source/environment hashes and every policy rule. No final-test ranking is used for selection.
+
+\begin{itemize}\item Twenty fresh conditions: four per existing object family; declared property strata stay within existing family-specific mass levels, scales and friction values. Save the exact stratum design before sampling/execution. Do not choose conditions to obtain a preferred class ratio.\end{itemize}
+
+\begin{itemize}\item Keep concrete poses, error seeds and plan outside Git until model freeze. Use new same-domain poses and two fresh hidden XYZ-error draws per condition, uniform within ±4 mm per axis, paired across all five policies. Freeze and hash this plan before execution; release the plan and raw evidence after predictions/outcomes are locked.\end{itemize}
+
+\begin{itemize}\item Settle one scene per condition/draw; save its full simulator state and observed context. Reproduce that state for each policy and apply the same latent-error draw. Candidate scoring uses this one observed context, not observations obtained by executing candidates.\end{itemize}
+
+\begin{itemize}\item Candidate grid: descent speed [0.04, 0.10, 0.20] m/s; opening [0.04, 0.08] m; closing command [2, 4, 8] N; trigger [0, 0.01, 0.02] m. Enumerate in this order with the rightmost field changing fastest. Exclude only predeclared command/workspace violations, never predicted or observed failures.\end{itemize}
+
+\begin{itemize}\item Fixed slow/medium/fast policies: respective speed above, opening 0.08 m, closing command 8 N, trigger 0 m. These are comparison settings, not guaranteed-safe choices.\end{itemize}
+
+\begin{itemize}\item Success-first: greatest predicted probability; exact ties use lowest candidate index.\end{itemize}
+
+\begin{itemize}\item Speed-aware: candidates with predicted probability ≥0.80; choose greatest speed, then greatest probability, then lowest candidate index. If none qualifies, record abstention without executing a grasp. The classification threshold stays 0.5; 0.80 is a separate fixed policy threshold.\end{itemize}
+
+Budget: 20 conditions × 2 draws × 5 policies = 200 planned policy opportunities. Abstentions reduce executed grasps, not the registered denominator. Record completion across all opportunities, conditional success among attempted grasps, coverage/abstentions, simulated attempt durations and failed-attempt durations. Total simulated attempt time divided by successful completions is null when none succeeds; do not silently omit failures or confuse it with mean successful-attempt duration. Report inference wall time separately. No retries are part of this comparison.
+
+Preserve ordinary physical failures as negative outcomes. Invalid initialization/software/numerical faults remain nonlabels with evidence and block a complete matched comparison; do not silently replace them. Use the unchanged physical success rule. Any model/controller/data change after outcome inspection becomes a separately versioned exploratory study.
+
+\Needspace{4\baselineskip}\section*{Uncertainty and completion gates}
+
+Use 2,000 bootstrap draws, seed 5644, resampling whole condition groups within family and pairing the same draws across compared models/policies. Save the draws, valid/undefined counts and denominators. Validation and the small policy study provide descriptive evidence, not guaranteed power, population coverage, or multiplicity-adjusted proof.
+
+A should review the added route implementations and this supplement before collecting new policy labels. All learners/settings must freeze before the existing independent classification-final collection as well; its predictions are locked before label joining. The current shared evaluator is validation-only, so neither new final-scoring capability nor a policy runner is claimed to exist. They are required implementation/evaluation work in this proposal, not results from the existing videos.
+
+\end{document}

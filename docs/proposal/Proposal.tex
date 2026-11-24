@@ -1,0 +1,137 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.73in,headheight=14pt]{geometry}
+\usepackage{amsmath,newtxtext,newtxmath,microtype}
+\usepackage{booktabs,tabularx,array,enumitem,titlesec,fancyhdr,hyperref,needspace}
+\hypersetup{hidelinks,pdftitle={Intelligent Grasping: Predicting Success and Selecting Approach Speeds of Robotic Arms},pdfauthor={Matthew Mikalsen; Benjamin Heep; Francesco Di Mise; Shihua YU}}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,topsep=2pt,parsep=0pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\renewcommand{\arraystretch}{1.1}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small EECE 5644: Machine Learning --- Fall 2026}
+\fancyhead[R]{\small Research Proposal}
+\fancyfoot[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\begin{document}
+
+
+\begin{center}{\fontsize{16}{18}\selectfont\bfseries Intelligent Grasping: Predicting Success and Selecting Approach Speeds of Robotic Arms\par}\end{center}
+
+{\centering\small EECE 5644: Machine Learning — Fall 2026\par}
+
+{\centering\small Project Proposal: Research Questions\par}
+
+{\centering\small Group Members: Matthew Mikalsen, Benjamin Heep, Francesco Di Mise, Shihua YU\par}
+
+\Needspace{4\baselineskip}\section*{I. What ML research issue(s) interest you most? Why?}
+
+We are interested in supervised learning for conditional robotic grasp-success prediction: Can a lightweight model predict grasp success from an object's properties, its initial state, and proposed control settings? We will investigate feature relevance, interactions, generalization to new conditions within the tested domain, and probability calibration.
+
+Our inputs describe object family, relative size, mass, friction, settled pose, descent speed, gripper opening, closing-force command, and closure timing. These variables jointly describe a grasping situation; a configuration that works for one object may fail for another. The learning question is whether these inputs support useful, reliable predictions beyond simple statistical or physics-inspired baselines. Neither nonlinear models nor adaptive decisions are assumed to be better in advance.
+
+\Needspace{4\baselineskip}\section*{II. Who else has worked in this vein? What did they accomplish? What can't they do?}
+
+\textbf{Joyce et al. [1]} trained lightweight neural networks to predict RGB-guided grasp outcomes from disagreement between pose estimators, using MuJoCo execution labels. They reported benefits from training jointly across objects. Their evaluation focuses on perception-induced pose error and reference grasps, rather than the systematic physical/control comparisons proposed here.
+
+\textbf{Kiyokawa et al. [2]} learned visual grasp-action predictions and residual movement-velocity corrections for mobile grasping. Simulation and real-robot experiments evaluated success and collection efficiency. Their mobile, RGB-D-guided setting differs from our fixed-base Panda study of tabular physical, state, and control inputs.
+
+\textbf{Avigal et al. [3]} learned suction-failure constraints from physical trials and incorporated them into time-optimizing transport plans. Their results connect a learned model to execution, but concern post-acquisition suction transport rather than acquisition and retention with a parallel-jaw gripper.
+
+These are boundaries of the reported evaluations, not claims that the methods could never address our setting. Our contribution is a controlled empirical comparison, not the first grasp predictor or a general-purpose controller.
+
+\Needspace{4\baselineskip}\section*{III. What kind of progress would you like to see? Why?}
+
+We aim to identify a compact predictor, determine which inputs provide useful information, and measure whether its probabilities support better execution decisions. Full-feature models will be compared with speed-only and object-property-only models. Discrimination and probability reliability will be evaluated separately. A matched simulation study will compare model-selected configurations and speed-aware choices with fixed strategies, measuring both success and time. Competitive simple baselines, unstable feature selection, or no improvement from adaptive choices are valid findings.
+
+\Needspace{4\baselineskip}\section*{IV. Do you have an idea for making some such progress? Explain.}
+
+\Needspace{6\baselineskip}\subsection*{A. Prediction target and simulation data}
+
+Let z denote object properties and initial state, u a candidate control configuration, and Y the binary grasp outcome. We seek:
+
+\[
+\widehat p_\theta(z,u) \approx \Pr(Y=1\mid z,u).
+\]
+
+Object properties are observed context; control commands are candidate decisions. The MuJoCo 3.3.7 environment uses a Franka Panda with a parallel-jaw gripper and five rigid object families: bowl, bottle, spoon, glass tumbler, and pen. The frozen v1 dataset contains 3,840 labelled trials in 240 condition groups, including 2,560 training rows and 640 validation rows. A separate 320-trial development pilot is not appended to v1 or treated as final-test evidence.
+
+The common input contract contains exactly 11 raw predictors:
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}p{0.22\linewidth}Y@{}}\toprule
+
+\textbf{Input group} & \textbf{Recorded predictors}\\\midrule
+
+Object properties (4) & Family (\texttt{target}), relative geometry \texttt{scale}, \texttt{mass\_kg}, \texttt{sliding\_friction}\\
+
+Initial state (3) & Settled pre-grasp \texttt{x\_m}, \texttt{y\_m}, \texttt{yaw\_rad}\\
+
+Control commands (4) & \texttt{descent\_speed\_m\_s}, \texttt{opening\_m}, \texttt{closing\_force\_n}, \texttt{close\_trigger\_m}\\
+
+\bottomrule\end{tabularx}\end{center}
+
+Scale is not measured volume or absolute dimensions. Force and speed are commands, not guaranteed realized forces or velocities. Mass and friction are simulator-known quantities. Hidden execution errors, identifiers, seeds, durations, contact diagnostics, and outcomes are excluded from predictors.
+
+A positive label requires terminal controller success and, continuously for two simulation seconds, bilateral contact, no table support, at least 0.10 m lift, and relative-position stability within 0.01 m. Numerical faults and invalid initialization are nonlabels, not ordinary failures. Existing recordings illustrate execution but do not supply additional labels.
+
+\Needspace{4\baselineskip}\subsection*{B. Classifiers, baselines, and feature experiments}
+
+We will compare full-feature L2 Logistic Regression, squared-loss LASSO selection followed by L2 Logistic Regression, Random Forest, and XGBoost. Logistic Regression provides a compact probabilistic baseline; LASSO tests sparse feature screening; the tree methods can capture nonlinear relationships and interactions. LASSO predictions are not probabilities, and its zero coefficients do not establish physical irrelevance.
+
+Two reduced-input Logistic models will use speed alone and the four object-property inputs alone. This holds the learner family fixed when examining feature value. Baselines will include the training success prevalence and a one-variable Logistic model using a predefined friction–force-command–weight proxy. The latter is physics-inspired, not a validated force-balance law, because the force command is not measured contact force.
+
+A separate LASSO-plus-Logistic experiment will add all 45 pairwise products of the ten numeric inputs, retaining their main effects and encoded family. Products will be constructed explicitly before fold-local scaling and selection; LASSO does not generate interactions automatically. Selection frequencies across the three folds will describe stability, not causality.
+
+\Needspace{4\baselineskip}\subsection*{C. Training, tuning, and independent evaluation}
+
+All routes preserve the supplied three grouped training folds. Encoding, scaling, feature selection, and fitting occur within each training fold. Each learned route receives 12 predeclared parameter candidates; selection minimizes mean held-out-fold log loss. The chosen whole pipeline is refitted on training rows only. Full-feature routes inherit the shared training plan; supplemental routes reuse the corresponding Logistic or LASSO search grids. Candidate counts do not imply equal compute; actual timings, failures, eligible candidates, and versions will be reported.
+
+Validation supports development comparison and model choice, with all inspections recorded. The already-public historical test partition is not a blind assessment and will not guide tuning. A separate planned 3,840-trial independent test remains sealed and unexecuted. All pipelines, settings, thresholds, and source/environment hashes must be frozen before final collection; predictions must be locked before labels are joined for scoring. No fitted probability calibration is included in this first comparison; reliability is measured rather than assumed.
+
+\Needspace{6\baselineskip}\subsection*{D. Configuration choices and actual execution}
+
+For one observed state z, the frozen predictor scores a finite admissible set of control configurations. The success-first policy is:
+
+\[
+u^*(z) \in \operatorname*{arg\,max}_{u\in\mathcal U(z)}\widehat p_\theta(z,u).
+\]
+
+To examine the speed–success trade-off, a second policy chooses the highest descent-speed setting among candidates with predicted success probability at least 0.80, breaking ties by probability and then fixed candidate order. If none qualifies, it abstains; this threshold is not a success or safety guarantee. Maximizing predicted success does not itself minimize completion time.
+
+We plan a separate, small execution study with 20 new conditions, two paired hidden-error draws per condition, and five policies: fixed slow, medium, and fast configurations, success-first selection, and speed-aware selection. This gives 200 planned policy opportunities, not completed trials or guaranteed statistical power. Each policy starts from the same settled scene snapshot for a condition/draw, with no outcome-based candidate filtering. Abstention is recorded as noncompletion, not a successful or failed grasp. Model/threshold choices and the private condition plan will be fixed before collection.
+
+\Needspace{4\baselineskip}\subsection*{E. Metrics, organization, and delivery}
+
+Prediction evaluation will report log loss (primary), Brier score, ROC-AUC, balanced accuracy, failure-class-0 recall, labelled confusion matrices, and fixed-bin reliability diagrams. Physical evaluation will report attempt success, completion across all opportunities, abstention/coverage, simulated execution time, failed-attempt time, and total attempt time per successful completion. Inference wall-clock time is reported separately from simulation time. Paired whole-condition bootstrap intervals, stratified by object family, will quantify uncertainty without treating related trials as independent.
+
+A will maintain simulation/data quality and shared evaluation; B will develop Logistic Regression and LASSO routes; C Random Forest; D XGBoost. Supplemental analyses will be reviewed collectively using the companion study plan. Each route must deliver source, environment, CV records, fitted pipeline, validation predictions, and logs. The existing Logistic reference and shared evaluator are available; new learners, supplemental analyses, and model-driven execution remain work to perform.
+
+\Needspace{4\baselineskip}\section*{V. What do you expect to discover from your investigation?}
+
+We will test whether combined inputs outperform reduced inputs; whether sparse or physics-inspired models remain competitive with nonlinear models; and whether explicit interactions improve held-out predictions. We expect classification and probability reliability to reveal different weaknesses, particularly near failure boundaries. Execution experiments will establish whether contextual decisions improve success or the success–time trade-off, or whether fixed settings suffice. Correlated predictors and limited condition coverage may restrict interpretation. Negative results will be retained; neither a causal explanation nor a speedup is assumed from a predictive association.
+
+\Needspace{4\baselineskip}\section*{VI. How will your expected result(s) affect the research community?}
+
+The intended contribution is a reproducible empirical study: documented simulation data and labels, controlled classifier/feature comparisons, and an evaluation separating prediction, probability reliability, and execution. It can clarify which inputs help and when simple models suffice. Claims are limited to the tested simulator, controller, rigid geometry families, and uncertainty distribution. The study does not establish unseen-geometry generalization, real-robot transfer, or a new learning algorithm.
+
+\Needspace{4\baselineskip}\section*{References}
+
+\begingroup\footnotesize
+
+[1] E. C. Joyce, Q. Zhao, N. Burgdorfer, L. Wang, and P. Mordohai. “Consensus-Driven Uncertainty for Robotic Grasping based on RGB Perception.” IROS, 2025. \href{https://arxiv.org/abs/2506.20045}{Paper}.
+
+[2] T. Kiyokawa, E. Nagata, Y. Tsurumine, Y. Kwon, and T. Matsubara. “Self-Supervised Learning of Grasping Arbitrary Objects On-the-Move.” SII, 2025. \href{https://arxiv.org/abs/2411.09904}{Paper}.
+
+[3] Y. Avigal, J. Ichnowski, M. Y. Cao, and K. Goldberg. “GOMP-ST: Grasp Optimized Motion Planning for Suction Transport.” WAFR, 2022. \href{https://wafr2022.github.io/proceedings/WAFR_2022_Final_71.pdf}{Paper}.
+
+Project data and shared protocol: \href{https://github.com/youseihuayu-wonderful/intelligent-grasping-course-project}{Course repository}. Supplemental execution details are supplied in \texttt{Study\_Plan.md}; they extend, rather than silently replace, the frozen first-comparison training protocol.
+
+\endgroup
+
+\end{document}

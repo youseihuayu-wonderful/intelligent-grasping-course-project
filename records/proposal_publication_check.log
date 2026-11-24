@@ -1,0 +1,62 @@
+{
+  "status": "passed_document_transfer_and_local_links",
+  "artifacts": [
+    {
+      "path": "docs/proposal/Proposal.md",
+      "bytes": 12112,
+      "sha256": "a0bb93c6b6e5dab79f8c57d7966762e7caf01f6c47ac29f2d182dc30ff71dd10",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "docs/proposal/Proposal.docx",
+      "bytes": 43367,
+      "sha256": "91736041c623dcf928edc01d5494829785c235c31a0374cc528bc3f5beef8515",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "docs/proposal/Proposal.tex",
+      "bytes": 14079,
+      "sha256": "4fe44b08b227a086bed82c870c66aa3919cad140fd590c29397f58f6ce06ca47",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "docs/proposal/Proposal.pdf",
+      "bytes": 43500,
+      "sha256": "4d53539417322cb2092ee6d56f907e465357ae965ef4df8d7766633215ee7cd9",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "docs/proposal/Study_Plan.md",
+      "bytes": 6898,
+      "sha256": "704a1a7c44f2e89fb2cc535e50c16ab31360067e67e873e939e122dea6bf9a1f",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "docs/proposal/Study_Plan.docx",
+      "bytes": 41022,
+      "sha256": "226904804e01e7abad6941738425f9f84097553d04aa5512f501691f10d96fd0",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "docs/proposal/Study_Plan.tex",
+      "bytes": 8972,
+      "sha256": "72b6c392ac4a5a15e1c39d9a5afd278bc7411d5843582a568daac8b2143a782e",
+      "matches_reviewed_source": true
+    },
+    {
+      "path": "docs/proposal/Study_Plan.pdf",
+      "bytes": 26693,
+      "sha256": "6cd66bd20408f55bd368a5482b3303c1fa9ff1282e971b384d7b4dd15c17a680",
+      "matches_reviewed_source": true
+    }
+  ],
+  "retained_verification_and_compile_logs_match": true,
+  "local_links_checked": 33,
+  "original_documents_overwritten": false,
+  "base_training_plan_unchanged": true,
+  "new_model_training_or_experiments": false,
+  "limits": [
+    "PDF rendering and Word XML/content checks are retained prior verification, not new model validation.",
+    "New classifier routes, final scoring and policy execution remain planned work."
+  ]
+}

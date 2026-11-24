@@ -12,6 +12,7 @@ The animation loops through the complete recorded Experiment 2 mission. It uses 
 
 ## Start here
 
+- **[Revised proposal and supplementary study plan — share with the team](docs/proposal/README.md)** — English I–VI proposal and explicit experiment additions; readable Markdown, reviewed PDF, editable Word and LaTeX. Planned work is distinguished from completed evidence.
 - **[Download all v1 data as one ZIP](https://github.com/youseihuayu-wonderful/intelligent-grasping-course-project/raw/refs/heads/main/grasp_dataset_v1.zip)** — complete CSV, fixed splits/CV, source metadata and feature/label documentation; no videos or model artifacts.
 - **[Download the raw v1 CSV](https://raw.githubusercontent.com/youseihuayu-wonderful/intelligent-grasping-course-project/main/data/v1/dataset.csv)** · [Browse the data](data/v1/dataset.csv) · [Frozen manifest](data/v1/manifest.json)
 - [Dataset, feature units, physical labels, and provenance](docs/DATASET.md)

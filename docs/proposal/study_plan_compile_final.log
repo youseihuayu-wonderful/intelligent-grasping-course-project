@@ -1,0 +1,151 @@
+note: Running TeX ...
+warning: hyperref.sty:4873: Requested font "pzdr" at 0.00002pt
+warning: hyperref.sty:4873:  -> pzdr
+warning: Study_Plan.tex:22: 
+Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 10.94997pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Slanted.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-BoldSlanted.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: Study_Plan.tex:25: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 16.0pt
+warning: Study_Plan.tex:25: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 16.0pt
+warning: Study_Plan.tex:27: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: Study_Plan.tex:29: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: Study_Plan.tex:31: Requested font "[lmmono10-regular]:" at 10.95pt
+warning: Study_Plan.tex:51: 
+Requested font "ntx-Regular-tlf-ot1" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntx-Regular-tlf-ot1
+warning: Study_Plan.tex:51: Requested font "ntx-Regular-tlf-ot1" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntx-Regular-tlf-ot1
+warning: Study_Plan.tex:51: Requested font "ntx-Regular-tlf-ot1" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntx-Regular-tlf-ot1
+warning: Study_Plan.tex:51: Requested font "ntxmi" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxmi
+warning: Study_Plan.tex:51: Requested font "ntxmi7" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxmi7
+warning: Study_Plan.tex:51: Requested font "ntxmi5" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxmi5
+warning: Study_Plan.tex:51: Requested font "ntxsy" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxsy
+warning: Study_Plan.tex:51: Requested font "ntxsy7" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxsy7
+warning: Study_Plan.tex:51: Requested font "ntxsy5" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxsy5
+warning: Study_Plan.tex:51: Requested font "ntxexx" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxexx
+warning: Study_Plan.tex:51: Requested font "ntxexx" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxexx
+warning: Study_Plan.tex:51: Requested font "ntxexx" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxexx
+warning: Study_Plan.tex:51: 
+Requested font "ntxmia" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxmia
+warning: Study_Plan.tex:51: Requested font "ntxmia" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxmia
+warning: Study_Plan.tex:51: Requested font "ntxmia" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxmia
+warning: Study_Plan.tex:51: 
+Requested font "ntxsym" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxsym
+warning: Study_Plan.tex:51: Requested font "ntxsym" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxsym
+warning: Study_Plan.tex:51: Requested font "ntxsym" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxsym
+warning: Study_Plan.tex:51: 
+Requested font "ntxsyc" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxsyc
+warning: Study_Plan.tex:51: Requested font "ntxsyc" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxsyc
+warning: Study_Plan.tex:51: Requested font "ntxsyc" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxsyc
+warning: Study_Plan.tex:51: Requested font "ntxexa" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxexa
+warning: Study_Plan.tex:51: Requested font "ntxexa" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxexa
+warning: Study_Plan.tex:51: Requested font "ntxexa" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxexa
+warning: Study_Plan.tex:51: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: Study_Plan.tex:51: Requested font "[lmmono10-regular]:" at 10.0pt
+warning: Study_Plan.tex:51: Underfull \hbox (badness 10000) in paragraph at lines 51--51
+note: Rerunning TeX because "Study_Plan.aux" changed ...
+warning: hyperref.sty:4873: Requested font "pzdr" at 0.00002pt
+warning: hyperref.sty:4873:  -> pzdr
+warning: Study_Plan.tex:22: 
+Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 10.94997pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Regular.otf]/OT" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Italic.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Slanted.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-BoldItalic.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-BoldSlanted.otf]/OT:script=latn;language=dflt;" at 10.95003pt
+warning: Study_Plan.tex:22: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: Study_Plan.tex:25: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 16.0pt
+warning: Study_Plan.tex:25: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 16.0pt
+warning: Study_Plan.tex:27: Requested font "[TeXGyreTermesX-Regular.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: Study_Plan.tex:29: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.95pt
+warning: Study_Plan.tex:31: Requested font "[lmmono10-regular]:" at 10.95pt
+warning: Study_Plan.tex:51: 
+Requested font "ntx-Regular-tlf-ot1" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntx-Regular-tlf-ot1
+warning: Study_Plan.tex:51: Requested font "ntx-Regular-tlf-ot1" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntx-Regular-tlf-ot1
+warning: Study_Plan.tex:51: Requested font "ntx-Regular-tlf-ot1" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntx-Regular-tlf-ot1
+warning: Study_Plan.tex:51: Requested font "ntxmi" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxmi
+warning: Study_Plan.tex:51: Requested font "ntxmi7" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxmi7
+warning: Study_Plan.tex:51: Requested font "ntxmi5" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxmi5
+warning: Study_Plan.tex:51: Requested font "ntxsy" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxsy
+warning: Study_Plan.tex:51: Requested font "ntxsy7" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxsy7
+warning: Study_Plan.tex:51: Requested font "ntxsy5" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxsy5
+warning: Study_Plan.tex:51: Requested font "ntxexx" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxexx
+warning: Study_Plan.tex:51: Requested font "ntxexx" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxexx
+warning: Study_Plan.tex:51: Requested font "ntxexx" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxexx
+warning: Study_Plan.tex:51: 
+Requested font "ntxmia" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxmia
+warning: Study_Plan.tex:51: Requested font "ntxmia" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxmia
+warning: Study_Plan.tex:51: Requested font "ntxmia" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxmia
+warning: Study_Plan.tex:51: 
+Requested font "ntxsym" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxsym
+warning: Study_Plan.tex:51: Requested font "ntxsym" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxsym
+warning: Study_Plan.tex:51: Requested font "ntxsym" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxsym
+warning: Study_Plan.tex:51: 
+Requested font "ntxsyc" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxsyc
+warning: Study_Plan.tex:51: Requested font "ntxsyc" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxsyc
+warning: Study_Plan.tex:51: Requested font "ntxsyc" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxsyc
+warning: Study_Plan.tex:51: Requested font "ntxexa" at 10.0pt
+warning: Study_Plan.tex:51:  -> ntxexa
+warning: Study_Plan.tex:51: Requested font "ntxexa" at 7.3pt
+warning: Study_Plan.tex:51:  -> ntxexa
+warning: Study_Plan.tex:51: Requested font "ntxexa" at 5.5pt
+warning: Study_Plan.tex:51:  -> ntxexa
+warning: Study_Plan.tex:51: Requested font "[TeXGyreTermesX-Bold.otf]/OT:script=latn;language=dflt;-ss05;+tnum;+lnum;mapping=tex-text;" at 10.0pt
+warning: Study_Plan.tex:51: Requested font "[lmmono10-regular]:" at 10.0pt
+warning: Study_Plan.tex:51: Underfull \hbox (badness 10000) in paragraph at lines 51--51
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `Study_Plan.log` (30.80 KiB)
+note: Writing `Study_Plan.pdf` (26.07 KiB)
+note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)

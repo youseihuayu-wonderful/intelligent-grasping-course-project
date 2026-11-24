@@ -1,0 +1,50 @@
+{
+  "new_models_trained": 0,
+  "private_final_accessed": false,
+  "documents": [
+    {
+      "name": "Proposal",
+      "pdf_pages": 3,
+      "word_matches_markdown_text": true,
+      "word_math_objects": 2,
+      "pdf_missing_glyphs": 0,
+      "pdf_overfull_boxes": 0,
+      "page_text_lengths": [
+        3676,
+        3957,
+        4202
+      ],
+      "files": {
+        "md": "a0bb93c6b6e5dab79f8c57d7966762e7caf01f6c47ac29f2d182dc30ff71dd10",
+        "docx": "91736041c623dcf928edc01d5494829785c235c31a0374cc528bc3f5beef8515",
+        "tex": "4fe44b08b227a086bed82c870c66aa3919cad140fd590c29397f58f6ce06ca47",
+        "pdf": "4d53539417322cb2092ee6d56f907e465357ae965ef4df8d7766633215ee7cd9"
+      }
+    },
+    {
+      "name": "Study_Plan",
+      "pdf_pages": 2,
+      "word_matches_markdown_text": true,
+      "word_math_objects": 0,
+      "pdf_missing_glyphs": 0,
+      "pdf_overfull_boxes": 0,
+      "page_text_lengths": [
+        3423,
+        3468
+      ],
+      "files": {
+        "md": "704a1a7c44f2e89fb2cc535e50c16ab31360067e67e873e939e122dea6bf9a1f",
+        "docx": "226904804e01e7abad6941738425f9f84097553d04aa5512f501691f10d96fd0",
+        "tex": "72b6c392ac4a5a15e1c39d9a5afd278bc7411d5843582a568daac8b2143a782e",
+        "pdf": "6cd66bd20408f55bd368a5482b3303c1fa9ff1282e971b384d7b4dd15c17a680"
+      }
+    }
+  ],
+  "original_word_unchanged_sha256": "37ab692d577aad9363681be55048881bfe3d03561afc10c44efd9564dffd6ac4",
+  "base_training_plan_unchanged": true,
+  "limits": [
+    "Word text/XML and equation structure checked; no Word application visual preview was performed.",
+    "PDFs rendered for visual review; TeX font-request notices remain in compile logs.",
+    "New learners, supplementary experiments and policy execution are planned, not executed results."
+  ]
+}
